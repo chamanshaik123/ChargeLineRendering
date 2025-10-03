@@ -1,0 +1,12 @@
+﻿{
+  "Name": "IE Cerner Soarian",
+  "Type": "App",
+  "Id": "CaN-G9Ynn0-XPDCoFNK6fg",
+  "Reference": "_SnxN0K_10e-jJArrRFzPQ/CaN-G9Ynn0-XPDCoFNK6fg",
+  "Created": "2025-08-11T08:10:49.873942Z",
+  "Updated": "2025-08-11T08:10:49.873942Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gfFM2WPbAEyogVaMuEqBNA" Reference="ycdoyavAlE-BYqdOwPhPXw/MhtpD2lWNECcK4b0dlsyRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="3689c84e-9f29-4a1c-b2b2-32b10282576c" CvTextArea="670, 158, 97, 12" CvTextArgument="NormalSubscriber" CvType="Text" DesignTimeRectangle="671, 158, 96, 13" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl name='NormalSubscriber' type='' class='' tag='A' aaname='NormalSubscriber' check:text='NormalSubscriber' /&gt;" Guid="a3e747d3-c8c4-4c0e-87a7-1dd8145c5f24" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d69d5f9adb9d693f82c3a5a5348e36d9.png" xmlns="">d69d5f9adb9d693f82c3a5a5348e36d9.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

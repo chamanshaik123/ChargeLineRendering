@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Filter Dropdown",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "BDdVJ_7k0kej_mIeM0a5FA",
+  "Reference": "_SnxN0K_10e-jJArrRFzPQ/BDdVJ_7k0kej_mIeM0a5FA",
+  "ParentRef": "_SnxN0K_10e-jJArrRFzPQ/njN-gIdMFkO02XsuhxZK3w",
+  "Created": "2025-08-11T08:10:50.5974165Z",
+  "Updated": "2025-08-11T08:11:21.0606082Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

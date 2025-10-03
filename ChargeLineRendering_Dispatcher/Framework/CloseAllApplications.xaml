@@ -1,0 +1,271 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CloseAllApplications" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_CitrixApplicationURL" Type="InArgument(x:String)" />
+    <x:Property Name="in_intTimeout" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_strRevenueAppPath" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>396,292</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>CloseAllApplications_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Do the necessary procedures for ending the process (e.g., logout) and close the used applications." DisplayName="Close All Applications" sap:VirtualizedContainerService.HintSize="1044,2454" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log message (close applications)" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Closing applications...&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Revenue Cycle - United States Base Experience" sap:VirtualizedContainerService.HintSize="1022,1053" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="Never" ScopeGuid="be557fbc-0645-4a90-952e-db4e76dcee5f" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do: Log Out From File" sap:VirtualizedContainerService.HintSize="416,730" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click File from Header" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" ContentHash="_cemV-6_NUCZcnwxDrWPew" CvTextArea="6, 26, 20, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="0, 23, 32, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' automationid='' check:text='File' /&gt;" Guid="fc74e989-a209-4b93-9d95-3af4c0d8b02a" InformativeScreenshot="51ec128da5b37f69e5cf2a44f24a1539.png" Reference="BIPb7NZ-MEG1ZOZ9L35Dqw/EFtxh0MCxUuGPjiA54VvuQ" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle - United States Base Experience - RevElate - Opene*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" CvTextArea="37, 26, 28, 12" CvTextArgument="View" CvType="Text" DesignTimeRectangle="32, 23, 39, 19" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' automationid='' check:text='View' /&gt;" Guid="53590946-70b2-451b-ae47-7c052962eca2" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click LogOut Option from 'File'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="df11f063-0c7c-4e71-a196-811c44ba85c9" ContentHash="hanvbqdAR0OIlk9kQeqtYA" CvTextArea="34, 138, 20, 12" CvTextArgument="Exit" CvType="Text" DesignTimeRectangle="3, 134, 205, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='File' role='popup menu' /&gt;&lt;ctrl role='menu item' text='Exit' /&gt;" FuzzySelectorArgument="&lt;ctrl name='File' role='popup menu' /&gt;&lt;ctrl automationid='135' role='menu item' check:text='Exit' /&gt;" Guid="134e4bfd-69fb-4fd6-a1de-210b0c3caedc" InformativeScreenshot="959123761ef777c29ec67b23fbd38166.png" Reference="BIPb7NZ-MEG1ZOZ9L35Dqw/jtQs2smFCEC39rr2jkvjFw" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='#32768' isremoteapp='1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1cc560fe-d488-41b6-82d4-8f076fd37b0c" CvTextArea="6, 26, 20, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="0, 23, 32, 19" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' automationid='' check:text='File' /&gt;" Guid="463aa9d9-f242-4fa1-9c54-e0fed6ec4161" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click '&amp;Yes' If Prompt" sap:VirtualizedContainerService.HintSize="382,218" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Timeout="[Convert.ToDouble(in_intTimeout)]" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="dedf1098-f5e0-4c11-b8bd-17bbdd8117cc" ContentHash="G0RUmcvEDUS30aSSXH2JZA" CvElementArea="316, 108, 91, 24" CvTextArea="352, 113, 18, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="316, 107, 92, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Yes' cls='Button' title='*Yes' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Yes' cls='Button' title='&amp;amp;Yes' check:text='&amp;amp;Yes' /&gt;" Guid="69f28cc1-e5da-4f85-91d1-f206617dfb84" InformativeScreenshot="28452f775de8e66458099776c13d54d4.png" Reference="BIPb7NZ-MEG1ZOZ9L35Dqw/VlJ2x__UHUGPRYFbkvDNBw" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='#32770' isremoteapp='1' title='Cancel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1440, 860" ContentHash="iGhtlIyPU0ihtWKnILiBuQ" FilePath="[in_strRevenueAppPath]" IconBase64="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" InformativeScreenshot="c5a85bdb86112783e67ece146b500f91.png" Reference="BIPb7NZ-MEG1ZOZ9L35Dqw/EnLO9Xs41EmI4c4fPs8DWg" Selector="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle - United States Base Experience - RevElate - Opene*' /&gt;" Title="Revenue Cycle - United States Base Experience - RevElate - Opene*" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" ContinueOnError="True" DisplayName="Chrome Welcome to CernerWorks!" sap:VirtualizedContainerService.HintSize="1022,1174" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="063a5046-d53c-4366-abdd-eda6c347ddda" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,934" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'DIV'" sap:VirtualizedContainerService.HintSize="954,704" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="063a5046-d53c-4366-abdd-eda6c347ddda" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,455" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message - click on log off" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Log off Drop down found....click on it&quot;]" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayAfter="[(in_intTimeout/2)]" DisplayName="Click 'Log off'" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="063a5046-d53c-4366-abdd-eda6c347ddda" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="8492d0f0-085c-4137-a9ba-21c8a54cab7f" ContentHash="U-9rqTVVt0SkE1vcwqmsMA" CvTextArea="1315, 258, 32, 12" CvTextArgument="Log off" CvType="Text" DesignTimeRectangle="1298, 246, 149, 36" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;webctrl id='dropdownLogOffBtn' tag='A' aaname='Log off' parentid='home-screen' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dropdownLogOffBtn' tag='A' aaname='Log off' parentid='home-screen' type='' class='theme-highlight-color' check:text='Log off' /&gt;" Guid="f712f7de-6e28-4af0-837f-9a650bc11de0" InformativeScreenshot="bda65520cfa542ecc86f8f8d62cfda5e.png" Reference="ycdoyavAlE-BYqdOwPhPXw/qAirFirDpk6o5_8YUSPyJQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message - No Log Off Button found" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;No Log off button found...&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" ContentHash="PUfRj269YUCdAbM51aDYlQ" DesignTimeRectangle="1410, 108, 21, 17" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;webctrl parentid='userMenuBtn' tag='DIV' parentclass='dropdown-menu-trigger settings-button' /&gt;" Guid="0cdec8ee-23cf-48cd-a866-140faa1cdb97" InformativeScreenshot="8c1a8a48e984a6b31f6113e9bd3b7e85.png" Reference="ycdoyavAlE-BYqdOwPhPXw/Ymcwhy3uSEOkehcTJiWgeg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <ui:LogMessage DisplayName="Log closure of Citrix application" sap:VirtualizedContainerService.HintSize="954,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Citrix Application closed&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1296, 776" BrowserType="Chrome" ContentHash="xGd8v0tJ5ky9ZgpBNwQF6A" IconBase64="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" InformativeScreenshot="abf0f41cdd675f27aa4d47cd77a17158.jpg" Reference="ycdoyavAlE-BYqdOwPhPXw/RcJ1O6Nahkikxz7ls2XN6g" Selector="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" Title="Welcome to CernerWorks!" Url="[in_CitrixApplicationURL]" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

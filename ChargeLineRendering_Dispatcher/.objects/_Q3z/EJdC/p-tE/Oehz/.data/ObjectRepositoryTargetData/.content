@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VY1UZt1Gc0CYa6a0IghYHA" Reference="_SnxN0K_10e-jJArrRFzPQ/OehzhzWCgEemlIz9v-uXUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="048dc578-d33f-4325-b3a2-d06a54778c77" DesignTimeRectangle="37, 851, 148, 166" DesignTimeScaleFactor="1" ElementType="ListItem" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='storeapp added' aaname='' check:innerText='*Revenue*ycle' /&gt;" Guid="934f16cb-e7f4-4e22-8248-176818c68774" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fc1553f62b3a071547d92d8222d1c5a7.png" xmlns="">0tX_XqGL2JE-OvuXSoKpWPg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
