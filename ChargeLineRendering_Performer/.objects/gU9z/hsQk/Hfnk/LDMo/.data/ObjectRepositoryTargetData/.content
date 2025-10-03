@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FlxZgT4fi0WnOvvwl_UqAg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="78a03065-f424-4486-9ca1-a176cf5215f6" CvElementArea="1039, 649, 54, 24" CvTextArea="1050, 654, 32, 14" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="1040, 650, 52, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ctlIccButton*' tag='BUTTON' type='button' aaname='Apply' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlIccButton*' tag='BUTTON' type='button' aaname='Apply' class='IccButtonGradient' check:text='Apply' /&gt;" Guid="519d115c-a7f9-4568-a1e1-4f8bc52eb9e9" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2eb30cfdc0cf3c790d988ca1eef46a56.png" xmlns="">0vP8mNqCTq0aPyZ2IiIViqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

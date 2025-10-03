@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ic22ImyNsUyTZfSzfG6U0g" Reference="iECXXsB5aE67CeGMsIoCEA/4FWVt9zcoEGyzqw9Bbp9aQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="78b29c75-7700-4a15-bf21-c5c19b6a0927" CvElementArea="97, 95, 390, 17" CvType="InputBox" DesignTimeRectangle="93, 97, 395, 15" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl tag='LI' aaname='Close' class='link' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LI' aaname='Close' class='link' type='' check:text='Close' /&gt;" Guid="38536397-af11-411f-a9f0-1a2355d599c8" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3dd6d7e9aa8926871d01743d958aef86.png" xmlns="">0_m3Ne1rt6k6fvaYh1-3_yQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

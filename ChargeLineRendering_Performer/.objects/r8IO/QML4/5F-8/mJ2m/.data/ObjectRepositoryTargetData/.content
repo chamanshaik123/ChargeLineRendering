@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NsW57qP5gE2u0VxDdwTegQ" Reference="iECXXsB5aE67CeGMsIoCEA/mJ2mZDNTEEWkOm0ES9MJOg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="6, 310, 1428, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" Guid="1cadb5b3-0142-4b2f-88a7-2b0f5ca0ea5e" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="TopLeft" X="50" Y="[18*int_ProcedureIndex]" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="41e991e4bd9ff9fdd582fd2729531503.png" xmlns="">0klX5kNOhXUi3w3MikMrJnQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

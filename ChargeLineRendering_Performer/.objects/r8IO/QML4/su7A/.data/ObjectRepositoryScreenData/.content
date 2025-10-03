@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="TowgAbDYCUCm4zs-KQGPrg" Reference="iECXXsB5aE67CeGMsIoCEA/su7ACU89e0SQ4d06deEBig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="523, 282, 393, 288" ContentHash="-4keWRIWq0imqiw4Qm_arg" FilePath="[str_glblChargeViewerApplicationPath]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD3SURBVDhPvZKxkYMwEEXpiQ7IqYFMLdABJTCjNqhA0UWKTWIiMpIbKtjbJ2s92BjscXB/5qNldv/XrqTiXyCKdV0lhCBd10nbtpJT50AYo9fPjX3fJ4Oqqj4zCNdwF5tB0zRS1/V7g2VZxMXywSDRO138uQGtI4Ze3MZAYzX4vfwcGzyLIXHM4qjkQHP5Hk4LH8TZABa+EM4ll+5Bciu23WGpYs4ll+5BW6n4lVh52jZzD8NwKAa59DV4YeM4ficG3CtXY3dvPJ15i7SNK5MJo/BcETO3rRAcngVJOkmMUeZ5TsTAVsTE5NFM0/S+QzOybiy+/S/yB/p7lZTA9RGaAAAAAElFTkSuQmCC" Reference="iECXXsB5aE67CeGMsIoCEA/su7ACU89e0SQ4d06deEBig" Selector="&lt;wnd app='cschargeviewer.exe' ctrlname='frmCreditReason' isremoteapp='1' /&gt;" Version="V1">
+      <imageRef attrName="InformativeScreenshot" originalValue="0159374fd18d17ce9a86fbdf9ebc4cd2.png" xmlns="">0YgMZZCqTb0yCUi-Pq-RLvQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

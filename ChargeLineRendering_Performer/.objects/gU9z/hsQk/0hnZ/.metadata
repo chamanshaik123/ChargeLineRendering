@@ -1,0 +1,16 @@
+﻿{
+  "Name": "RevenueSoarian",
+  "Type": "Screen",
+  "Id": "0hnZlI2A4kODkm6B2SHsXA",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/0hnZlI2A4kODkm6B2SHsXA",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/hsQkqJib0kOw9rAWAxRmqw",
+  "Created": "2025-08-18T15:18:36.4136081Z",
+  "Updated": "2025-08-18T15:25:43.2488503Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

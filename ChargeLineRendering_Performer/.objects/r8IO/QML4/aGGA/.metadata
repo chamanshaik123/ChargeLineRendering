@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Provider Selection",
+  "Type": "Screen",
+  "Id": "aGGAA2XJlUSVhIpHAGg1sQ",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/aGGAA2XJlUSVhIpHAGg1sQ",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/QML4C9JuCkGcc1-4uUVGOw",
+  "Created": "2025-09-02T11:17:44.1025678Z",
+  "Updated": "2025-09-02T11:17:44.1025678Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

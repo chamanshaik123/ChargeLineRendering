@@ -1,0 +1,234 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CloseAllApplications" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_strCitrixUrl" Type="InArgument(x:String)" />
+    <x:Property Name="in_intMaxRetry" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_intWaitTime" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>396,292</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>CloseAllApplications_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Do the necessary procedures for ending the process (e.g., logout) and close the used applications.&#xA;Log out from Citrix and cerner  based on the observed scenarios&#xA;in_intWaitTime&#xA;in_strCitrixUrl&#xA;in_strErrorCodePAITEWL&#xA;in_intWaitTime&#xA;" DisplayName="Close All Applications" sap:VirtualizedContainerService.HintSize="764,820" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log message (close applications)" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Closing applications...&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Based on Flag check for Session Availability or Log out from RevElate Application&#xA;in_intMaxRetry&#xA;in_intWaitTime&#xA;in_strCitrixUrl&#xA;in_strApplicationName&#xA;in_boolLogout&#xA;in_strNamePrefixSE&#xA;in_strScreenshotFolderPath" DisplayName="Cerner_LogOut - Invoke Workflow File (ReusableModule\Cerner_LogOut.xaml)" sap:VirtualizedContainerService.HintSize="416,333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReusableModule\Cerner_SessionAvailabilityCheckAndLogOutRevElate.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:Int32" x:Key="in_intMaxRetry">[in_intMaxRetry]</InArgument>
+        <InArgument x:TypeArguments="x:Int32" x:Key="in_intWaitTime">[in_intWaitTime]</InArgument>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolLogout">True</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strApplicationName">[string.Empty]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strCitrixUrl">[string.Empty]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strNamePrefixSE">[string.Empty]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strScreenshotFolderPath">[string.Empty]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Log out from Citrix and based on the observed scenarios&#xA;in_intWaitTime&#xA;in_strCitrixUrl&#xA;" DisplayName="Citrix_LogOut - Invoke Workflow File (ReusableModule\Citrix_LogOut.xaml)" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ReusableModule\Citrix_LogOut.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strCitrixUrl">[in_strCitrixUrl]</InArgument>
+        <InArgument x:TypeArguments="x:Int32" x:Key="in_intWaitTime">[in_intWaitTime]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <uix:NCheckState DisplayName="Check App State 'ToggleToCheckChargeAvailability'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NCheckState_1" IsLoose="True" Timeout="[in_intWaitTime/in_intMaxRetry]" Version="V4">
+      <uix:NCheckState.IfExists>
+        <Sequence DisplayName="Target appears: ToggleToCheckChargeAvailability" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="False" DisplayName="Charge Viewer" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="be557fbc-0645-4a90-952e-db4e76dcee5f" Timeout="[in_intWaitTime]" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do: Log Out From File" sap:VirtualizedContainerService.HintSize="416,490" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click File from Header" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CVScreenId="bc19bd51-fe31-4270-8dd0-fd20f930b44b" ContentHash="JrxVwG7av0WEl4_5SGu2sA" CvTextArea="7, 28, 26, 12" CvTextArgument="Task" CvType="Text" DesignTimeRectangle="0, 23, 42, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='MainMenu1' /&gt;&lt;ctrl name='Task' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='MainMenu1' /&gt;&lt;ctrl name='Task' role='menu item' automationid='' /&gt;" Guid="80b4a6d4-4ef0-4160-91e5-607749d2a28c" InformativeScreenshot="f0cc0db0545c3a6c1481558d41aa44d2.png" Reference="iECXXsB5aE67CeGMsIoCEA/aL0VmCtDKk-2gxSMA0ivUg" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click LogOut Option from 'File'" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CVScreenId="fcb1d297-815e-4d51-85fc-0c6a8b4c46ae" ContentHash="vtuOHlZ0uESVpwNmFeRM_Q" CvTextArea="35, 118, 20, 12" CvTextArgument="Exit" CvType="Text" DesignTimeRectangle="0, 114, 188, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='MainMenu1' /&gt;&lt;ctrl name='Task' role='menu item' /&gt;&lt;ctrl name='Exit' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='MainMenu1' /&gt;&lt;ctrl name='Task' role='menu item' /&gt;&lt;ctrl name='Exit' role='menu item' automationid='' check:fulltext='Exit' /&gt;" Guid="0a59965c-16c8-4b14-84d9-c86cd731a634" InformativeScreenshot="ebf004d6b9a9b95681a7ef529137a8bd.png" Reference="iECXXsB5aE67CeGMsIoCEA/dbwshJW6AEGXoWZ7O5-G3w" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <ui:LogMessage DisplayName="Log Message: Login Successfull" sap:VirtualizedContainerService.HintSize="382,50" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Logout Successful for ChargeViewer&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 1440, 860" ContentHash="g3aBiScT3Ualtq7SYFxDTQ" FilePath="C:\Program Files\Cerner\cschargeviewer.exe" IconBase64="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" InformativeScreenshot="c11694cb594a4c3160566b054a8e87c4.png" Reference="iECXXsB5aE67CeGMsIoCEA/5F-8wdAmVEuyX_dFvA7udw" Selector="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" Version="V1" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+        </Sequence>
+      </uix:NCheckState.IfExists>
+      <uix:NCheckState.IfNotExists>
+        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </uix:NCheckState.IfNotExists>
+      <uix:NCheckState.Target>
+        <uix:TargetAnchorable CVScreenId="f29ac89b-8b16-4d27-b655-6f71af169b87" ContentHash="c6NfxMZX8kKyMP63M6xrUQ" DesignTimeRectangle="122, 48, 24, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Toggle*' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Toggle*' role='push button' automationid='' check:fulltext='Toggle from Interfaced to Pending' /&gt;" Guid="b71247b1-cc7d-4943-b8e3-8815e57a9120" InformativeScreenshot="653bf6e56e4a244112799c4384886618.png" Reference="iECXXsB5aE67CeGMsIoCEA/6YzxMZw9cEmPQmurUKopBQ" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+      </uix:NCheckState.Target>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NCheckState>
+  </Sequence>
+</Activity>

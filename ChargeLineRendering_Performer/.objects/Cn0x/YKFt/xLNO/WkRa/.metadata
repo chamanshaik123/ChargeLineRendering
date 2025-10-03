@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click- All ",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "WkRaVTHRLUq5Q4O_G83K7g",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/WkRaVTHRLUq5Q4O_G83K7g",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/xLNOkJMvOk-gjIWmZHCEcA",
+  "Created": "2025-09-01T16:42:19.3093604Z",
+  "Updated": "2025-09-01T16:42:19.3093604Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

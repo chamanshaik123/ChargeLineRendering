@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XLFE0ZuPTUmzqvTK9CTItw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="3706f3a3-89e9-46b9-8e84-2c1bc0d15471" CvElementArea="7, 122, 378, 122" CvType="InputBox" DesignTimeRectangle="7, 123, 379, 122" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='txtCreditRsnNote' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='txtCreditRsnNote' /&gt;" Guid="f56f693e-1516-4988-8342-0170d102ea81" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmCreditReason' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3706f3a3-89e9-46b9-8e84-2c1bc0d15471" CvTextArea="6, 110, 38, 12" CvTextArgument="* Note:" CvType="Text" DesignTimeRectangle="6, 102, 381, 21" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='_Reqlbl_1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='_Reqlbl_1' check:text='Note:' /&gt;" Guid="fdfecd6e-f727-4272-8d74-ef16c1762b2f" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a777ce017a1bd67f446160e65d34feff.png" xmlns="">0YML2DYmYskmtFoSM82W0Hw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

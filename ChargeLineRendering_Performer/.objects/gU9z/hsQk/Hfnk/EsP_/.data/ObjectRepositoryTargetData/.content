@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1qQCcqCWVke1Hq-Ojm7E-w" Reference="iECXXsB5aE67CeGMsIoCEA/EsP_dclj-kG4QOc1l6d5hw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="8afefaa0-01cb-46b9-8a0f-16c14b329a24" DesignTimeRectangle="662, 663, 120, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TR' aria-role='presentation' parentid='ctlEnc_*' /&gt;&lt;webctrl tag='DIV' aaname='{0}' class='IccGridCellValue' /&gt;&quot;, in_strEncounterId)]" Guid="f09837db-37af-46d6-824c-b755f0b64db2" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b7d97eb4f131146934b9b6250c7f17a0.png" xmlns="">0mUlw4znlkUu0X6gyXAG7Ew</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="5050576265" IsVariable="False" Name="in_strEncounterId" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

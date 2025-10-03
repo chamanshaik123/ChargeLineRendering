@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Unable to connect to th…(2)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "WhNc6VGsykig9Qd2el_SuQ",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/WhNc6VGsykig9Qd2el_SuQ",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/DAfp95PQ8kOpFML8eWfZ0g",
+  "Created": "2025-09-01T16:41:57.3875341Z",
+  "Updated": "2025-09-01T16:41:57.3875341Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

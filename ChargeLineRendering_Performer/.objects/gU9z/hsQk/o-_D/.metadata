@@ -1,0 +1,13 @@
+﻿{
+  "Name": "RevElate -- Webpage Dialog",
+  "Type": "Screen",
+  "Id": "o-_DsQEpUE2elEm038dnLg",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/o-_DsQEpUE2elEm038dnLg",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/hsQkqJib0kOw9rAWAxRmqw",
+  "Created": "2025-09-02T13:14:34.7386941Z",
+  "Updated": "2025-09-02T13:14:34.7386941Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

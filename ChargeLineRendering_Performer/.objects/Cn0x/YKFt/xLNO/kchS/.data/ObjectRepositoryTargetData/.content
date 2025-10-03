@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hOnjUSyreUeelfoaQ67Pcw" Reference="J-GH-OIaQEaHiNcjAacQKw/fiej57dY80KftdYVHZAZRg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="1877b79b-330d-4297-856b-f704530aee7c" DesignTimeRectangle="559, 459, 148, 166" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='LI' class='storeapp added' innertext='{0}' parentid='home-screen' /&gt;&quot;, in_strApplicationName)]" FuzzyMatches="10000" Guid="ce66fbfb-b127-45b0-b812-cfbeda22b5b5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a7d968597b0b77eb7915f461bff74e65.png" xmlns="">a7d968597b0b77eb7915f461bff74e65.png</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="M0570 AccessHIM" IsVariable="False" Name="in_strApplicationName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

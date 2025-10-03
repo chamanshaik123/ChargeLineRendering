@@ -1,0 +1,17 @@
+﻿{
+  "Name": "CheckReceivableIdTab",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "WK3oAOYEHUit_k-AYS0gog",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/WK3oAOYEHUit_k-AYS0gog",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-08-29T06:01:50.6500397Z",
+  "Updated": "2025-08-29T06:02:18.3892987Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

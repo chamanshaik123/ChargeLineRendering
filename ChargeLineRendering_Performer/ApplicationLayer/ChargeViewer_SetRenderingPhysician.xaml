@@ -1,0 +1,1674 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ChargeViewer_SetRenderingPhysician" this:ChargeViewer_SetRenderingPhysician.in_strScreenshotFolderpath="BRUBAKER, GREGORY " this:ChargeViewer_SetRenderingPhysician.in_strPrefixSE="SystemException" this:ChargeViewer_SetRenderingPhysician.in_strPrefixBE="BE" this:ChargeViewer_SetRenderingPhysician.in_intMaxRetry="3" this:ChargeViewer_SetRenderingPhysician.in_intWaitTime="30" this:ChargeViewer_SetRenderingPhysician.in_strRenderingPhysicianName="Elie Gharib" this:ChargeViewer_SetRenderingPhysician.in_listProcedure="[New List(Of String) From {&quot;81025&quot;}]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_strScreenshotFolderpath" Type="InArgument(x:String)" />
+    <x:Property Name="in_strPrefixSE" Type="InArgument(x:String)" />
+    <x:Property Name="in_strPrefixBE" Type="InArgument(x:String)" />
+    <x:Property Name="in_intMaxRetry" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_intWaitTime" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_strRenderingPhysicianName" Type="InArgument(x:String)" />
+    <x:Property Name="in_listProcedure" Type="InArgument(scg:List(x:String))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ChargeViewer_SetRenderingPhysician_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Expand all the Charges and find Corresponding Procedure in CPT 4/HCPCS column and update the Rendering Physician with Health Care Professional Name&#xA;in_strScreenshotFolderPath&#xA;in_intMaxRetry&#xA;in_intWaitTime&#xA;in_strPrefixSE&#xA;in_strPrefixBE&#xA;in_strRenderingPhysicianName&#xA;in_listProcedure" DisplayName="ChargeViewer_SetRenderingPhysician" sap:VirtualizedContainerService.HintSize="679,1429" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_ExceptionMessage" />
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="bool_TakeScreenshot" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message: Start SetRenderingPhysician" sap:VirtualizedContainerService.HintSize="564,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start: SetRenderingPhysician&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <ui:RetryScope DisplayName="Retry Scope: SetRenderingPhysician" sap:VirtualizedContainerService.HintSize="564,997" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_intMaxRetry]" RetryInterval="[Timespan.FromSeconds(2*in_intMaxRetry)]">
+      <ui:RetryScope.ActivityBody>
+        <ActivityAction>
+          <TryCatch DisplayName="Try Catch: SetRenderingPhysician" sap:VirtualizedContainerService.HintSize="522,790" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="int_ProcedureIndex" />
+            </TryCatch.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch.Try>
+              <Sequence DisplayName="Action: SetRenderingPhysician" sap:VirtualizedContainerService.HintSize="484,540" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If Condition="[Not String.IsNullOrEmpty(str_ExceptionMessage)]" DisplayName="If: Check if Exception Message is not Empty" sap:VirtualizedContainerService.HintSize="450,432" sap2010:WorkflowViewState.IdRef="If_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Then: Throw BE" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Throw DisplayName="Throw: BE" Exception="[New BusinessRuleException(str_ExceptionMessage)]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Charge Viewer: UpdateRenderingPhysician" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="2fee6bbb-5aab-4b48-9488-8e08052f416f" Version="V2">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do: UpdateRenderingPhysician" sap:VirtualizedContainerService.HintSize="688,2332" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="str_TableText" />
+                          <Variable x:TypeArguments="x:Int32" Name="NoOfRepetitions" />
+                          <Variable x:TypeArguments="x:Int32" Name="stepNo" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="654,2272" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_listProcedure]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:String">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body: To Get Procedure and Modify the RenderingPhysicianDetails" sap:VirtualizedContainerService.HintSize="620,2135" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="str_ChangeStatus" />
+                                  <Variable x:TypeArguments="x:String" Name="str_TableTextHeader" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText DisplayName="Get Text 'GridTable' GetHeader" sap:VirtualizedContainerService.HintSize="586,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" TextString="[str_TableTextHeader]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable ContentHash="vO1TFrVlfk2Nk7yPyFBTsA" DesignTimeRectangle="6, 310, 1428, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" Guid="55be4c59-8dd0-4756-a211-5b7f976a55de" InformativeScreenshot="e363df9189f8e6667531db5686779aba.png" Reference="iECXXsB5aE67CeGMsIoCEA/HMt7nUJevkmT3rm2YZ-kkw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NGetText>
+                                <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each int_ProcedureIndex" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Enumerable.Range(2,str_TableTextHeader.Split(Environment.NewLine.ToCharArray(0,1)).Count-1).Reverse]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:Int32">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Int32" Name="int_ProcedureIndex" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Body for each HeaderExpand" sap:VirtualizedContainerService.HintSize="416,241" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GridTableText' foreachHeader" sap:VirtualizedContainerService.HintSize="382,181" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Version="V4">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable ContentHash="NsW57qP5gE2u0VxDdwTegQ" DesignTimeRectangle="6, 310, 1428, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" Guid="1cadb5b3-0142-4b2f-88a7-2b0f5ca0ea5e" InformativeScreenshot="41e991e4bd9ff9fdd582fd2729531503.png" Reference="iECXXsB5aE67CeGMsIoCEA/mJ2mZDNTEEWkOm0ES9MJOg" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.PointOffset>
+                                                <uix:PointOffset Position="TopLeft" X="50" Y="[18*int_ProcedureIndex]" />
+                                              </uix:TargetAnchorable.PointOffset>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:ForEach>
+                                <uix:NGetText DisplayName="Get Text 'GridTable' post Expand" sap:VirtualizedContainerService.HintSize="586,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" TextString="[str_TableText]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable ContentHash="vO1TFrVlfk2Nk7yPyFBTsA" DesignTimeRectangle="6, 310, 1428, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" Guid="55be4c59-8dd0-4756-a211-5b7f976a55de" InformativeScreenshot="e363df9189f8e6667531db5686779aba.png" Reference="iECXXsB5aE67CeGMsIoCEA/HMt7nUJevkmT3rm2YZ-kkw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NGetText>
+                                <Sequence DisplayName="Repeat With Counter to Seach Procedure" sap:VirtualizedContainerService.HintSize="548,811" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign DisplayName="Assign: NoOfRepetitions SearchProcedure" sap:VirtualizedContainerService.HintSize="514,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[NoOfRepetitions]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[str_TableText.Split(Environment.NewLine.ToCharArray(0,1)).Count]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <Assign DisplayName="Assign: StepNo SearchProcedure" sap:VirtualizedContainerService.HintSize="514,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[stepNo]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <DoWhile DisplayName="Do while: Check for Procedure" sap:VirtualizedContainerService.HintSize="514,523" sap2010:WorkflowViewState.IdRef="DoWhile_1">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <DoWhile.Condition>[stepNo &lt; NoOfRepetitions]</DoWhile.Condition>
+                                    <Sequence DisplayName="Sequence: Procedure check" sap:VirtualizedContainerService.HintSize="468,336" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign DisplayName="Assign: Procedure Index Init" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Int32">[int_ProcedureIndex]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Int32">
+                                            <Literal x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="Literal`1_1" />
+                                          </InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <If Condition="[str_TableText.Split(Environment.NewLine.ToCharArray(0,1))(stepNo).Contains(currentText)]" DisplayName="If: Procedure Found" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="If_7">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence DisplayName="Then: Update procedure Index and Check Further" sap:VirtualizedContainerService.HintSize="468,337" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign DisplayName="Assign: ProcedureIndex Update" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:Int32">[int_ProcedureIndex]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:Int32">[stepNo+1]</InArgument>
+                                              </Assign.Value>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </Assign>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="[in_intMaxRetry]" DisplayName="Click 'GridTableText'  allVisibleText" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Version="V4">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable ContentHash="NsW57qP5gE2u0VxDdwTegQ" DesignTimeRectangle="6, 310, 1428, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" Guid="1cadb5b3-0142-4b2f-88a7-2b0f5ca0ea5e" InformativeScreenshot="41e991e4bd9ff9fdd582fd2729531503.png" Reference="iECXXsB5aE67CeGMsIoCEA/mJ2mZDNTEEWkOm0ES9MJOg" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset Position="TopLeft" X="50" Y="[18*int_ProcedureIndex]" />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NClick>
+                                            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="aastate" DisplayName="Get Attribute 'Toggle from Interfaced …'" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[str_ChangeStatus]" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Version="V4">
+                                              <uix:NGetAttributeGeneric.Target>
+                                                <uix:TargetAnchorable CVScreenId="f29ac89b-8b16-4d27-b655-6f71af169b87" ContentHash="c6NfxMZX8kKyMP63M6xrUQ" DesignTimeRectangle="122, 48, 24, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Toggle*' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Toggle*' role='push button' automationid='' check:fulltext='Toggle from Interfaced to Pending' /&gt;" Guid="b71247b1-cc7d-4943-b8e3-8815e57a9120" InformativeScreenshot="653bf6e56e4a244112799c4384886618.png" Reference="iECXXsB5aE67CeGMsIoCEA/6YzxMZw9cEmPQmurUKopBQ" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                              </uix:NGetAttributeGeneric.Target>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NGetAttributeGeneric>
+                                            <If Condition="[Not str_ChangeStatus.Contains(&quot;unavail&quot;,StringComparison.CurrentCultureIgnoreCase)]" DisplayName="If: ChargeStatus is available " sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="If_8">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <If.Then>
+                                                <Sequence DisplayName="Then: Break by updating Step No to NoOfRepetition" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign DisplayName="Assign: StepNo to NoOfRepetition" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Int32">[stepNo]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Int32">[NoOfRepetitions+1]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence DisplayName="Else: Reset ProcedureIndex" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign DisplayName="Assign: Procedure Index Reset" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_34">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Int32">[int_ProcedureIndex]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else: Continue" sap:VirtualizedContainerService.HintSize="416,90" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                      <Assign DisplayName="Assign: StepNo SearchProcedure" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Int32">[stepNo]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Int32">[stepNo + 1]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </Sequence>
+                                  </DoWhile>
+                                </Sequence>
+                                <If Condition="[int_ProcedureIndex=0]" DisplayName="If: Not Opened Procedure not Found" sap:VirtualizedContainerService.HintSize="586,1478" sap2010:WorkflowViewState.IdRef="If_4">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If.Then>
+                                    <Sequence DisplayName="Then: Serial Processing" sap:VirtualizedContainerService.HintSize="552,1082" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:Boolean" Name="bool_ProcedureFound" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message: Procedure not Found" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Procedure: &quot;+currentText+&quot; not found.&quot;]">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:LogMessage>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="[in_intMaxRetry*2]" DisplayName="Click 'Refresh Charges'" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="05ef6981-44aa-46b7-8fb4-1309e1c51cb5" ContentHash="OhlR65t6eUGL-z52lYJoTA" CvElementArea="39, 49, 21, 21" CvType="Icon" DesignTimeRectangle="38, 48, 24, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Refresh Charges' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Refresh Charges' role='push button' automationid='' check:fulltext='Refresh Charges' /&gt;" Guid="07d487a2-0590-45a6-b2a4-75efbb2b4367" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGcSURBVEhLvZM7SwNBEMf3k/kqRKz0k4i1goVgIbEQ0U6MKOkCWmlhIVrYCCaaRPO85PJ+qieksBlvJt65t7uXXELcwI/sZHb+Py7MsXA4DDphoPnDyr0v0AkzuxbohP5S/odS53Pq8PkkLLY/tEFCo/U+EWz5gFD1/JhYiCKr/z2ZsNDsjQVb2ieZI8QaUQmkWVGYb3SHwhZDcH5nwG2y6WH3Imn39kgizvD5JMzVO4FBYegyBdEHU2IjEgO2euaRSfOiMFtrj4TNb8Pa8SMcXqXpLNbifT6fhJlqa2zY3BZJUED17F/Ny6Q5UZiuND3gUriXcUH4emaT4GtxXoSEb+WGEgx3NtGpa72+KxXvB0ESvpp1F0dwEx+cnTpyb9CZn/MDc/iahKlSTQmGHl1nSCiyE00AWzlVzg2DhMli1Rd8DTAcn4qHhHZPFcqDGfxZEiaMigRbsFf/F3wH108G26i6OwpZWLAbPuAWksz+VvWDQMKXfDkQzmug6gVFEj7nzH+FhPFsSRsslimCTiThU9qYOnw+sywL9GHBD8F6+sZjXXSuAAAAAElFTkSuQmCC" InformativeScreenshot="6fa2d4ae980700c34f2e146b0834d561.png" Reference="iECXXsB5aE67CeGMsIoCEA/4fZ3Dpa5HUaImV3yoxpY7A" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NClick>
+                                      <Assign DisplayName="Assign: ProcedureFound" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Boolean">[bool_ProcedureFound]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                        </Assign.Value>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Assign>
+                                      <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each counterProcedureIndex" sap:VirtualizedContainerService.HintSize="518,803" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Enumerable.Range(2,str_TableTextHeader.Split(Environment.NewLine.ToCharArray(0,1)).Count-1).Reverse]">
+                                        <ui:ForEach.Body>
+                                          <ActivityAction x:TypeArguments="x:Int32">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="x:Int32" Name="counterProcedureIndex" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Body: ReCheck Procedre by Serial Processing" sap:VirtualizedContainerService.HintSize="484,657" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign DisplayName="Assign: ProcedureIndex from counter SerailizingProcess " sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Int32">[int_ProcedureIndex]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Int32">[counterProcedureIndex]</InArgument>
+                                                </Assign.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Assign>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GridTableText' SerailizingProcess " sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable ContentHash="NsW57qP5gE2u0VxDdwTegQ" DesignTimeRectangle="6, 310, 1428, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" Guid="1cadb5b3-0142-4b2f-88a7-2b0f5ca0ea5e" InformativeScreenshot="41e991e4bd9ff9fdd582fd2729531503.png" Reference="iECXXsB5aE67CeGMsIoCEA/mJ2mZDNTEEWkOm0ES9MJOg" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.PointOffset>
+                                                      <uix:PointOffset Position="TopLeft" X="50" Y="[18*int_ProcedureIndex]" />
+                                                    </uix:TargetAnchorable.PointOffset>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NClick>
+                                              <uix:NGetText DelayBefore="[in_intMaxRetry/in_intMaxRetry]" DisplayName="Get Text 'GridTable' SerailizingProcess " sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" TextString="[str_TableText]" Version="V4">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable ContentHash="vO1TFrVlfk2Nk7yPyFBTsA" DesignTimeRectangle="6, 310, 1428, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" Guid="55be4c59-8dd0-4756-a211-5b7f976a55de" InformativeScreenshot="e363df9189f8e6667531db5686779aba.png" Reference="iECXXsB5aE67CeGMsIoCEA/HMt7nUJevkmT3rm2YZ-kkw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                </uix:NGetText.Target>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NGetText>
+                                              <Sequence DisplayName="Repeat With Counter: Procedure  Check OneByOne" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign DisplayName="Assign: NoOfRepetitions" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_27">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[NoOfRepetitions]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">[str_TableText.Split(Environment.NewLine.ToCharArray(0,1)).Count]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign DisplayName="Assign: StepNo" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[stepNo]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <DoWhile DisplayName="Do while: SerailizingProcess To Get Procesdure" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="DoWhile_4">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <DoWhile.Condition>[stepNo &lt; NoOfRepetitions]</DoWhile.Condition>
+                                                  <Sequence DisplayName="Sequence: SerailizingProcess " sap:VirtualizedContainerService.HintSize="484,817" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Assign DisplayName="Assign: SerailizingProcess  to provide initial value" sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:Int32">[int_ProcedureIndex]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                    <If Condition="[str_TableText.Split(Environment.NewLine.ToCharArray(0,1))(stepNo).Contains(currentText)]" DisplayName="If: SerailizingProcess Procdure is found" sap:VirtualizedContainerService.HintSize="450,538" sap2010:WorkflowViewState.IdRef="If_18">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <If.Then>
+                                                        <Sequence DisplayName="Then: SerailizingProcess update index" sap:VirtualizedContainerService.HintSize="416,279" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <Assign DisplayName="Assign: ProcedureIndex SerailizingProcess " sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="Assign_30">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:Int32">[int_ProcedureIndex]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:Int32">[stepNo+1]</InArgument>
+                                                            </Assign.Value>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                          </Assign>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="[in_intMaxRetry]" DisplayName="Click 'GridTableText' SerailizingProcess " sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Version="V4">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable ContentHash="NsW57qP5gE2u0VxDdwTegQ" DesignTimeRectangle="6, 310, 1428, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" Guid="1cadb5b3-0142-4b2f-88a7-2b0f5ca0ea5e" InformativeScreenshot="41e991e4bd9ff9fdd582fd2729531503.png" Reference="iECXXsB5aE67CeGMsIoCEA/mJ2mZDNTEEWkOm0ES9MJOg" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.PointOffset>
+                                                                  <uix:PointOffset Position="TopLeft" X="50" Y="[18*int_ProcedureIndex]" />
+                                                                </uix:TargetAnchorable.PointOffset>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NClick.Target>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                          </uix:NClick>
+                                                          <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="aastate" DisplayName="Get Attribute 'Toggle SerailizingProcess " sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_5" Result="[str_ChangeStatus]" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Version="V4">
+                                                            <uix:NGetAttributeGeneric.Target>
+                                                              <uix:TargetAnchorable CVScreenId="f29ac89b-8b16-4d27-b655-6f71af169b87" ContentHash="c6NfxMZX8kKyMP63M6xrUQ" DesignTimeRectangle="122, 48, 24, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Toggle*' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Toggle*' role='push button' automationid='' check:fulltext='Toggle from Interfaced to Pending' /&gt;" Guid="b71247b1-cc7d-4943-b8e3-8815e57a9120" InformativeScreenshot="653bf6e56e4a244112799c4384886618.png" Reference="iECXXsB5aE67CeGMsIoCEA/6YzxMZw9cEmPQmurUKopBQ" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                            </uix:NGetAttributeGeneric.Target>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                          </uix:NGetAttributeGeneric>
+                                                          <If Condition="[Not str_ChangeStatus.Contains(&quot;unavail&quot;,StringComparison.CurrentCultureIgnoreCase)]" DisplayName="If: SerailizingProcess status is unavailable" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="If_17">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <If.Then>
+                                                              <Sequence DisplayName="Then: SerailizingProcess StepNo" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <Assign DisplayName="Assign: Break the loop SerailizingProcess " sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_31">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:Int32">[stepNo]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:Int32">[NoOfRepetitions+1]</InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                              </Sequence>
+                                                            </If.Then>
+                                                            <If.Else>
+                                                              <Sequence DisplayName="Else: reset SerailizingProcess " sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <Assign DisplayName="Assign: ProcedureIndex SerailizingProcess reset" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_33">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:Int32">[int_ProcedureIndex]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:Int32">[stepNo+1]</InArgument>
+                                                                  </Assign.Value>
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                </Assign>
+                                                              </Sequence>
+                                                            </If.Else>
+                                                          </If>
+                                                        </Sequence>
+                                                      </If.Then>
+                                                      <If.Else>
+                                                        <Sequence DisplayName="Else: SerailizingProcess continue" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Sequence>
+                                                      </If.Else>
+                                                    </If>
+                                                    <Assign DisplayName="Assign: increament SerailizingProcess  Step" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Assign_32">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:Int32">[stepNo]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:Int32">[stepNo + 1]</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                  </Sequence>
+                                                </DoWhile>
+                                              </Sequence>
+                                              <If Condition="[int_ProcedureIndex&lt;&gt;0]" DisplayName="If: Check if procedure found" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="If_13">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <If.Then>
+                                                  <Sequence DisplayName="Then: procedure found" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Assign DisplayName="Assign: ProcedureFound" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:Boolean">[bool_ProcedureFound]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                    <ui:Break sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                                  </Sequence>
+                                                </If.Then>
+                                                <If.Else>
+                                                  <Sequence DisplayName="Else: Skip" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Sequence>
+                                                </If.Else>
+                                              </If>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ui:ForEach.Body>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:ForEach>
+                                      <If Condition="[bool_ProcedureFound]" DisplayName="If: Check for Flag if Found" sap:VirtualizedContainerService.HintSize="518,48" sap2010:WorkflowViewState.IdRef="If_14">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence DisplayName="Then: Log the Success" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message: Procedure Found by serializing" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Procedure Found at: &quot;+int_ProcedureIndex.ToString]" />
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else: Throw Procedure not Found" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,175" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;Procedure Not Found&quot;]" />
+                                            <Throw DisplayName="Throw: Procedure Not Found" Exception="[New BusinessRuleException(&quot;Procedure: &quot;+currentText+&quot; not found.&quot;)]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_7">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </Throw>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else: Procedure Found" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message: Procedure Found" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Procedure Found at: &quot;+int_ProcedureIndex.ToString]" />
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                                <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'GridTableText'" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable ContentHash="NsW57qP5gE2u0VxDdwTegQ" DesignTimeRectangle="6, 310, 1428, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='sprOrder' /&gt;" Guid="1cadb5b3-0142-4b2f-88a7-2b0f5ca0ea5e" InformativeScreenshot="41e991e4bd9ff9fdd582fd2729531503.png" Reference="iECXXsB5aE67CeGMsIoCEA/mJ2mZDNTEEWkOm0ES9MJOg" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.PointOffset>
+                                        <uix:PointOffset Position="TopLeft" X="50" Y="[18*int_ProcedureIndex]" />
+                                      </uix:TargetAnchorable.PointOffset>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NClick>
+                                <Pick DisplayName="Pick: Modify Charge Or Not found" sap:VirtualizedContainerService.HintSize="586,48" sap2010:WorkflowViewState.IdRef="Pick_3">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <PickBranch DisplayName="PickBranch: Deactivated" sap:VirtualizedContainerService.HintSize="260,40" sap2010:WorkflowViewState.IdRef="PickBranch_1">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <PickBranch.Trigger>
+                                      <uix:NCheckState DisplayName="Check App State 'OK'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Timeout="[in_intWaitTime]" Version="V4">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable ContentHash="HO-AxNBE1E62x34Bb3DJnw" DesignTimeRectangle="295, 119, 75, 23" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd aaname='OK' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='OK' cls='Button' check:text='OK' /&gt;" Guid="891eb697-0601-422f-9e46-fec8ed8f19c1" InformativeScreenshot="756b20426644e71219f0944d49756ace.png" Reference="iECXXsB5aE67CeGMsIoCEA/d569R3PLeUusyw8uBEL2iw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Credit Charge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                    </PickBranch.Trigger>
+                                    <Sequence DisplayName="Sequence: Required Procedure not Found" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message: Required Procedure not Found" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Appropriate procedure not found&quot;]" />
+                                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Credit Charge: Procedure Not Found" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="15045d93-1bcf-43e7-9e04-7869c4599772" Version="V2">
+                                        <uix:NApplicationCard.Body>
+                                          <ActivityAction x:TypeArguments="x:Object">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Do: Required Procedure not Found" sap:VirtualizedContainerService.HintSize="416,245" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK' Required Procedure not Found" sap:VirtualizedContainerService.HintSize="382,183" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15045d93-1bcf-43e7-9e04-7869c4599772" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable ContentHash="HO-AxNBE1E62x34Bb3DJnw" DesignTimeRectangle="295, 119, 75, 23" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd aaname='OK' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='OK' cls='Button' check:text='OK' /&gt;" Guid="891eb697-0601-422f-9e46-fec8ed8f19c1" InformativeScreenshot="756b20426644e71219f0944d49756ace.png" Reference="iECXXsB5aE67CeGMsIoCEA/d569R3PLeUusyw8uBEL2iw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Credit Charge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </uix:NApplicationCard.Body>
+                                        <uix:NApplicationCard.TargetApp>
+                                          <uix:TargetApp Area="535, 380, 386, 152" ContentHash="lYjleo54L02Yc9g4ILVVVQ" FilePath="[str_glblChargeViewerApplicationPath]" IconBase64="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" InformativeScreenshot="50d6d50fbbf601bc85007ed0b2c9cc97.png" Reference="iECXXsB5aE67CeGMsIoCEA/yLNkNRYYV0q15UPgnm6otg" Selector="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Credit Charge' /&gt;" Title="Credit Charge" Version="V1" />
+                                        </uix:NApplicationCard.TargetApp>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NApplicationCard>
+                                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Modify Charge Information" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="c3f8a6d3-d925-4f32-9f0b-5c73ab580e4b" Version="V2">
+                                        <uix:NApplicationCard.Body>
+                                          <ActivityAction x:TypeArguments="x:Object">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Do: Required Procedure not Found" sap:VirtualizedContainerService.HintSize="416,245" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Cancel': Required Procedure not Found" sap:VirtualizedContainerService.HintSize="382,183" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3f8a6d3-d925-4f32-9f0b-5c73ab580e4b" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable CVScreenId="d61f6eb0-eecf-43c8-a9d2-bf6b1b35f92b" ContentHash="BdMipiKQR0GFWaKl8ZtIKg" CvElementArea="525, 434, 93, 26" CvTextArea="551, 442, 39, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="525, 434, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='cmdCancel' aaname='Cancel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='cmdCancel' aaname='Cancel' check:text='&amp;amp;Cancel' /&gt;" Guid="904cece8-8afe-40eb-98f4-e0a515447995" InformativeScreenshot="fe2f73bb1fc5c93f2a792480fd6bd6b6.png" Reference="iECXXsB5aE67CeGMsIoCEA/QcUdYh2C7EOls1cmfF6Gvw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </uix:NApplicationCard.Body>
+                                        <uix:NApplicationCard.TargetApp>
+                                          <uix:TargetApp Area="359, 193, 722, 467" ContentHash="GsQZC70oakG8R7anL4IQNg" FilePath="[str_glblChargeViewerApplicationPath]" IconBase64="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" InformativeScreenshot="bd9802d1f96ed19c8edfc01e3f99a7ff.png" Reference="iECXXsB5aE67CeGMsIoCEA/PFZTp4TlTkuLkLS4TIxmlQ" Selector="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" Version="V1" />
+                                        </uix:NApplicationCard.TargetApp>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NApplicationCard>
+                                      <Throw DisplayName="Throw: Required Procedure not Found" Exception="[New BusinessRuleException(&quot;Required procedure not Found for &quot;+currentText)]" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Throw_8">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Throw>
+                                    </Sequence>
+                                  </PickBranch>
+                                  <PickBranch DisplayName="PickBranch: activated Procedure" sap:VirtualizedContainerService.HintSize="304,40" sap2010:WorkflowViewState.IdRef="PickBranch_2">
+                                    <PickBranch.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="str_PhysicianListName" />
+                                    </PickBranch.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <PickBranch.Trigger>
+                                      <uix:NCheckState DisplayName="Check App State '&amp;Cancel'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="204,25" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="2fee6bbb-5aab-4b48-9488-8e08052f416f" Timeout="[in_intWaitTime]" Version="V4">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable CVScreenId="d61f6eb0-eecf-43c8-a9d2-bf6b1b35f92b" ContentHash="BdMipiKQR0GFWaKl8ZtIKg" CvElementArea="525, 434, 93, 26" CvTextArea="551, 442, 39, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="525, 434, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='cmdCancel' aaname='Cancel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='cmdCancel' aaname='Cancel' check:text='&amp;amp;Cancel' /&gt;" Guid="904cece8-8afe-40eb-98f4-e0a515447995" InformativeScreenshot="fe2f73bb1fc5c93f2a792480fd6bd6b6.png" Reference="iECXXsB5aE67CeGMsIoCEA/QcUdYh2C7EOls1cmfF6Gvw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                    </PickBranch.Trigger>
+                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Modify Charge Information" sap:VirtualizedContainerService.HintSize="239,25" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" ScopeGuid="be09dddf-72fc-4868-b12c-8c0316c8e932" Version="V2">
+                                      <uix:NApplicationCard.Body>
+                                        <ActivityAction x:TypeArguments="x:Object">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Do: ModifyChargeProcedure" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message: Modify Charge Information" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Modify Charge Information found for appropirate procedure&quot;]" />
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Miscellaneous': ModifyChargeProcedure" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be09dddf-72fc-4868-b12c-8c0316c8e932" Version="V4">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable CVScreenId="4308bb50-519e-4874-9e8d-2b61e11ab7ce" ContentHash="UMLIxd96xE2PiTABnoC1VQ" CvElementArea="76, 64, 92, 21" CvTextArea="81, 69, 81, 12" CvTextArgument="Miscellaneous" CvType="Button" DesignTimeRectangle="76, 64, 92, 20" DesignTimeScaleFactor="1" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='tbsOptions' /&gt;&lt;ctrl name='Miscellaneous' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tbsOptions' /&gt;&lt;ctrl name='Miscellaneous' role='page tab' automationid='' check:text='Miscellaneous' /&gt;" Guid="0964fdd5-5ba3-464a-97d2-786c019e7e3c" InformativeScreenshot="c466855f676f57ccb04aed27d3a3328d.png" Reference="iECXXsB5aE67CeGMsIoCEA/d43F56XGSkqiVILIDvs9yg" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                              </uix:NClick.Target>
+                                              <uix:NClick.VerifyOptions>
+                                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                  <uix:VerifyExecutionOptions.Retry>
+                                                    <InArgument x:TypeArguments="x:Boolean" />
+                                                  </uix:VerifyExecutionOptions.Retry>
+                                                  <uix:VerifyExecutionOptions.Timeout>
+                                                    <InArgument x:TypeArguments="x:Double" />
+                                                  </uix:VerifyExecutionOptions.Timeout>
+                                                </uix:VerifyExecutionOptions>
+                                              </uix:NClick.VerifyOptions>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search' ModifyChargeProcedure" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be09dddf-72fc-4868-b12c-8c0316c8e932" Version="V4">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable CVScreenId="ca9978be-297d-444a-9b0c-18629f8ad424" ContentHash="Vf_BdL0ofEK1hOhV_XzvnQ" CvElementArea="490, 105, 24, 22" CvType="Button" DesignTimeRectangle="491, 105, 23, 21" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='tbsOptions' /&gt;&lt;wnd ctrlname='stlpMiscellaneous' /&gt;&lt;wnd aaname='Rendering Physician' /&gt;&lt;wnd cls='Button' aaname='Search' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tbsOptions' /&gt;&lt;wnd ctrlname='stlpMiscellaneous' /&gt;&lt;wnd aaname='Rendering Physician' /&gt;&lt;wnd cls='Button' aaname='Search' check:text='Search' /&gt;" Guid="a8108909-df9f-46fe-a8cd-e14c252dd46e" InformativeScreenshot="2774a637150ba47554ba288e8bac472f.png" Reference="iECXXsB5aE67CeGMsIoCEA/OV1VpZ-hhEeZmQ9HsO2I4A" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target CVScreenId="61baee81-62ea-40e1-9100-c83021624726" CvTextArea="117, 110, 114, 14" CvTextArgument="Rendering Physician" CvType="Text" DesignTimeRectangle="17, 102, 218, 27" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='tbsOptions' /&gt;&lt;wnd ctrlname='stlpMiscellaneous' /&gt;&lt;wnd aaname='Rendering Physician' cls='WindowsForms*STATIC*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tbsOptions' /&gt;&lt;wnd ctrlname='stlpMiscellaneous' /&gt;&lt;wnd aaname='Rendering Physician' cls='WindowsForms*STATIC*' check:text='Rendering Physician' /&gt;" Guid="49079568-0d49-4695-927a-eb3fa2a853d8" SearchSteps="Selector, FuzzySelector, CV" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                              <uix:NClick.VerifyOptions>
+                                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                  <uix:VerifyExecutionOptions.Retry>
+                                                    <InArgument x:TypeArguments="x:Boolean" />
+                                                  </uix:VerifyExecutionOptions.Retry>
+                                                  <uix:VerifyExecutionOptions.Timeout>
+                                                    <InArgument x:TypeArguments="x:Double" />
+                                                  </uix:VerifyExecutionOptions.Timeout>
+                                                </uix:VerifyExecutionOptions>
+                                              </uix:NClick.VerifyOptions>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NClick>
+                                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Provider Selection" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="b13bfcdd-579c-4005-b520-a0cebfef93b5" Version="V2">
+                                              <uix:NApplicationCard.Body>
+                                                <ActivityAction x:TypeArguments="x:Object">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence DisplayName="Do:ModifyChargeProcedure" sap:VirtualizedContainerService.HintSize="416,861" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into '&amp;Last name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,251" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="b13bfcdd-579c-4005-b520-a0cebfef93b5" Text="[in_strRenderingPhysicianName.Split(&quot; &quot;c)(1)]" Version="V4">
+                                                      <uix:NTypeInto.Target>
+                                                        <uix:TargetAnchorable CVScreenId="e79090b9-ac4b-4079-978b-23fb20f66ac9" ContentHash="nekd0jE-LkWB-kelv67Y1w" CvElementArea="15, 57, 128, 22" CvType="InputBox" DesignTimeRectangle="16, 58, 127, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="c4d7254a-df44-4a12-a028-e365399ed72d" InformativeScreenshot="ab3133f5f487cefe191f88b6f2407628.png" IsResponsive="True" Reference="iECXXsB5aE67CeGMsIoCEA/qn1PiFuNu0KFEJoxeyimww" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CVScreenId="e79090b9-ac4b-4079-978b-23fb20f66ac9" CvTextArea="15, 41, 53, 12" CvTextArgument="Last name:" CvType="Text" DesignTimeRectangle="16, 38, 127, 20" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Last name:' cls='Static' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Last name:' cls='Static' check:text='&amp;amp;Last name:' /&gt;" Guid="67709834-a810-4fad-ae99-d7b6909dddc7" SearchSteps="Selector, FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NTypeInto.Target>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </uix:NTypeInto>
+                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into '&amp;First name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,251" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="b13bfcdd-579c-4005-b520-a0cebfef93b5" Text="[in_strRenderingPhysicianName.Split(&quot; &quot;c)(0)]" Version="V4">
+                                                      <uix:NTypeInto.Target>
+                                                        <uix:TargetAnchorable CVScreenId="9bc9492d-3f3a-4a20-bd8c-c88874dd82f0" ContentHash="MHauRiCO0Ey053lrkQak9A" CvElementArea="149, 57, 129, 22" CvType="InputBox" DesignTimeRectangle="150, 58, 127, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="c05925eb-7beb-4589-b023-5ac4e7116be0" InformativeScreenshot="90aa059562f0abf50ab68adb9c9d3dc2.png" IsResponsive="True" Reference="iECXXsB5aE67CeGMsIoCEA/MDOlPZ7NE0e_0nd2pOUVsw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CVScreenId="9bc9492d-3f3a-4a20-bd8c-c88874dd82f0" CvTextArea="149, 41, 52, 12" CvTextArgument="First name:" CvType="Text" DesignTimeRectangle="150, 38, 127, 20" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='First name:' cls='Static' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='First name:' cls='Static' check:text='&amp;amp;First name:' /&gt;" Guid="42a9e84a-8a39-4f23-8f03-57bfdebb2ac9" SearchSteps="Selector, FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NTypeInto.Target>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </uix:NTypeInto>
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Search' ModifyChargeProcedure" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b13bfcdd-579c-4005-b520-a0cebfef93b5" Version="V4">
+                                                      <uix:NClick.Target>
+                                                        <uix:TargetAnchorable CVScreenId="d2ec1414-c62a-485b-a7ad-1d7403362f9a" ContentHash="rvSD7ujFRU-RtiXjMrDT8w" CvElementArea="419, 45, 120, 27" CvTextArea="461, 52, 36, 12" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="419, 45, 120, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Search' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Search' cls='Button' check:text='&amp;amp;Search' /&gt;" Guid="e602a972-0fdd-4496-9e4a-fe03fbcb6169" InformativeScreenshot="9fd09b9a6ce08c0e67f720a6bc9e2070.png" Reference="iECXXsB5aE67CeGMsIoCEA/W3ReD7pv1kWRDEYnByFqrA" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                      </uix:NClick.Target>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </uix:NClick>
+                                                    <uix:NGetText DisplayName="Get List of Physician Name" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="b13bfcdd-579c-4005-b520-a0cebfef93b5" ScrapingMethod="Native" TextString="[str_PhysicianListName]" Version="V4">
+                                                      <uix:NGetText.Target>
+                                                        <uix:TargetAnchorable ContentHash="vACYXTqWg0OeHKqYlVxzlg" DesignTimeRectangle="9, 395, 538, 170" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='SftTree*' role='pane' /&gt;" FuzzySelectorArgument="&lt;uia cls='SftTree*' role='pane' automationid='*' /&gt;" Guid="e1398078-5b45-42bb-a6b9-7220978f1048" ImageBase64="" InformativeScreenshot="f4e5de0a43049fcc4bc91289c4238f22.png" Reference="iECXXsB5aE67CeGMsIoCEA/Q4rEqU1d1UiVQEhCT8qx9g" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                      </uix:NGetText.Target>
+                                                    </uix:NGetText>
+                                                    <If Condition="[str_PhysicianListName.Split(Environment.NewLine.ToCharArray(0,1)).Count&lt;&gt;2]" DisplayName="If: Multiple Physician Found" sap:VirtualizedContainerService.HintSize="382,50" sap2010:WorkflowViewState.IdRef="If_9">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <If.Then>
+                                                        <Sequence DisplayName="Then: click Cancel for Multiple Physician Found" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b13bfcdd-579c-4005-b520-a0cebfef93b5" Version="V4">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable CVScreenId="102b67b9-0572-41db-8f17-fee5f84cebfc" ContentHash="itoUKVImK0GxyQS2yTMw2g" CvElementArea="454, 599, 93, 26" CvTextArea="483, 606, 35, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="454, 599, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Cancel' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Cancel' cls='Button' check:text='Cancel' /&gt;" Guid="2a1249fb-e869-45ae-9669-2fbb4f017f8e" InformativeScreenshot="d28c76d6ca68c0fd00dfcfd413105a6d.png" Reference="iECXXsB5aE67CeGMsIoCEA/6_cjbduQs0mWlyeqmvr0Lg" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                          </uix:NClick>
+                                                        </Sequence>
+                                                      </If.Then>
+                                                      <If.Else>
+                                                        <Sequence DisplayName="Else: Click Ok to ModifyChargeProcedure" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;OK' ModifyChargeProcedure" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b13bfcdd-579c-4005-b520-a0cebfef93b5" Version="V4">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable CVScreenId="a48dda1d-ef19-4716-9f01-9794f3ee050a" ContentHash="h_oESxNb2EyFGFhJ4q68Vg" DesignTimeRectangle="356, 599, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;uia cls='Button' name='OK' enabled='true' /&gt;" Guid="26168693-72af-4c70-8222-818fb6ee71bf" InformativeScreenshot="9bbe8eaa0b74055d2c848e9673a7ed37.png" Reference="iECXXsB5aE67CeGMsIoCEA/QLyGxxPJukuaChp2vlzxlA" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                          </uix:NClick>
+                                                        </Sequence>
+                                                      </If.Else>
+                                                    </If>
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </uix:NApplicationCard.Body>
+                                              <uix:NApplicationCard.TargetApp>
+                                                <uix:TargetApp Area="442, 110, 556, 633" ContentHash="iYejhOhKGUGaof6SwOdRZA" FilePath="[str_glblChargeViewerApplicationPath]" IconBase64="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" InformativeScreenshot="570f9e4d532e79549b00a6711aa695fa.png" Reference="iECXXsB5aE67CeGMsIoCEA/aGGAA2XJlUSVhIpHAGg1sQ" Selector="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" Title="Provider Selection" Version="V1" />
+                                              </uix:NApplicationCard.TargetApp>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NApplicationCard>
+                                            <If Condition="[str_PhysicianListName.Split(Environment.NewLine.ToCharArray(0,1)).Count&lt;&gt;2]" DisplayName="If: Physicican List Name Found Multiple" sap:VirtualizedContainerService.HintSize="382,50" sap2010:WorkflowViewState.IdRef="If_10">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <If.Then>
+                                                <Sequence DisplayName="Then: Throw Error for Multiple Physician Found" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign DisplayName="Assign: ScreenshotPath" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[str_glblScreenshotPath]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[in_strScreenshotFolderPath+in_strPrefixBE+datetime.Now.ToString("ddMMyyyyHHmmss")+".png"]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <uix:NTakeScreenshot DisplayName="Take Screenshot: Login error RevElate" FileName="[str_glblScreenshotPath]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" Version="V4">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </uix:NTakeScreenshot>
+                                                  <ui:LogMessage DisplayName="Log Message: Unable to Start err msg" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Multiple Physician found with same Name for &quot;+in_strRenderingPhysicianName]">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:LogMessage>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Cancel' for Multiple Physician Found" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be09dddf-72fc-4868-b12c-8c0316c8e932" Version="V4">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable CVScreenId="d61f6eb0-eecf-43c8-a9d2-bf6b1b35f92b" ContentHash="BdMipiKQR0GFWaKl8ZtIKg" CvElementArea="525, 434, 93, 26" CvTextArea="551, 442, 39, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="525, 434, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='cmdCancel' aaname='Cancel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='cmdCancel' aaname='Cancel' check:text='&amp;amp;Cancel' /&gt;" Guid="904cece8-8afe-40eb-98f4-e0a515447995" InformativeScreenshot="fe2f73bb1fc5c93f2a792480fd6bd6b6.png" Reference="iECXXsB5aE67CeGMsIoCEA/QcUdYh2C7EOls1cmfF6Gvw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                    </uix:NClick.Target>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </uix:NClick>
+                                                  <Throw DisplayName="Throw: Multiple Physician Found" Exception="[New BusinessRuleException(&quot;Multiple Physician found with same First and Last Name.&quot;)]" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Throw_6">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Throw>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence DisplayName="Else: ModifyChargeProcedure" sap:VirtualizedContainerService.HintSize="416,335" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;OK' ModifyChargeProcedure" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be09dddf-72fc-4868-b12c-8c0316c8e932" Version="V4">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable CVScreenId="1b19bc50-e55b-4763-89ca-9e982475c721" ContentHash="JIVTA0-AVEetj3mpDSO_TA" CvElementArea="427, 434, 93, 27" CvTextArea="463, 442, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="427, 434, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='cmdOK' aaname='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='cmdOK' aaname='OK' check:text='&amp;amp;OK' /&gt;" Guid="eea16f8f-4ec3-402e-96fb-2395e00c7168" InformativeScreenshot="e84df2cb1d8f3efef2343553a980fc47.png" Reference="iECXXsB5aE67CeGMsIoCEA/cWDrgIY0MEOQyt62RX8JTQ" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                    </uix:NClick.Target>
+                                                    <uix:NClick.VerifyOptions>
+                                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                        <uix:VerifyExecutionOptions.Retry>
+                                                          <InArgument x:TypeArguments="x:Boolean" />
+                                                        </uix:VerifyExecutionOptions.Retry>
+                                                        <uix:VerifyExecutionOptions.Timeout>
+                                                          <InArgument x:TypeArguments="x:Double" />
+                                                        </uix:VerifyExecutionOptions.Timeout>
+                                                      </uix:VerifyExecutionOptions>
+                                                    </uix:NClick.VerifyOptions>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </uix:NClick>
+                                                  <ui:RetryScope DisplayName="Retry Scope: ModifyChargeProcedure Reason" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="[in_intMaxRetry]" RetryInterval="[Timespan.FromSeconds(in_intMaxRetry)]">
+                                                    <ui:RetryScope.ActivityBody>
+                                                      <ActivityAction>
+                                                        <Sequence DisplayName="Action: ModifyChargeProcedure Reason" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="CreditModify Information" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" ScopeGuid="d0ce839d-3a3d-4a95-8609-b231898b13bf" Version="V2">
+                                                            <uix:NApplicationCard.Body>
+                                                              <ActivityAction x:TypeArguments="x:Object">
+                                                                <ActivityAction.Argument>
+                                                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                                </ActivityAction.Argument>
+                                                                <Sequence DisplayName="Do: ModifyChargeProcedure Modify Reason" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <uix:NSelectItem DisplayName="Select Item 'Abnormal Labs Another R…'" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Another Reason" ScopeIdentifier="d0ce839d-3a3d-4a95-8609-b231898b13bf" Version="V4">
+                                                                    <uix:NSelectItem.Items>
+                                                                      <scg:List x:TypeArguments="x:String" Capacity="50">
+                                                                        <x:String>Abnormal Labs</x:String>
+                                                                        <x:String>Another Reason</x:String>
+                                                                        <x:String>Appointment Availability</x:String>
+                                                                        <x:String>APTT Mixing Study Cancelled</x:String>
+                                                                        <x:String>Broken Tube</x:String>
+                                                                        <x:String>Canceled After Collected</x:String>
+                                                                        <x:String>Chromogenic Interference</x:String>
+                                                                        <x:String>Clerical Error</x:String>
+                                                                        <x:String>Client to Patient</x:String>
+                                                                        <x:String>Code - Dosage incorrect for injection</x:String>
+                                                                        <x:String>Code - Missing charges - office service</x:String>
+                                                                        <x:String>Coding - Add CRNA charge</x:String>
+                                                                        <x:String>Coding - Add CRNA PQRS</x:String>
+                                                                        <x:String>Coding - Add facility charge</x:String>
+                                                                        <x:String>Coding - Bilateral modifier correction b</x:String>
+                                                                        <x:String>Coding - Biopsy charge changed to debrid</x:String>
+                                                                        <x:String>Coding - Critical care time not document</x:String>
+                                                                        <x:String>Coding - Decreased CPT code level to mat</x:String>
+                                                                        <x:String>Coding - Drug cup not charged</x:String>
+                                                                        <x:String>Coding - Duplicate charge deleted</x:String>
+                                                                        <x:String>Coding - Established patient, not new</x:String>
+                                                                        <x:String>Coding - Increased CPT code level to mat</x:String>
+                                                                        <x:String>Coding - IP CPT code changed to OP</x:String>
+                                                                        <x:String>Coding - Missing charges - hospital serv</x:String>
+                                                                        <x:String>Coding - New patient, not established</x:String>
+                                                                        <x:String>Coding - Nurse Practitioner signed for p</x:String>
+                                                                        <x:String>Coding - OP CPT code changed to IP</x:String>
+                                                                        <x:String>Coding - Other modifier correction</x:String>
+                                                                        <x:String>Coding - Procedure note missing</x:String>
+                                                                        <x:String>Coding - Pro fee generated inappropriate</x:String>
+                                                                        <x:String>Coding - Radiology charge corrected</x:String>
+                                                                        <x:String>Coding - Smoking cessation total time mi</x:String>
+                                                                        <x:String>Coding - Split share not met</x:String>
+                                                                        <x:String>Coding - Teaching guidelines not met</x:String>
+                                                                        <x:String>Collections Inquiry Cancel</x:String>
+                                                                        <x:String>Completed at an outside facility</x:String>
+                                                                        <x:String>Cost</x:String>
+                                                                        <x:String>Data Not Submitted</x:String>
+                                                                        <x:String>Discontinued Medication</x:String>
+                                                                        <x:String>Duplicate Order</x:String>
+                                                                        <x:String>Duplicate request, charges credited.</x:String>
+                                                                        <x:String>Equipment Down</x:String>
+                                                                        <x:String>Erroneous patient information provided</x:String>
+                                                                        <x:String>Exam Removed</x:String>
+                                                                        <x:String>Exam Replaced</x:String>
+                                                                        <x:String>Formed Stool</x:String>
+                                                                        <x:String>Hgb A1c Referred Out</x:String>
+                                                                        <x:String>Improper storage of specimen</x:String>
+                                                                        <x:String>Improper tube - specimen type</x:String>
+                                                                        <x:String>Incorrect temperature</x:String>
+                                                                      </scg:List>
+                                                                    </uix:NSelectItem.Items>
+                                                                    <uix:NSelectItem.Target>
+                                                                      <uix:TargetAnchorable CVScreenId="7f95c46e-3afd-47b3-a424-2793e25340d0" ContentHash="mqgMSSIiYE6TATz3Nt8upg" CvElementArea="25, 61, 345, 23" CvType="InputBox" DesignTimeRectangle="26, 62, 342, 21" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='stplCreditReason' /&gt;&lt;wnd ctrlname='grpCreditReason' /&gt;&lt;wnd cls='ComboBox' /&gt;&lt;ctrl role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='stplCreditReason' /&gt;&lt;wnd ctrlname='grpCreditReason' /&gt;&lt;wnd cls='ComboBox' /&gt;&lt;ctrl role='combo box' automationid='' /&gt;" Guid="5f05c248-77c4-4348-bca6-831ca18927d9" InformativeScreenshot="c446131ab5ec05a28f9562f8798e5663.png" Reference="iECXXsB5aE67CeGMsIoCEA/F-4DRq77GE6w0TMELxegYQ" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmCreditReason' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                                    </uix:NSelectItem.Target>
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                  </uix:NSelectItem>
+                                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Note' ModifyChargeProcedureReason" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="d0ce839d-3a3d-4a95-8609-b231898b13bf" Text="Added Rendering Provider" Version="V4">
+                                                                    <uix:NTypeInto.Target>
+                                                                      <uix:TargetAnchorable CVScreenId="3706f3a3-89e9-46b9-8e84-2c1bc0d15471" ContentHash="XLFE0ZuPTUmzqvTK9CTItw" CvElementArea="7, 122, 378, 122" CvType="InputBox" DesignTimeRectangle="7, 123, 379, 122" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='txtCreditRsnNote' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='txtCreditRsnNote' /&gt;" Guid="f56f693e-1516-4988-8342-0170d102ea81" InformativeScreenshot="a777ce017a1bd67f446160e65d34feff.png" IsResponsive="True" Reference="iECXXsB5aE67CeGMsIoCEA/c5uSYti6xk-GPe37sUZ9Uw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmCreditReason' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                        <uix:TargetAnchorable.Anchors>
+                                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                            <uix:Target CVScreenId="3706f3a3-89e9-46b9-8e84-2c1bc0d15471" CvTextArea="6, 110, 38, 12" CvTextArgument="* Note:" CvType="Text" DesignTimeRectangle="6, 102, 381, 21" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='_Reqlbl_1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='_Reqlbl_1' check:text='Note:' /&gt;" Guid="fdfecd6e-f727-4272-8d74-ef16c1762b2f" SearchSteps="Selector, FuzzySelector, CV" />
+                                                                          </scg:List>
+                                                                        </uix:TargetAnchorable.Anchors>
+                                                                      </uix:TargetAnchorable>
+                                                                    </uix:NTypeInto.Target>
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                  </uix:NTypeInto>
+                                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;OK' ModifyChargeProcedureReason" sap:VirtualizedContainerService.HintSize="382,50" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d0ce839d-3a3d-4a95-8609-b231898b13bf" Version="V4">
+                                                                    <uix:NClick.Target>
+                                                                      <uix:TargetAnchorable CVScreenId="e7af99bc-35ab-4fdf-a896-387be96c0cec" ContentHash="2MRZsThAjkqVPfvgRq915Q" CvElementArea="195, 255, 93, 27" CvTextArea="231, 263, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="195, 255, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='stlpButtons' /&gt;&lt;wnd ctrlname='cmdOK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='stlpButtons' /&gt;&lt;wnd ctrlname='cmdOK' check:text='&amp;amp;OK' /&gt;" Guid="d7730fe2-3993-4124-8ae5-aa44cfc7a6e6" InformativeScreenshot="4143a4635a3f3143b9fefa6654f133e9.png" Reference="iECXXsB5aE67CeGMsIoCEA/IeGyuZieVU6qeIo5GprQUw" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmCreditReason' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                                    </uix:NClick.Target>
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                  </uix:NClick>
+                                                                </Sequence>
+                                                              </ActivityAction>
+                                                            </uix:NApplicationCard.Body>
+                                                            <uix:NApplicationCard.TargetApp>
+                                                              <uix:TargetApp Area="523, 282, 393, 288" ContentHash="TowgAbDYCUCm4zs-KQGPrg" FilePath="[str_glblChargeViewerApplicationPath]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD3SURBVDhPvZKxkYMwEEXpiQ7IqYFMLdABJTCjNqhA0UWKTWIiMpIbKtjbJ2s92BjscXB/5qNldv/XrqTiXyCKdV0lhCBd10nbtpJT50AYo9fPjX3fJ4Oqqj4zCNdwF5tB0zRS1/V7g2VZxMXywSDRO138uQGtI4Ze3MZAYzX4vfwcGzyLIXHM4qjkQHP5Hk4LH8TZABa+EM4ll+5Bciu23WGpYs4ll+5BW6n4lVh52jZzD8NwKAa59DV4YeM4ficG3CtXY3dvPJ15i7SNK5MJo/BcETO3rRAcngVJOkmMUeZ5TsTAVsTE5NFM0/S+QzOybiy+/S/yB/p7lZTA9RGaAAAAAElFTkSuQmCC" InformativeScreenshot="0159374fd18d17ce9a86fbdf9ebc4cd2.png" Reference="iECXXsB5aE67CeGMsIoCEA/su7ACU89e0SQ4d06deEBig" Selector="&lt;wnd app='cschargeviewer.exe' ctrlname='frmCreditReason' isremoteapp='1' /&gt;" Version="V1" />
+                                                            </uix:NApplicationCard.TargetApp>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                          </uix:NApplicationCard>
+                                                        </Sequence>
+                                                      </ActivityAction>
+                                                    </ui:RetryScope.ActivityBody>
+                                                    <ui:RetryScope.Condition>
+                                                      <ActivityFunc x:TypeArguments="x:Boolean" />
+                                                    </ui:RetryScope.Condition>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:RetryScope>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </uix:NApplicationCard.Body>
+                                      <uix:NApplicationCard.TargetApp>
+                                        <uix:TargetApp Area="359, 193, 722, 467" ContentHash="GsQZC70oakG8R7anL4IQNg" FilePath="[str_glblChargeViewerApplicationPath]" IconBase64="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" InformativeScreenshot="bd9802d1f96ed19c8edfc01e3f99a7ff.png" Reference="iECXXsB5aE67CeGMsIoCEA/PFZTp4TlTkuLkLS4TIxmlQ" Selector="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" Version="V1" />
+                                      </uix:NApplicationCard.TargetApp>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NApplicationCard>
+                                  </PickBranch>
+                                  <PickBranch DisplayName="PickBranch: Delay If Nothing Found" sap:VirtualizedContainerService.HintSize="323,40" sap2010:WorkflowViewState.IdRef="PickBranch_3">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <PickBranch.Trigger>
+                                      <Delay DisplayName="Delay: UnableToFindProcedureForChargeViewer" Duration="[TimeSpan.FromSeconds(in_intWaitTime-in_intMaxRetry)]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                    </PickBranch.Trigger>
+                                    <Sequence DisplayName="Sequence: Unable to Find Procedure For ChargeViewer" sap:VirtualizedContainerService.HintSize="416,351" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message: Unable to Find Procedure" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Unable to Find Procedure in ChargeViewer to Update Physician Name for &quot;+currentText]" />
+                                      <Throw DisplayName="Throw: Unable to Find Procedure" Exception="[New BusinessRuleException(&quot;Unable to Find Procedure in ChargeViewer to Update Physician Name for &quot;+currentText)]" sap:VirtualizedContainerService.HintSize="382,114" sap2010:WorkflowViewState.IdRef="Throw_5" />
+                                    </Sequence>
+                                  </PickBranch>
+                                </Pick>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ForEach>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="0, 0, 1440, 860" ContentHash="2Hec5aNns0CdaNnXK-8rdw" FilePath="[str_glblChargeViewerApplicationPath]" IconBase64="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" InformativeScreenshot="c11694cb594a4c3160566b054a8e87c4.png" Reference="iECXXsB5aE67CeGMsIoCEA/5F-8wdAmVEuyX_dFvA7udw" Selector="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" Version="V1" />
+                  </uix:NApplicationCard.TargetApp>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NApplicationCard>
+              </Sequence>
+            </TryCatch.Try>
+            <TryCatch.Catches>
+              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="488,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ActivityAction x:TypeArguments="s:Exception">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Sequence: Take Screenshot  Rethrow Error" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[Not bool_TakeScreenshot]" DisplayName="If: Screenshot needs to be taken" sap:VirtualizedContainerService.HintSize="502,711" sap2010:WorkflowViewState.IdRef="If_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then: TakeScreenshot Add it into the Dictionary" sap:VirtualizedContainerService.HintSize="468,452" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="Assign: ScreenshotPath to Save Screenshot" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.str_glblScreenshotPath]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[in_strScreenshotFolderpath+in_strPrefixSE+DateTime.Now.ToString("ddMMyyyyHHmmss")+".png"]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <uix:NTakeScreenshot DisplayName="Take Screenshot: SetRenderingPhysician" FileName="[GlobalVariablesNamespace.GlobalVariables.str_glblScreenshotPath]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NTakeScreenshot>
+                          <ui:LogMessage DisplayName="Log Message: Error while SetRenderingPhysician" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Unable to SetRenderingPhysician: &quot;+exception.Message]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                          <Assign DisplayName="Assign: Change the Flag of Take Screenshot" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[bool_TakeScreenshot]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else: Throw GetProcedures" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <Throw DisplayName="Throw: SetRenderingPhysician" Exception="[New System.Exception(&quot;SE: Unable to SetRenderingPhysician: &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="502,113" sap2010:WorkflowViewState.IdRef="Throw_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Throw>
+                  </Sequence>
+                </ActivityAction>
+              </Catch>
+              <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="488,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ActivityAction x:TypeArguments="ui:BusinessRuleException">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Sequence BE" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[Not exception.Message.StartsWith(&quot;BE:&quot;)]" DisplayName="If: Prefix BE is not present" sap:VirtualizedContainerService.HintSize="502,360" sap2010:WorkflowViewState.IdRef="If_5">
+                      <If.Then>
+                        <Sequence DisplayName="Then: Update the Prefix" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="Assign: Exception Message BE" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_ExceptionMessage]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">["BE: "+exception.Message]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <Rethrow DisplayName="Rethrow: BE" sap:VirtualizedContainerService.HintSize="502,48" sap2010:WorkflowViewState.IdRef="Rethrow_2" />
+                  </Sequence>
+                </ActivityAction>
+              </Catch>
+            </TryCatch.Catches>
+          </TryCatch>
+        </ActivityAction>
+      </ui:RetryScope.ActivityBody>
+      <ui:RetryScope.Condition>
+        <ActivityFunc x:TypeArguments="x:Boolean" />
+      </ui:RetryScope.Condition>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:RetryScope>
+    <ui:LogMessage DisplayName="Log Message: End SetRenderingPhysicianSetRenderingPhysician" sap:VirtualizedContainerService.HintSize="564,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;End: SetRenderingPhysician&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>

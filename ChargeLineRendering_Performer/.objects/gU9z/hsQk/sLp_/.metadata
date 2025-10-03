@@ -1,0 +1,13 @@
+﻿{
+  "Name": "IE Cerner Soarian [TEST 2025.01]",
+  "Type": "Screen",
+  "Id": "sLp_oTSiRk2774ooxLXdUw",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/sLp_oTSiRk2774ooxLXdUw",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/hsQkqJib0kOw9rAWAxRmqw",
+  "Created": "2025-09-04T04:57:05.0430554Z",
+  "Updated": "2025-09-04T04:57:05.0430554Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

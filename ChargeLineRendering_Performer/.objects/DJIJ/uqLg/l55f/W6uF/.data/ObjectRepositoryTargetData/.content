@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dQ_nTJW5CUK1hgoKPE4NEA" Reference="BIPb7NZ-MEG1ZOZ9L35Dqw/XfzcGSVo0kWL_5RuihfHfg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" DesignTimeRectangle="1391, 115, 32, 25" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='userMenuBtn' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='userMenuBtn' tag='DIV' type='' class='embedded-settings-icon-svg' aaname='' /&gt;" Guid="f4f74f7e-c3b5-4473-9d00-e54cd057f4ad" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="18af85533b3d5b4b94a9d88be0ffe431.png" xmlns="">18af85533b3d5b4b94a9d88be0ffe431.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

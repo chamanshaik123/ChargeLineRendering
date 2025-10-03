@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Bs8X7WCHwEirqg1AeMFE1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="2254320e-ef39-43a6-b169-a799c248d8a9" CvTextArea="34, 29, 78, 15" CvTextArgument="Charge Viewer" CvType="Text" DesignTimeRectangle="3, 25, 257, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Accounting' role='popup menu' /&gt;&lt;ctrl name='Charge Viewer' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Accounting' role='popup menu' /&gt;&lt;ctrl automationid='148' role='menu item' check:text='Charge Viewer' /&gt;" Guid="96db07ab-8722-42b2-8b8e-f6aaa12ba18d" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='#32768' isremoteapp='1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0180ba5bda2df83f4280ed85fc4bbd8d.png" xmlns="">0nRiOQH_SQkKAonUF9642qg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Change View to RevElate Dialog box",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "eKQ2U16QK0WQhoWytqIuzw",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/eKQ2U16QK0WQhoWytqIuzw",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-09-01T16:41:42.635781Z",
+  "Updated": "2025-09-01T16:41:42.635781Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

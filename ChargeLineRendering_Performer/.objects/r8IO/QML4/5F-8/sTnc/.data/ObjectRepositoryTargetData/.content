@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Fp81_OGTcESbUGbVwNuutw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="76ce5237-ead6-4417-882f-6e1634de5018" CvTextArea="266, 323, 35, 12" CvTextArgument="CPT-4" CvType="Text" DesignTimeRectangle="266, 323, 35, 12" DesignTimeScaleFactor="1" ElementType="Text" Guid="67d85bb2-dde8-4157-8d89-d140e1ab751a" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="261, 319, 53, 16" Guid="96511c70-e7ce-4ad4-b2ec-2dd60cb2bd90" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADUAAAAQCAYAAAC2hzf1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADvSURBVEhL7ZXBFYMgDEA7opNkkSySObi7QebgmpIgii200pbXR+vhHwQ1+QnRyzzP4r3/KU6pUTilRuEfpVgcgkzTFAEUx2nPCab1FRBAZ88R3O4tAAnfxcnR94LQGqedh1IOQxIhyZQEOwyJBTG7LgTnKIouXyOB9ZnnWMxuUpVkNGhMulxR3Qfiba1Biil0mqhfpzSAdqm0F/lwp/Q+O5rlYrXwplQ2KwYI5l1SDknpDCaRr0sdCF6QinOzoDNrxy4Vo6NUrcLbzLwutaf+pdwd4wbqUgGraMvXr8Sh45fTs1PG/X9qCzas1Ih4uQJT+zL+bJwvrAAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1da8a5900aa9465dca519c563aab16fb.png" xmlns="">0oQ72ET1t7kCc5XbB9slSEw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

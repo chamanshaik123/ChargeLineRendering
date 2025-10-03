@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JV16H3gRuUu775pQVIlJIA" Reference="J-GH-OIaQEaHiNcjAacQKw/ZeoHMxcDrkyR7pzFwWh3Cw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="96ce61a0-acb8-4ffe-82c4-089ad670d0cb" CvTextArea="236, 718, 275, 12" CvTextArgument="Patient Access Inbound Transaction Errors Worklist" CvType="Text" DesignTimeRectangle="230, 715, 565, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='option' aaname=' Patient Access Inbound Transaction Errors Worklist' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' tag='DIV' type='' class='CUI-TableGridLinesRow quadContent linkStyle' aaname=' Patient Access Inbound Transaction Errors Worklist' check:text='Patient Access Inbound Transaction Errors Worklist' /&gt;" Guid="23ec223b-64fc-4230-8446-ac2488ce307b" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="34ca5f74-4c79-44b2-ab66-ff44f4c908a1" CvTextArea="233, 418, 60, 12" CvTextArgument="WorkLists" CvType="Text" DesignTimeRectangle="230, 413, 582, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='standardHeaderText' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='standardHeaderText' tag='DIV' type='' class='hpHeaderText' aaname='WorkLists' check:text='WorkLists' /&gt;" Guid="93070726-000f-415a-964e-512d0d3535ed" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5a484e3331a75825d836fa9173c32e9d.png" xmlns="">5a484e3331a75825d836fa9173c32e9d.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

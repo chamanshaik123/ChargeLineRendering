@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Welcome to CernerWorks",
+  "Type": "App",
+  "Id": "Cn0xH0vhxkuxO5mR_Ys6YA",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/Cn0xH0vhxkuxO5mR_Ys6YA",
+  "Created": "2025-09-01T16:42:18.897379Z",
+  "Updated": "2025-09-01T16:42:18.897379Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

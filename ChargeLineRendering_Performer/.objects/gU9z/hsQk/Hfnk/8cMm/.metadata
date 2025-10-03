@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pt. Financials",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "8cMmgs0OzUuOy_cpUnqqvA",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/8cMmgs0OzUuOy_cpUnqqvA",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-08-31T18:10:09.633072Z",
+  "Updated": "2025-08-31T18:10:09.633072Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

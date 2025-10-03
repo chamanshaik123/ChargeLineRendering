@@ -1,0 +1,14 @@
+﻿{
+  "Name": "View Charge Information",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "UqTpEoKVaEyUa9AzKXeotQ",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/UqTpEoKVaEyUa9AzKXeotQ",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-09-01T16:17:06.0839456Z",
+  "Updated": "2025-09-01T16:17:06.0839456Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

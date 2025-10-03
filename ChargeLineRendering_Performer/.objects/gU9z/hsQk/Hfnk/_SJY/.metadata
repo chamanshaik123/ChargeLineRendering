@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Sub-Encounters (for sel…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "_SJYakbm_EOj82n--Wi1WA",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/_SJYakbm_EOj82n--Wi1WA",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-09-01T05:57:27.0530999Z",
+  "Updated": "2025-09-01T05:57:27.0530999Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "ListOfPhysicianFoundByName",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "Q4rEqU1d1UiVQEhCT8qx9g",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/Q4rEqU1d1UiVQEhCT8qx9g",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/aGGAA2XJlUSVhIpHAGg1sQ",
+  "Created": "2025-09-09T20:16:44.5758428Z",
+  "Updated": "2025-09-09T20:30:18.0302098Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

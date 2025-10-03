@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Credit Charge",
+  "Type": "Screen",
+  "Id": "yLNkNRYYV0q15UPgnm6otg",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/yLNkNRYYV0q15UPgnm6otg",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/QML4C9JuCkGcc1-4uUVGOw",
+  "Created": "2025-09-02T10:59:10.7531142Z",
+  "Updated": "2025-09-02T10:59:10.7531142Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "BUTTON HealthProfessionalRefresh",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "u42fdYhD1kGijsMFy5tPzA",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/u42fdYhD1kGijsMFy5tPzA",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-10-02T21:24:26.9566764Z",
+  "Updated": "2025-10-02T21:25:13.7332705Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

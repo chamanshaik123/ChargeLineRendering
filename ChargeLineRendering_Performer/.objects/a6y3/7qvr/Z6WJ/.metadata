@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Access CernerWorks Application",
+  "Type": "Screen",
+  "Id": "Z6WJylg6EkOkYobignUDkQ",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/Z6WJylg6EkOkYobignUDkQ",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/7qvrpZaZu0KP8PjJqT-Ugg",
+  "Created": "2025-09-01T16:42:20.9538105Z",
+  "Updated": "2025-09-01T16:42:20.9538105Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

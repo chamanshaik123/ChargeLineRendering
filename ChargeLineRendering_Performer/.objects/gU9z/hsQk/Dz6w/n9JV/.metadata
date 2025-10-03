@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click LogOut Option from 'File'",
+  "Type": "Element",
+  "Id": "n9JV87cgSkaZXfT57H9XNg",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/n9JV87cgSkaZXfT57H9XNg",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/Dz6wvNm8GEyyko49OynQRg",
+  "Created": "2025-09-01T16:41:49.0720709Z",
+  "Updated": "2025-09-01T16:41:49.0720709Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

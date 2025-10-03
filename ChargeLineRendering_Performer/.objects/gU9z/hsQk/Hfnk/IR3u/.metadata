@@ -1,0 +1,17 @@
+﻿{
+  "Name": "HealthProfessionalScrollBar",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "IR3ux-Eet0-QU_OTORIPXQ",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/IR3ux-Eet0-QU_OTORIPXQ",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-09-11T10:30:59.5345807Z",
+  "Updated": "2025-09-11T10:31:26.3127611Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

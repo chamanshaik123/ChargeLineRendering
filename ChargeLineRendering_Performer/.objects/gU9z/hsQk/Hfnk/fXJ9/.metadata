@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Check App State Collapse",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "fXJ9dYgQ_UaxrRNj73IyCQ",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/fXJ9dYgQ_UaxrRNj73IyCQ",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-08-20T10:19:14.1396917Z",
+  "Updated": "2025-08-20T10:19:14.1396917Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

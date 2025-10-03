@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Encounter Identifier(ex…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "GP7EXgXNN02r9zPFTW1OCg",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/GP7EXgXNN02r9zPFTW1OCg",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/LrZ84tnZEk6I7B347Ax9-g",
+  "Created": "2025-09-01T20:30:29.4986931Z",
+  "Updated": "2025-09-01T20:30:29.4986931Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

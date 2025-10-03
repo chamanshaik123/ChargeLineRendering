@@ -1,0 +1,1011 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Cerner_LogOut" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_intMaxRetry" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_intWaitTime" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_boolLogout" Type="InArgument(x:Boolean)" />
+    <x:Property Name="in_strApplicationName" Type="InArgument(x:String)" />
+    <x:Property Name="in_strCitrixUrl" Type="InArgument(x:String)" />
+    <x:Property Name="in_strNamePrefixSE" Type="InArgument(x:String)" />
+    <x:Property Name="in_strScreenshotFolderPath" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Cerner_LogOut_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Based on Flag check for Session Availability or Log out from RevElate Application&#xA;in_intMaxRetry&#xA;in_intWaitTime&#xA;in_strCitrixUrl&#xA;in_strApplicationName&#xA;in_boolLogout&#xA;in_strNamePrefixSE&#xA;in_strScreenshotFolderPath" DisplayName="Cerner_LogOut" sap:VirtualizedContainerService.HintSize="710,4250" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="bool_RestartApplication" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message: Cerner LogOut Initiation" sap:VirtualizedContainerService.HintSize="710,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start: SessionAvailableCheckandLogOutRevElate&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <TryCatch DisplayName="Try Catch: RevElate Session Log and Logout check" sap:VirtualizedContainerService.HintSize="710,3818" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <ui:RetryScope ContinueOnError="False" DisplayName="Retry logging out of the Revenue Cycle application" sap:VirtualizedContainerService.HintSize="672,3558" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[If(in_boolLogout,in_intMaxRetry,in_intMaxRetry*3)]" RetryInterval="[TimeSpan.FromSeconds(in_intMaxRetry*3)]">
+          <ui:RetryScope.ActivityBody>
+            <ActivityAction>
+              <Sequence DisplayName="Open and exit Revenue Cycle application" sap:VirtualizedContainerService.HintSize="630,3383" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If Condition="[not in_boolLogout]" DisplayName="If: Bool Login Check for Multiple State" sap:VirtualizedContainerService.HintSize="596,57" sap2010:WorkflowViewState.IdRef="If_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Then: Check for App State" sap:VirtualizedContainerService.HintSize="1695,1423" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="str_PopUpMessageText" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Pick DisplayName="Pick: Check Citrix App state" sap:VirtualizedContainerService.HintSize="1661,1363" sap2010:WorkflowViewState.IdRef="Pick_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <PickBranch DisplayName="PickBranch: Unable to Open " sap:VirtualizedContainerService.HintSize="242,1293" sap2010:WorkflowViewState.IdRef="PickBranch_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <PickBranch.Trigger>
+                            <uix:NCheckState DelayBefore="[in_intWaitTime-(in_intMaxRetry*2)]" DisplayName="Check App State 'Close_RecieverPopUp'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_2" IsLoose="True" Timeout="[in_intWaitTime]" Version="V4">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable CVScreenId="b5309cd3-0e3a-46b0-90ce-122d0612339c" ContentHash="cxt_hXQ7Ak6Dlk1mTDiMpg" CvTextArea="82, 44, 94, 13" CvType="AnyWordGroup" DesignTimeRectangle="83, 44, 101, 27" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='LaunchProgressNotification.ProgressInfo' role='list item' /&gt;&lt;ctrl automationid='launchStatusMessage' name='Unable to start' /&gt;" Guid="1a36e27f-364e-413b-909c-6a757f325959" ImageBase64="" InformativeScreenshot="457642197836d6812d4e8110b316a842.png" Reference="iECXXsB5aE67CeGMsIoCEA/eF4IT-ikI0q2xlaE6OTa_Q" ScopeSelectorArgument="&lt;wnd app='receiver.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NCheckState.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NCheckState>
+                          </PickBranch.Trigger>
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="receiver.exe Close Failed Reciever PopUp" sap:VirtualizedContainerService.HintSize="305,25" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="79b371bf-0746-4ff8-924f-d78d6e8418bb" Version="V2">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do: Unable to Start Reciever" sap:VirtualizedContainerService.HintSize="468,572" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText DisplayName="Get Text: PopUp Message Text" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="79b371bf-0746-4ff8-924f-d78d6e8418bb" TextString="[str_PopUpMessageText]" Version="V4">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable CVScreenId="b5309cd3-0e3a-46b0-90ce-122d0612339c" ContentHash="cxt_hXQ7Ak6Dlk1mTDiMpg" CvTextArea="82, 44, 94, 13" CvType="AnyWordGroup" DesignTimeRectangle="83, 44, 101, 27" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='LaunchProgressNotification.ProgressInfo' role='list item' /&gt;&lt;ctrl automationid='launchStatusMessage' name='Unable to start' /&gt;" Guid="1a36e27f-364e-413b-909c-6a757f325959" ImageBase64="" InformativeScreenshot="457642197836d6812d4e8110b316a842.png" Reference="iECXXsB5aE67CeGMsIoCEA/eF4IT-ikI0q2xlaE6OTa_Q" ScopeSelectorArgument="&lt;wnd app='receiver.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                    </uix:NGetText.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NGetText>
+                                  <Assign DisplayName="Assign: ScreenshotPath" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[str_glblScreenshotPath]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[in_strScreenshotFolderPath+in_strNamePrefixSE+datetime.Now.ToString("ddMMyyyyHHmmss")+".png"]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <uix:NTakeScreenshot DisplayName="Take Screenshot: Login error RevElate" FileName="[str_glblScreenshotPath]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NTakeScreenshot>
+                                  <ui:LogMessage DisplayName="Log Message: Unable to Start err msg" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;Unable to Start Citrix Reciever: &quot;+str_PopUpMessageText]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close_RecieverPopUp'" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="79b371bf-0746-4ff8-924f-d78d6e8418bb" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable CVScreenId="b5309cd3-0e3a-46b0-90ce-122d0612339c" ContentHash="e1793OvfSUaRn8B0cLakvg" CvTextArea="365, 33, 36, 13" CvTextArgument="Close" CvType="Text" DesignTimeRectangle="321, 32, 80, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='LaunchProgressNotification.ProgressInfo' role='list item' /&gt;&lt;ctrl automationid='closeButton' /&gt;" FuzzySelectorArgument="&lt;ctrl name='LaunchProgressNotification.ProgressInfo' role='list item' /&gt;&lt;ctrl automationid='closeButton' role='push button' check:text='Close' /&gt;" Guid="75f50a47-d8df-4e0b-9dc0-d968d00a720a" InformativeScreenshot="89d2e25a6c16af994f53d0a2fbfc53f6.png" Reference="iECXXsB5aE67CeGMsIoCEA/yc9BCRa4NECvzuab_y6-9Q" ScopeSelectorArgument="&lt;wnd app='receiver.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NClick>
+                                  <Assign DisplayName="Assign: Start Application Again" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Boolean">[bool_RestartApplication]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="1017, 773, 416, 83" ContentHash="1tnVLB-6okCnb9-DnUILzw" FilePath="[Nothing]" IconBase64="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" InformativeScreenshot="7b7646755d11a65e8bacd444a6df4cb3.png" Reference="iECXXsB5aE67CeGMsIoCEA/OrcrsD4oRkibzDoigEWokQ" Selector="&lt;wnd app='receiver.exe' cls='HwndWrapper*' idx='*' /&gt;" Version="V1" />
+                            </uix:NApplicationCard.TargetApp>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NApplicationCard>
+                        </PickBranch>
+                        <PickBranch DisplayName="PickBranch: Check for App" sap:VirtualizedContainerService.HintSize="244,1293" sap2010:WorkflowViewState.IdRef="PickBranch_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <PickBranch.Trigger>
+                            <uix:NCheckState DisplayName="Check App State 'Click File from Header_CheckAppState'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_1" IsLoose="True" Timeout="[in_intWaitTime*4]" Version="V4">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" ContentHash="xYIX5xJTDE2-eB8Sse1iQA" CvTextArea="6, 26, 20, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="0, 23, 32, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' automationid='' check:text='File' /&gt;" Guid="fc74e989-a209-4b93-9d95-3af4c0d8b02a" InformativeScreenshot="a5aa1738e55659ed25193282ca4538c9.png" Reference="iECXXsB5aE67CeGMsIoCEA/T-lzooMxpk-774tCCk_Eew" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" CvTextArea="37, 26, 28, 12" CvTextArgument="View" CvType="Text" DesignTimeRectangle="32, 23, 39, 19" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' automationid='' check:text='View' /&gt;" Guid="53590946-70b2-451b-ae47-7c052962eca2" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheckState.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NCheckState>
+                          </PickBranch.Trigger>
+                          <Sequence DisplayName="Sequence: RevElate Main Screen Found" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message: RevElate Main Screen Found" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;RevElate Main Screen Found&quot;]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:LogMessage>
+                            <Assign DisplayName="Assign: not to start Application" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[bool_RestartApplication]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </PickBranch>
+                        <PickBranch DisplayName="PickBranch: Unable to Open Citrix PopUp" sap:VirtualizedContainerService.HintSize="592,1293" sap2010:WorkflowViewState.IdRef="PickBranch_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <PickBranch.Trigger>
+                            <uix:NCheckState DelayBefore="[in_intWaitTime-(in_intMaxRetry*2)]" DisplayName="Check App State 'Close_RecieverPopUp'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_4" IsLoose="True" Timeout="[in_intWaitTime]" Version="V4">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable CVScreenId="b5309cd3-0e3a-46b0-90ce-122d0612339c" ContentHash="JnrTy0NUR0G6C1j8xPPorA" CvTextArea="82, 44, 94, 13" CvType="AnyWordGroup" DesignTimeRectangle="83, 44, 101, 27" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='OK' cls='Button' /&gt;" Guid="1a36e27f-364e-413b-909c-6a757f325959" ImageBase64="" InformativeScreenshot="457642197836d6812d4e8110b316a842.png" Reference="iECXXsB5aE67CeGMsIoCEA/3Z1Sb7qgcUGZqVsw99hJYQ" ScopeSelectorArgument="&lt;wnd app='wfcrun32.exe' title='P0*ERROR' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NCheckState.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NCheckState>
+                          </PickBranch.Trigger>
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="receiver.exe Close Failed Citrix PopUp" sap:VirtualizedContainerService.HintSize="502,917" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="79b371bf-0746-4ff8-924f-d78d6e8418bb" Version="V2">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do: Unable to Start Reciever Citrix Error" sap:VirtualizedContainerService.HintSize="468,586" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Unable to connect to th…'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="79b371bf-0746-4ff8-924f-d78d6e8418bb" TextString="[str_PopUpMessageText]" Version="V4">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable CVScreenId="823498df-c28e-4132-aa57-ed4bd1f4c689" ContentHash="-fLc4aYyY0OGhUZcwxuW9w" CvElementArea="319, 138, 75, 23" CvTextArea="348, 144, 17, 11" CvType="Button" DesignTimeRectangle="319, 138, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd title='Unable to connect to the server*' cls='Static' /&gt;" FuzzySelectorArgument="&lt;wnd title='Unable to connect to the server*' cls='Static' /&gt;" Guid="6e73652c-81d4-4902-8e01-57923d0ec10a" InformativeScreenshot="c62acc5d45c3689247f829f582e60565.png" Reference="iECXXsB5aE67CeGMsIoCEA/KBXZTpnQB0eode7lgULBBA" ScopeSelectorArgument="&lt;wnd app='wfcrun32.exe' title='P0*ERROR' /&gt;" SearchSteps="Selector" Version="V4">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="70, 54, 309, 54" ElementType="Text" Guid="2b42c61c-4d4e-468e-8f1a-1ca09ab2ba8b" SearchSteps="Selector, FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                  <Assign DisplayName="Assign: ScreenshotPath" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[str_glblScreenshotPath]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[in_strScreenshotFolderPath+in_strNamePrefixSE+datetime.Now.ToString("ddMMyyyyHHmmss")+".png"]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <uix:NTakeScreenshot DisplayName="Take Screenshot: Login error RevElate" FileName="[str_glblScreenshotPath]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" ScopeIdentifier="79b371bf-0746-4ff8-924f-d78d6e8418bb" Version="V4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NTakeScreenshot>
+                                  <ui:LogMessage DisplayName="Log Message: Unable to Start err msg" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Citrix Error PopUp encountered: &quot;+str_PopUpMessageText]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Unable to connect to th…'" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="79b371bf-0746-4ff8-924f-d78d6e8418bb" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable CVScreenId="823498df-c28e-4132-aa57-ed4bd1f4c689" ContentHash="ASCMqn85Z0-KzNaONYhwWg" CvElementArea="319, 138, 75, 23" CvTextArea="348, 144, 17, 11" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="319, 138, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='OK' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd title='OK' aaname='OK' cls='Button' check:text='OK' /&gt;" Guid="6e73652c-81d4-4902-8e01-57923d0ec10a" InformativeScreenshot="c62acc5d45c3689247f829f582e60565.png" Reference="iECXXsB5aE67CeGMsIoCEA/g3Di-oTHCUilysKmxIT71Q" ScopeSelectorArgument="&lt;wnd app='wfcrun32.exe' title='P0*ERROR' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="70, 54, 309, 54" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='65535' title='Unable to connect to the server. Contact your system administrat*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='65535' title='Unable to connect to the server. Contact your system administrat*' check:text='Unable to connect to the server. Contact your system administrator with the following error: There is no Citrix XenApp server configured on the specified address. (Socket Error 10060)' /&gt;" Guid="2b42c61c-4d4e-468e-8f1a-1ca09ab2ba8b" SearchSteps="Selector, FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NClick>
+                                  <Assign DisplayName="Assign: Start Application Again" sap:VirtualizedContainerService.HintSize="434,50" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Boolean">[bool_RestartApplication]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="1017, 773, 416, 83" ContentHash="ztPQZ5tbOk-PSNcEvh-gjA" FilePath="[Nothing]" IconBase64="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" InformativeScreenshot="7b7646755d11a65e8bacd444a6df4cb3.png" Reference="iECXXsB5aE67CeGMsIoCEA/zIz-BiylKEqeLTrkhnb57w" Selector="&lt;wnd app='wfcrun32.exe' title='P0*ERROR' /&gt;" Title="P0*ERROR" Version="V1" />
+                            </uix:NApplicationCard.TargetApp>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NApplicationCard>
+                        </PickBranch>
+                        <PickBranch DisplayName="PickBranch - Pop up box found Anothr Citrix PopUp" sap:VirtualizedContainerService.HintSize="241,1253" sap2010:WorkflowViewState.IdRef="PickBranch_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <PickBranch.Trigger>
+                            <uix:NCheckState DelayBefore="[in_intWaitTime-(in_intMaxRetry*2)]" DisplayName="Check App State 'Unable to connect to th…'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="NCheckState_5" Timeout="[in_intWaitTime]" Version="V4">
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable CVScreenId="823498df-c28e-4132-aa57-ed4bd1f4c689" ContentHash="lfDPfx8rnUai1UXTT57j5Q" CvElementArea="319, 138, 75, 23" CvTextArea="348, 144, 17, 11" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="319, 138, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd title='OK' aaname='OK' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd title='OK' aaname='OK' cls='Button' check:text='OK' /&gt;" Guid="6e73652c-81d4-4902-8e01-57923d0ec10a" InformativeScreenshot="c62acc5d45c3689247f829f582e60565.png" Reference="iECXXsB5aE67CeGMsIoCEA/nM-sc6g3DEG7AOi3aewuRg" ScopeSelectorArgument="&lt;wnd app='wfcrun32.exe' cls='#32770' title='P0570 Revenue Cycle ERROR' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="70, 54, 309, 54" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='65535' title='Unable to connect to the server.*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='65535' title='Unable to connect to the server. Contact your system administrat*' check:text='Unable to connect to the server. Contact your system administrator with the following error: There is no Citrix XenApp server configured on the specified address. (Socket Error 10060)' /&gt;" Guid="2b42c61c-4d4e-468e-8f1a-1ca09ab2ba8b" SearchSteps="Selector, FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheckState.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NCheckState>
+                          </PickBranch.Trigger>
+                          <Sequence sap:VirtualizedContainerService.HintSize="536,964" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Pop up scope" sap:VirtualizedContainerService.HintSize="502,904" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" OpenMode="Never" ScopeGuid="28756312-ab8f-4960-9547-65377bffa564" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do: Unable to PopUp Citrix Error" sap:VirtualizedContainerService.HintSize="468,588" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Unable to connect to th…'" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="28756312-ab8f-4960-9547-65377bffa564" TextString="[str_PopUpMessageText]" Version="V4">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable CVScreenId="823498df-c28e-4132-aa57-ed4bd1f4c689" ContentHash="FXoAigN_pkiRTlmt8hAWug" CvElementArea="319, 138, 75, 23" CvTextArea="348, 144, 17, 11" CvType="Button" DesignTimeRectangle="319, 138, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd title='Unable to connect to the server*' cls='Static' /&gt;" FuzzySelectorArgument="&lt;wnd title='Unable to connect to the server*' cls='Static' /&gt;" Guid="6e73652c-81d4-4902-8e01-57923d0ec10a" InformativeScreenshot="c62acc5d45c3689247f829f582e60565.png" Reference="iECXXsB5aE67CeGMsIoCEA/0KDRCRAxtUquaWg3Zi0-OA" ScopeSelectorArgument="&lt;wnd app='wfcrun32.exe' cls='#32770' title='P0570 Revenue Cycle ERROR' /&gt;" SearchSteps="Selector" Version="V4">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="70, 54, 309, 54" ElementType="Text" Guid="2b42c61c-4d4e-468e-8f1a-1ca09ab2ba8b" SearchSteps="Selector, FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                    <Assign DisplayName="Assign: ScreenshotPath" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[str_glblScreenshotPath]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[in_strScreenshotFolderPath+in_strNamePrefixSE+datetime.Now.ToString("ddMMyyyyHHmmss")+".png"]</InArgument>
+                                      </Assign.Value>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Assign>
+                                    <uix:NTakeScreenshot DisplayName="Take Screenshot: Login error RevElate" FileName="[str_glblScreenshotPath]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_3" ScopeIdentifier="28756312-ab8f-4960-9547-65377bffa564" Version="V4">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTakeScreenshot>
+                                    <ui:LogMessage DisplayName="Log Message: Unable to Start err msg" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Citrix another Error PopUp encountered: &quot;+str_PopUpMessageText]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:LogMessage>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Unable to connect to th…'" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28756312-ab8f-4960-9547-65377bffa564" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="823498df-c28e-4132-aa57-ed4bd1f4c689" ContentHash="7rRti0STP029v8pU8VZ1aQ" CvElementArea="319, 138, 75, 23" CvTextArea="348, 144, 17, 11" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="319, 138, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd title='OK' aaname='OK' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd title='OK' aaname='OK' cls='Button' check:text='OK' /&gt;" Guid="6e73652c-81d4-4902-8e01-57923d0ec10a" InformativeScreenshot="c62acc5d45c3689247f829f582e60565.png" Reference="iECXXsB5aE67CeGMsIoCEA/WhNc6VGsykig9Qd2el_SuQ" ScopeSelectorArgument="&lt;wnd app='wfcrun32.exe' cls='#32770' title='P0570 Revenue Cycle ERROR' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="70, 54, 309, 54" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='65535' title='Unable to connect to the server. Contact your system administrat*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='65535' title='Unable to connect to the server. Contact your system administrat*' check:text='Unable to connect to the server. Contact your system administrator with the following error: There is no Citrix XenApp server configured on the specified address. (Socket Error 10060)' /&gt;" Guid="2b42c61c-4d4e-468e-8f1a-1ca09ab2ba8b" SearchSteps="Selector, FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NClick>
+                                    <Assign DisplayName="Assign: Start Application Again" sap:VirtualizedContainerService.HintSize="434,50" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Boolean">[bool_RestartApplication]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                      </Assign.Value>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Assign>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="0, 0, 0, 0" ContentHash="5BQMhuPLZku8Hf8m9RUfWQ" Reference="iECXXsB5aE67CeGMsIoCEA/DAfp95PQ8kOpFML8eWfZ0g" Selector="&lt;wnd app='wfcrun32.exe' cls='#32770' title='P0570 Revenue Cycle ERROR' /&gt;" Title="P0570 Revenue Cycle ERROR" Url="[Nothing]" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </PickBranch>
+                        <PickBranch DisplayName="PickBranch: Wait for Delay" sap:VirtualizedContainerService.HintSize="248,1253" sap2010:WorkflowViewState.IdRef="PickBranch_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <PickBranch.Trigger>
+                            <Delay DisplayName="Delay: No PopUp or Screen Appear" Duration="[TimeSpan.FromSeconds(in_intWaitTime-2)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                          </PickBranch.Trigger>
+                          <Sequence DisplayName="Sequence: NoPopUpOrScreenAppear" sap:VirtualizedContainerService.HintSize="416,281" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message: No States Found of App" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;RevElate Main screen App State not found in scope&quot;]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:LogMessage>
+                            <Assign DisplayName="Assign: not to start Application" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Assign_2">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[bool_RestartApplication]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                          </Sequence>
+                        </PickBranch>
+                      </Pick>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else: Not To Start Application Again" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Assign: not to start Application" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[bool_RestartApplication]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <If Condition="[Not bool_RestartApplication]" DisplayName="If: bool Start Application" sap:VirtualizedContainerService.HintSize="596,3266" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If.Then>
+                    <Sequence DisplayName="Then: Continue with Usual Process" sap:VirtualizedContainerService.HintSize="562,2582" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NCheckState DisplayName="Check App State 'Cancel_RevelateDialogCancel'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="528,907" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Timeout="[in_intWaitTime/in_intMaxRetry]" Version="V4">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484,658" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="True" DisplayName="IE RevElate Fille Up DialogBox" sap:VirtualizedContainerService.HintSize="450,596" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="Simulate" ScopeGuid="5a401959-a52a-4810-99da-ec80ffe8b196" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,280" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancel_RevelateDialogCancel'" sap:VirtualizedContainerService.HintSize="382,218" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a401959-a52a-4810-99da-ec80ffe8b196" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="749b519f-e63e-49a5-9373-37bf3c7ef4d8" ContentHash="UZ_IlUwCokOuwTVf8AK09Q" CvElementArea="635, 707, 60, 26" CvTextArea="646, 713, 38, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="636, 708, 59, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ctlcancelButtonButton*' tag='BUTTON' aaname='Cancel' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlcancelButtonButton*' tag='BUTTON' aaname='Cancel' type='button' class='IccButtonGradient' check:text='Cancel' /&gt;" Guid="cfea0e65-d585-4ddd-804c-af848b8c2e8d" InformativeScreenshot="ed4b555b7cb239b8c74ddc4b428555d8.png" Reference="iECXXsB5aE67CeGMsIoCEA/yiBsrKr0rEmMIc38R-1Cjg" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="372, 88, 712, 757" ContentHash="iXAIGVwGQk2N9QyvbnU_BA" FilePath="[Nothing]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEhSURBVDhPlZDBSoRgFIV9pF6gR+gVatNmNkHLnE1EuIuECILyDXQhIjimKJEb30EmCnsDhUad21zvcZqpkfn74IL853yXixqTpintmyRJ2qqqLnrhN1zYR57nFIZh915+TKD9sNqO2jhZllFd17zkqyiKE6hCHMeojbMSKQiCfvgbqhBFEWpEV48Bnd+HdHob0/HN9uLPsqS3+fzvAn4YWC679YzBV0AV+GHg+img6cOMzu6e+wuOjJQOL1/oYPqKxo4Fvu8jIuq6dj2b12xexH2ogud5iNQu4D5UwXVdRGpwH6rgOA4itQu4D1WwbRsRUbNYUNPItG2z9T8GuA9VsCwLkdoF3IcqmKaJSA3uQxUMw0CkBvehCrqu039HTE37BhzbyIyO/xSmAAAAAElFTkSuQmCC" InformativeScreenshot="24cdf559920962c095110085a1cee072.png" Reference="iECXXsB5aE67CeGMsIoCEA/hj61UCvM6kWWL8S4hr8mZg" Selector="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" Title="RevElate" Version="V1" />
+                              </uix:NApplicationCard.TargetApp>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable CVScreenId="749b519f-e63e-49a5-9373-37bf3c7ef4d8" ContentHash="UZ_IlUwCokOuwTVf8AK09Q" CvElementArea="635, 707, 60, 26" CvTextArea="646, 713, 38, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="636, 708, 59, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ctlcancelButtonButton*' tag='BUTTON' aaname='Cancel' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlcancelButtonButton*' tag='BUTTON' aaname='Cancel' type='button' class='IccButtonGradient' check:text='Cancel' /&gt;" Guid="cfea0e65-d585-4ddd-804c-af848b8c2e8d" InformativeScreenshot="ed4b555b7cb239b8c74ddc4b428555d8.png" Reference="iECXXsB5aE67CeGMsIoCEA/yiBsrKr0rEmMIc38R-1Cjg" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NCheckState.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NCheckState>
+                      <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="False" DisplayName="Revenue Cycle - United States Base Experiences" sap:VirtualizedContainerService.HintSize="528,1615" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="be557fbc-0645-4a90-952e-db4e76dcee5f" Timeout="[in_intWaitTime]" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do: Log Out From Files" sap:VirtualizedContainerService.HintSize="484,1301" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[in_boolLogout]" DisplayName="Logout or highlight File based on inputs" sap:VirtualizedContainerService.HintSize="450,1239" sap2010:WorkflowViewState.IdRef="If_1">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Sequence DisplayName="Then Proceed with Log Outs" sap:VirtualizedContainerService.HintSize="416,661" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click File from Headers" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" ContentHash="xYIX5xJTDE2-eB8Sse1iQA" CvTextArea="6, 26, 20, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="0, 23, 32, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' automationid='' check:text='File' /&gt;" Guid="fc74e989-a209-4b93-9d95-3af4c0d8b02a" InformativeScreenshot="a5aa1738e55659ed25193282ca4538c9.png" Reference="iECXXsB5aE67CeGMsIoCEA/T-lzooMxpk-774tCCk_Eew" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" CvTextArea="37, 26, 28, 12" CvTextArgument="View" CvType="Text" DesignTimeRectangle="32, 23, 39, 19" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' automationid='' check:text='View' /&gt;" Guid="53590946-70b2-451b-ae47-7c052962eca2" SearchSteps="Selector, FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click LogOut Option from 'File's" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="df11f063-0c7c-4e71-a196-811c44ba85c9" ContentHash="cNzizThKl0qQFFJTQakGqw" CvTextArea="34, 138, 20, 12" CvTextArgument="Exit" CvType="Text" DesignTimeRectangle="3, 134, 205, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='File' role='popup menu' /&gt;&lt;ctrl role='menu item' text='Exit' /&gt;" FuzzySelectorArgument="&lt;ctrl name='File' role='popup menu' /&gt;&lt;ctrl automationid='135' role='menu item' check:text='Exit' /&gt;" Guid="134e4bfd-69fb-4fd6-a1de-210b0c3caedc" InformativeScreenshot="959123761ef777c29ec67b23fbd38166.png" Reference="iECXXsB5aE67CeGMsIoCEA/GKdjo0uitk2eaD5A5_H7xg" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' isremoteapp='1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CVScreenId="1cc560fe-d488-41b6-82d4-8f076fd37b0c" CvTextArea="6, 26, 20, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="0, 23, 32, 19" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' automationid='' check:text='File' /&gt;" Guid="463aa9d9-f242-4fa1-9c54-e0fed6ec4161" SearchSteps="Selector, FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click '&amp;Yes' If Prompts" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Timeout="[in_intWaitTime/in_intMaxRetry]" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="dedf1098-f5e0-4c11-b8bd-17bbdd8117cc" ContentHash="r5hQzBtfXE2zSRvDPFLdOA" CvElementArea="316, 108, 91, 24" CvTextArea="352, 113, 18, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="316, 107, 92, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Yes' cls='Button' title='*Yes' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Yes' cls='Button' title='&amp;amp;Yes' check:text='&amp;amp;Yes' /&gt;" Guid="69f28cc1-e5da-4f85-91d1-f206617dfb84" InformativeScreenshot="28452f775de8e66458099776c13d54d4.png" Reference="iECXXsB5aE67CeGMsIoCEA/RjpyXH7MOEyBiPQb2-MgUQ" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' isremoteapp='1' title='Cancel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NClick>
+                                    <ui:LogMessage DisplayName="Log Message: Login Successfulls" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[&quot;Logout Successfull for RevElate&quot;]" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Highlight the 'Click File from Header' elements" sap:VirtualizedContainerService.HintSize="416,415" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NHighlight Color="Gold" DisplayName="Highlight 'Click File from Header's" HighlightTime="5" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NHighlight_1" ScopeIdentifier="be557fbc-0645-4a90-952e-db4e76dcee5f" Version="V4">
+                                      <uix:NHighlight.Target>
+                                        <uix:TargetAnchorable CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" ContentHash="xYIX5xJTDE2-eB8Sse1iQA" CvTextArea="6, 26, 20, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="0, 23, 32, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' automationid='' check:text='File' /&gt;" Guid="fc74e989-a209-4b93-9d95-3af4c0d8b02a" InformativeScreenshot="a5aa1738e55659ed25193282ca4538c9.png" Reference="iECXXsB5aE67CeGMsIoCEA/T-lzooMxpk-774tCCk_Eew" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" CvTextArea="37, 26, 28, 12" CvTextArgument="View" CvType="Text" DesignTimeRectangle="32, 23, 39, 19" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' automationid='' check:text='View' /&gt;" Guid="53590946-70b2-451b-ae47-7c052962eca2" SearchSteps="Selector, FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NHighlight.Target>
+                                    </uix:NHighlight>
+                                    <ui:LogMessage DisplayName="Log Message: Login Successfull" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Login Successfull for RevElate&quot;]" />
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 1440, 860" ContentHash="wRjAISAOqkWixmFEM1dsXg" FilePath="C:\Program Files\Cerner\RevenueCycle\revenuecycle.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAdZSURBVFhHnZaJU9TlH8e5MjrmN79mmqaZykx+hlJhK3IsLtfiguSGI4LE6Sqoy7FchgeKeCCXQICokKKwSIWhKSCQWOaBRxGXICAgimkooml/wPv3fJ7dBaTvrtgz8xmY3e9336/n/TmexygoQYTMUgWy1eHILV+DvIoIFHyrwt7KOOz/fh2Kq9bj4IkklNYkQ12XgiMNO1DB4kj9dmSVhyJTHYLMshCkHw5BWkmwwQiMnwujySv9UAiiM8SI3e2EhBw3JObJsLHAC0mFcqQULUVqiR8y1IHIqViBvMpwFFYpUXhMiXV7HLCuwAEJ+Q6Iy7NHbI4donfbIjJjPpS7bASDILSy40sIYEP+IiTv98aOEh8m7o/sb4KRf3QlEw7HvhNKFJ2MwMbiBdhQ5Ij1+x2RuE/MgMSIz9eCZNlOHSCthAAcEJslQXyOK1ZtkkDqYwfZMjE++8IFS8Pd4af0QGCMHEGR3lDE+WCbWooth52w5ZATNpdIkHRAwoHW73PkzsR9ZQ8VcyMibYoAUen2iMlaAKeg2XBfaY1Fa+fBW+WAZQkS+G90Q3CyBxTbvRC+S461mUuwMHYWZAkfwjPREilqZ2wtdeYwBEKufFko5mmZDKEHIBiR6XZQZTpCEmgJN8XH8Fj9KeRRdlga7wi/9S4ISJIiNMUDK3d6ISxt8TMAXhtnQxY2B9vKXZBcqnFkA3ODQzAnJqbjQstxYYCINFuoshzhGDALriusIAufi88ibbAklrnwJbnggsAtUoRsk0Ea/b9/ACzePAc7v3XF9iMu2FrmrIFgTvBCzZPg1MWvUXu+WD8A0cVmi+HgbwGnkNmQrvoYnkoR5CpbXOk9ir2nArC/IQi/9x/XC/D5ViukfqeBICcO1KrQ+FsJGq4cRF3T14ZTEJE+H7G5DrDzm4EFQcwFxRzI1ljDK1KE/BpfFNYtR9HpAGTXyJBTK4P7CktBgLTvpTh3rRS/tB/Gz62HcKa5hKciNteOpXm+foAo1ruUL5tl0yEOmAnnUEtIw6zgobRmAD7Y2+CLokZ/5NZ5IK+eRYOnIMDF7jKc7yrFuY5SngoqykTWGfGsIKMzbfWngAqFeli09B3Y+TMXgi3gorCE+2or5NV6o7DBB1/Ve3LhgtMsGhcJAjT1lCG9SsrrgbqDaqG4Ogo/XtWkQa8D1C4JbKoRgI3vu7APmAFJqAVcwywZgBx7Grz5zkl8DxMvPCMMsPvkQmQcc0dqpRvOtBbzNFRfyufFGJNtp98BFfuSxqoOwNb/PYiDGITCArk1Xiiol2t2rxW38ZwpDFC9UJOGzlIUnQpDMhtW+VUK7kD9pQO40PoCAPaBrB5C3kd2tQy5pzR5l6/9SG8XXL5RjqZeNTKOu2MXc6Chec9YIT4fYFIKJgI4KpgTYR/Aec1MuEZYCAKMPB1gAGqegovXNQ780qHphMaJAFMpwhcBGH36J3fmcl85LrHdUxFeYADUimdZK/7UMg5ARagXQNeG/8aBdFZ0NBuaetQ8/7uOumFHhSvOtjGA3w/hNB9GB3gbkpZWdnzRhzSIYtgxKgSgW8s3OetNAbeeiV/oKuMtWFQbxu2vYR0wpUFEY5LSIASwk41XmnDUXlk/uOstQnpGl/ucKj8+hOh4jmcXFqoxg6OYviQXhAC2sdlOu6LKJpH0Y1JBAH2HEV1QdLckgwAUQgB0sKSUO2N7hQYk9Ts3QYBbw23PPY6TC/zHAM5ebUFr9w0YJWb4GATYxKykywYHYeOVzn0hABpEQheSVZtF8FdZw1f5CUh0YoyRGAKgw4SuWwRCuyMYz1XstBQA0F3JlKnzEZzwKXzXfoKDlUU491vbP8QpxgBONv6INTvmCQLQSUY/mrhXzC+gtEMCegYgaQ484mYjNFGEL1RzUXeuEb923sCVjh6cb24XFL/ePzgOQA939A3CSvIuREueBaAcUotSPqmiaWJGZdjCJWwWnFeyWPEhFinn8fdbewbQ3NU3Jq5v5xSrI6OzOUDv4JAW4Bb6hu7i9p8PcPfBKESLp8NG/j7PnV+ENZZHWrNczkXJ0RwM3h1G/9A99N76A9cHhvi7E8Uvt3cLik4MLq5b9EFbz00GcA9/3B/B8OhjPHj0F0ZY3H/0GMMPHzGohxgafqARv6MR7yLxG4No6R7gwhRNrZ2CgpNDK61Z9MHVa73oHrzDAB5i5PETjP71hP+9z2DujYzizvAIFyfIHvZcZ/9ttPXeRPP1qe+6ubMH5HhH78CzAFQQ9AD9CO1s9MlTPGQAtHMCunXvPt91D/tuXLjfoPCl1mtcjP7XyhhenX03x14mN9qZtWRx18BtbY7Hd0sFpntWFy1dvVyw9ufzf2t/8sWXjvh5odsdibpKF8aYmpq+PSneMjUxfdPE2OR1E2Pj14yNjV9l8RKTMNEoCSz2gPlLZmYW5i+bO1VW141SvihXV9u7uChrmxOvmJtLp02bJjIzM5thIKabmZq+wwFMTN5g8V8W/9GCvMKkCMKYixoZGf0fP+F1WVjwzyMAAAAASUVORK5CYII=" InformativeScreenshot="2be286a30058aaceac71d6d8e7813391.png" Reference="iECXXsB5aE67CeGMsIoCEA/OqgZjvEuKkS2V3HaDMBlog" Selector="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle*' /&gt;" Title="Revenue Cycle - United States Base Experience - My Workflow - Opened by Singh, Abhishek" Version="V1" />
+                        </uix:NApplicationCard.TargetApp>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else: Launch Application" sap:VirtualizedContainerService.HintSize="416,523" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LaunchingApplicationInCitrix - Invoke Workflow File (ReusableModule\LaunchingApplicationInCitrix.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReusableModule\LaunchingApplicationInCitrix.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:Int32" x:Key="in_intMaxRetry">[in_intMaxRetry]</InArgument>
+                          <InArgument x:TypeArguments="x:Int32" x:Key="in_intWaitTime">[in_intWaitTime]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_strCitrixUrl">[in_strCitrixUrl]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_strApplicationName">[in_strApplicationName]</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                      <ui:LogMessage DisplayName="Log Message: Login Successfull" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Warn" Message="[&quot;ReAttempt Login for RevElate&quot;]" />
+                      <Throw DisplayName="Throw: Unable to Login Into RevElate" Exception="[New SystemException(&quot;Unable to Login into RevElate&quot;)]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </ui:RetryScope.ActivityBody>
+          <ui:RetryScope.Condition>
+            <ActivityFunc x:TypeArguments="x:Boolean" />
+          </ui:RetryScope.Condition>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:RetryScope>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="676,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <If Condition="[in_boolLogout]" DisplayName="Logout or highlight File based on input" sap:VirtualizedContainerService.HintSize="502,913" sap2010:WorkflowViewState.IdRef="If_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then: UnableToLogOutRevElate" sap:VirtualizedContainerService.HintSize="468,602" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message: UnableToLogOutRevElate" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;UnableToLogOutRevElate: &quot;+exception.Message]" />
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" ContinueOnError="True" DisplayName="Revenue Cycle - United States Base Experience(1)" sap:VirtualizedContainerService.HintSize="434,369" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="be557fbc-0645-4a90-952e-db4e76dcee5f" Timeout="[in_intWaitTime]" Version="V2" WindowResize="Maximize">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="0, 0, 1440, 860" ContentHash="-0NQqUZhgE-3sf0PWqKHkg" FilePath="[str_glblRevenueCycleApplicationPath]" IconBase64="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" InformativeScreenshot="c5a85bdb86112783e67ece146b500f91.png" Reference="iECXXsB5aE67CeGMsIoCEA/Dz6wvNm8GEyyko49OynQRg" Selector="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle - United States Base Experience - RevElate - Opene*' /&gt;" Title="Revenue Cycle - United States Base Experience - RevElate - Opene*" Version="V1" />
+                    </uix:NApplicationCard.TargetApp>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Highlight the 'Click File from Header' element" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw: Unable to LoadRevElate" Exception="[New SystemException(&quot;SE4: &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </If.Else>
+            </If>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:LogMessage DisplayName="Log Message: Cerner LogOut Closure" sap:VirtualizedContainerService.HintSize="542,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;End: SessionAvailableCheckandLogOutRevElate&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>

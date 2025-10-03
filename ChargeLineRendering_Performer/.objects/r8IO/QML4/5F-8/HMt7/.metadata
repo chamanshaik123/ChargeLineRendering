@@ -1,0 +1,18 @@
+﻿{
+  "Name": "GridTable_ProcedureCharges",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "HMt7nUJevkmT3rm2YZ-kkw",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/HMt7nUJevkmT3rm2YZ-kkw",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/5F-8wdAmVEuyX_dFvA7udw",
+  "Created": "2025-08-07T16:21:28.0782926Z",
+  "Updated": "2025-09-15T08:41:51.0022063Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "PatientRecordRow",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "FBEbVj5xAEKsq-rlbp4-6w",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/FBEbVj5xAEKsq-rlbp4-6w",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-09-01T07:53:58.0487521Z",
+  "Updated": "2025-09-01T07:54:40.3041393Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

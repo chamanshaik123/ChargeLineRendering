@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get Text PopUp Message Text",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "asL56YoGRUWLc0icNNUnYA",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/asL56YoGRUWLc0icNNUnYA",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/OrcrsD4oRkibzDoigEWokQ",
+  "Created": "2025-09-01T16:41:52.9833101Z",
+  "Updated": "2025-09-01T16:41:52.9833101Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

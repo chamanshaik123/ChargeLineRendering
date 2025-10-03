@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kr0T_X1MsEuS5PWrzeqtBQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="1ee54d4b-c136-47b6-9fcc-1f9c5353c695" CvElementArea="95, 82, 196, 25" CvType="InputBox" DesignTimeRectangle="99, 87, 171, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='cmbPatientName' /&gt;&lt;wnd aaname='Person name:' cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='cmbPatientName' /&gt;&lt;wnd aaname='Person name:' cls='Edit' /&gt;" Guid="2e372665-c21e-42e5-a9bb-e6bec9f5a803" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b775f38b6e6a05db214d433b2a4997e8.png" xmlns="">0Dvsr9_ELMkqiAS018rmFog</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

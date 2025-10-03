@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uEWDOg1ZqE6f8QLqR1z9wQ" Reference="F-XitlQWl0ahaBFojCE8Zg/iLMiqdxHqUmY7b_GzWX21A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="e62cebc1-ee4b-475b-83ce-bbfb5f6a3e82" CvElementArea="6, 78, 41, 40" CvType="Button" DesignTimeRectangle="7, 80, 39, 38" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Patient Tracking' role='check box' automationid='' check:fulltext='Patient Tracking' /&gt;" Guid="5304d234-79a0-4955-a130-0589c1607336" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle - United States Base Experience - RevElate - Opene*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a636b89a7e3db0bd4aff9245935f4c12.png" xmlns="">a636b89a7e3db0bd4aff9245935f4c12.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

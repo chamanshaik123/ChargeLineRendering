@@ -1,0 +1,13 @@
+﻿{
+  "Name": "MouseMenu",
+  "Type": "Screen",
+  "Id": "fUakgAWBTkC3LT8G-JSdXw",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/fUakgAWBTkC3LT8G-JSdXw",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/QML4C9JuCkGcc1-4uUVGOw",
+  "Created": "2025-09-02T10:41:34.9546514Z",
+  "Updated": "2025-09-02T10:41:34.9546514Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

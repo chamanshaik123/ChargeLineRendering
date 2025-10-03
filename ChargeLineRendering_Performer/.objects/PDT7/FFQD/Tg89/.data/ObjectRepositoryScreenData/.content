@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="Yi01vYsMu0ub7Nb1h-Tynw" Reference="J-GH-OIaQEaHiNcjAacQKw/27peo9Y1H0ysTD0cy3b1ZA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 1440, 860" ContentHash="SaXcpwM7JE6ubxHYF23UQA" FilePath="[str_glblAccessHimApplicationPath]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIKSURBVDhPY+CQUjJTL5/9SatuyX9tINatX/pfr2Hpf/3GZf8NgNiwafl/IyA2bl6Bgg1q5n/mklGxYFAumfVJrXrRf/Waxf81gFirFmKQDtAgVMOWYxgGMoRBqXLBf+XKhf9Vqhb+RzZIsxabYcv+6wMxsssY5Mvn/1coX/BfsWLBfyWgQZlL9v1/8v7Lfxj49P3X//Xn7/43b12F4TKQpQwypfP+y5bN+y9XNv9/0+ZTUG3//1979g6o+SeU9///U6Chpi0rIS6DhhdH5tT/DJLFc/9Llcz9bwG0Yfe1R0CNb/+Hz9wOd1Xp6iP/T957AcaT9l4EexNkkE3H6v8MKZP+M4gVzv4vXjTnv0vverBNIFuP330OxyfA+AWKa0CgYdNJiAHCBbP+ixTM/g8yqHvnuf+P332GKsEODtx88n8DMEzAmkFYIG/mf6H8WcAAXPB/+amb/4/cfvZ/x5WH/xcdvw7EN/4vOHb9/4TdF/4vOHoNrPnDt5/gKIUbwJsz4z9/7oz/FWuPgm148OYTmMYF4E6HYe7s6f9BGBSnu64+BNsAig2fSZv+O3Sv/Z+ycM//ju1nwK4ImLoFVTMIc2VN+8+UOhnMSZi3G2oPBCC7BsQGeRfDALYMYFwiCYBsQdYIchHI/1g1gzDMdrIxY3znB6wSxOA4oF4GYWkDMAObAnwYpEdY2gAA05yX7h7K1bcAAAAASUVORK5CYII=" Reference="J-GH-OIaQEaHiNcjAacQKw/27peo9Y1H0ysTD0cy3b1ZA" Selector="&lt;wnd app='?ava*' isremoteapp='1' title='AccessHIM*' /&gt;" Title="AccessHIM - Task Queue" Version="V1">
+      <imageRef attrName="InformativeScreenshot" originalValue="96d65f247dbdf13129b73b574583ae11.png" xmlns="">96d65f247dbdf13129b73b574583ae11.png</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

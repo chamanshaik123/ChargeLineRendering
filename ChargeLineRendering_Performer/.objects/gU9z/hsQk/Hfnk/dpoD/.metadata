@@ -1,0 +1,17 @@
+﻿{
+  "Name": "CAMC Missing RenderingTabCheck",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "dpoDNFqMt0i_R8tB4uBCWQ",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/dpoDNFqMt0i_R8tB4uBCWQ",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-08-19T13:54:08.1827398Z",
+  "Updated": "2025-09-01T05:17:05.3725485Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

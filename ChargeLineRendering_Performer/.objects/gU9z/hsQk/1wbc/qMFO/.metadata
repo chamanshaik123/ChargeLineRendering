@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Cancel_Soarian",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "qMFO-YYIoEuoHhMAQisl_Q",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/qMFO-YYIoEuoHhMAQisl_Q",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/1wbckMG0ekygTxUeBGe-2Q",
+  "Created": "2025-09-01T16:41:40.4664009Z",
+  "Updated": "2025-09-01T16:41:40.4664009Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UMLIxd96xE2PiTABnoC1VQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="4308bb50-519e-4874-9e8d-2b61e11ab7ce" CvElementArea="76, 64, 92, 21" CvTextArea="81, 69, 81, 12" CvTextArgument="Miscellaneous" CvType="Button" DesignTimeRectangle="76, 64, 92, 20" DesignTimeScaleFactor="1" ElementType="TabPage" FullSelectorArgument="&lt;wnd ctrlname='tbsOptions' /&gt;&lt;ctrl name='Miscellaneous' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tbsOptions' /&gt;&lt;ctrl name='Miscellaneous' role='page tab' automationid='' check:text='Miscellaneous' /&gt;" Guid="0964fdd5-5ba3-464a-97d2-786c019e7e3c" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c466855f676f57ccb04aed27d3a3328d.png" xmlns="">0NbqodvIeIECmy_AK77tkqg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

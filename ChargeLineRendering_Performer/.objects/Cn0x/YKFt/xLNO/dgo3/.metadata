@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click - Application Name",
+  "Type": "Element",
+  "Id": "dgo3m13jg0GOj21IZoVjcg",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/dgo3m13jg0GOj21IZoVjcg",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/xLNOkJMvOk-gjIWmZHCEcA",
+  "Created": "2025-09-01T16:42:19.950473Z",
+  "Updated": "2025-09-01T16:42:19.950473Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

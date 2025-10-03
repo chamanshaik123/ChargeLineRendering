@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Cancel_RevelateDialogCancel",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "yiBsrKr0rEmMIc38R-1Cjg",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/yiBsrKr0rEmMIc38R-1Cjg",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/hj61UCvM6kWWL8S4hr8mZg",
+  "Created": "2025-09-01T16:41:40.0477225Z",
+  "Updated": "2025-09-01T16:41:40.0477225Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

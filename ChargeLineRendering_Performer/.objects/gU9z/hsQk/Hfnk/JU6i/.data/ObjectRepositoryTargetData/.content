@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HtHnT2eRrk-tKLXNKKXNOA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ad9be6d2-8c0c-41db-87dc-0d5edbe82799" CvElementArea="778, 519, 152, 20" CvType="InputBox" DesignTimeRectangle="780, 520, 150, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='IccTextBox' aaname='' /&gt;" Guid="696aff58-95a7-4a51-ab9d-eb8297ce5b67" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [PROD 2025.01]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2fa00617-e1c0-46d1-8af6-463e4474d94b" CvElementArea="349, 518, 229, 20" CvType="InputBox" DesignTimeRectangle="351, 519, 210, 18" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Attribute combo box' id='ctlIccComboBox3Text__' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Attribute combo box' id='ctlIccComboBox3Text__' type='text' class='IccComboBoxInput' /&gt;" Guid="a476bf09-84dd-4a1b-9fe3-f048ede1c8cb" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="15527a8e3bd2e77b4e6ebe6bb85f3240.png" xmlns="">09t2imqiz5EyvZViwj2PQOg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

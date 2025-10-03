@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iNKaowun5kysTmR8aSG27A" Reference="J-GH-OIaQEaHiNcjAacQKw/e-quWLSoSki01x896fp50w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="abd67c9c-6f69-48f3-9140-bd19a6bb094c" CvTextArea="656, 414, 283, 12" CvTextArgument="No transactions matching the filter criteria found." CvType="Text" DesignTimeRectangle="657, 414, 380, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='DIV' aaname='N? ?ransactions*atchi*ilter*riteria*ound*' class='gwt-Label' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' aaname='N? ?ransactions*atchi*ilter*riteria*ound*' class='gwt-Label' type='' check:text='No transactions matching the filter criteria found.' /&gt;" Guid="22f06155-661d-48f1-9311-f6514e0f4ea7" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="abd67c9c-6f69-48f3-9140-bd19a6bb094c" CvElementArea="912, 510, 55, 25" CvTextArea="923, 515, 32, 12" CvTextArgument="Close" CvType="Button" DesignTimeRectangle="913, 511, 53, 24" ElementType="Button" FullSelectorArgument="&lt;webctrl type='button' class='gwt-Button' tag='BUTTON' aaname='Close' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='BPOForm' type='button' class='gwt-Button' tag='BUTTON' aaname='Close' check:text='Close' /&gt;" Guid="c6b27a81-e22b-404b-8790-144ccf37aff4" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="17fc8fb9ef8ee79d5e9194afd254791b.png" xmlns="">17fc8fb9ef8ee79d5e9194afd254791b.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

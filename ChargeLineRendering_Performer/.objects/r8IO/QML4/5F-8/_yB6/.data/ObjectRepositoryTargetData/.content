@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dzuy0GVonE2DgLGSXN8DNQ" Reference="iECXXsB5aE67CeGMsIoCEA/_yB6jbXbZkiCtlSBq6VAaA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ac9b6da6-31c1-4f0a-9fb5-440065911d28" CvElementArea="13, 355, 15, 20" CvType="ArrowButton" DesignTimeRectangle="13, 355, 17, 20" DesignTimeScaleFactor="1" ElementType="ArrowButton" Guid="34fcf69e-3c43-41e4-9672-042475f1f96a" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="28997f17-6cb2-4df3-936c-dad99a49a295" CvTextArea="41, 323, 69, 12" CvTextArgument="FIN Number" CvType="Text" DesignTimeRectangle="41, 323, 69, 12" ElementType="Text" Guid="86dd5f37-c7aa-4715-8cf3-be674ab49556" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2b4014630a93cd90c69fafa40866515b.png" xmlns="">0CGesmuhgUUiYheNa37-4Fg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

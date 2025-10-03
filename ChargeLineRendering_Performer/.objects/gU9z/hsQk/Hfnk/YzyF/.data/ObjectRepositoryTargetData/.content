@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RA07kG2L0k6xYr4AoLXSpQ" Reference="iECXXsB5aE67CeGMsIoCEA/YzyF8JaLvkWalDWjsHkx-w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="25b8b44a-78bb-4db1-bd87-fba6b2d667a6" DesignTimeRectangle="644, 529, 52, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='TABLE' class='Dialog_ButtonBar' parentclass='Dialog_MainBackground' /&gt;&lt;webctrl tag='BUTTON' type='button' colName='Close' /&gt;" Guid="c448d83a-59fc-4a9b-be6d-ea733fb3504c" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="65b7af756175e5ccb1d206effd8e77b4.png" xmlns="">0CDevYv9JgUSQD7y8rbloNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

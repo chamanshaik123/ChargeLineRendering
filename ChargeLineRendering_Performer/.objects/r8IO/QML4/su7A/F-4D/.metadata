@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Abnormal Labs Another R…",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "F-4DRq77GE6w0TMELxegYQ",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/F-4DRq77GE6w0TMELxegYQ",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/su7ACU89e0SQ4d06deEBig",
+  "Created": "2025-09-02T11:32:56.527192Z",
+  "Updated": "2025-09-02T11:32:56.527192Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

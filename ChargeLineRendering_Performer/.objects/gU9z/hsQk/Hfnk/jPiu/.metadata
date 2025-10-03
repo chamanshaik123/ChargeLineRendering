@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Save_FilterOption",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "jPiuK-oZPUeWmA3XZwP6vA",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/jPiuK-oZPUeWmA3XZwP6vA",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-09-23T20:45:53.9798606Z",
+  "Updated": "2025-09-23T20:46:11.8769636Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

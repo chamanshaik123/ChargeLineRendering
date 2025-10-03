@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Log On",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "l2ZH254SyUmaeNfLtqgg9A",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/l2ZH254SyUmaeNfLtqgg9A",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/l55fCXfX5kGg-zTZJqA61g",
+  "Created": "2025-09-01T16:42:12.8892738Z",
+  "Updated": "2025-09-01T16:42:12.8892738Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gm1Bxxk8a0SY4ykaGu9FRg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="27ad4d8c-6ac0-407f-8852-fb574b0232eb" CvElementArea="554, 510, 94, 27" CvTextArea="591, 518, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="554, 510, 94, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='cmdOk' aaname='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='cmdOk' aaname='OK' check:text='OK' /&gt;" Guid="c5683d50-f649-4b7d-b67f-a368071b74b8" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmMain' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="05ed0e5603a3721c30e869895900c1b6.png" xmlns="">0hqyAelRAi0-NXETjbL-I1A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

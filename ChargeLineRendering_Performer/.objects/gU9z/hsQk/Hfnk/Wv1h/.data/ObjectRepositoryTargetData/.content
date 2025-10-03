@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="N-2m9iK8fEu7hhov4HVjyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="2d13a146-bc62-404a-9ea6-7ee39ee45277" DesignTimeRectangle="518, 343, 17, 18" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl class='IccComboBoxButton' colName='Filter' type='button' /&gt;" Guid="37bf67be-51a0-413d-89bf-f34f9be98c90" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2d13a146-bc62-404a-9ea6-7ee39ee45277" DesignTimeRectangle="351, 323, 196, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='worklistingFilterUI' tag='DIV' aaname='Filter' /&gt;" Guid="ec99b8fd-ca7c-41ba-bdb5-536013123229" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="42e73e5e246ca01add0a61c9dee85f49.png" xmlns="">0N1NaITUYl0yBZErotImP6A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

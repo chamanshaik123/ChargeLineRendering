@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tWBGKfTs_kmhsMTKvBKJvg" Reference="J-GH-OIaQEaHiNcjAacQKw/_y5uNYi-QEiYs-sRY97llA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="8c26c1c7-f257-4724-8942-5c2fa5cd1fb8" CvElementArea="1320, 768, 61, 26" CvTextArea="1331, 773, 39, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1321, 769, 59, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Cancel' class='navigationButton' parentid='navigationPanelType2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Cancel' class='navigationButton' parentid='navigationPanelType2' type='button' check:text='Cancel' /&gt;" Guid="3d2c304a-06c1-48ce-af42-1afcbfa1ed7c" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fedbc20d5b0606c11c6d56b6f13aabf7.png" xmlns="">fedbc20d5b0606c11c6d56b6f13aabf7.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,355 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Cerner_LaunchAndLogin" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Orchestrator Asset name in which Cerner Credentials were stored" Name="in_strCernerCredentialsAssetName" Type="InArgument(x:String)" />
+    <x:Property Name="in_strOrchestratorFolderPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_intWaitTime" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_intMaxRetry" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Cerner_LaunchAndLogin_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Launch and Login for Cerner Application if required (MOCK) with appropriate credentials&#xA;in_strCernerCredentialsAssetName&#xA;in_strOrchestratorFolderPath&#xA;in_intWaitTime&#xA;in_intMaxRetry&#xA;" DisplayName="Cerner_LaunchAndLogin" sap:VirtualizedContainerService.HintSize="1510,3148" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch: Login into Cerner" sap:VirtualizedContainerService.HintSize="1510,3053" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence DisplayName="Sequence: Cerner Login" sap:VirtualizedContainerService.HintSize="1472,2802" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message- Cerner Login" sap:VirtualizedContainerService.HintSize="1438,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Module Cerner login started&quot;]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:LogMessage>
+          <ui:RetryScope DisplayName="Retry Scope- Cerner Login" sap:VirtualizedContainerService.HintSize="1438,2569" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_intMaxRetry]" RetryInterval="[New TimeSpan(0,0,in_intMaxRetry)]">
+            <ui:RetryScope.ActivityBody>
+              <ActivityAction>
+                <Sequence sap:VirtualizedContainerService.HintSize="1396,2291" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Action- Cerner Login" sap:VirtualizedContainerService.HintSize="1362,2231" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Millennium Logon" sap:VirtualizedContainerService.HintSize="1328,2148" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="d3feac9a-e257-4536-9732-4cdb59e38a15" Timeout="[in_intWaitTime*4]" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do- Millennium Logon" sap:VirtualizedContainerService.HintSize="1294,1834" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="CernerUsername" />
+                              <Variable x:TypeArguments="ss:SecureString" Name="CernerPassword" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_strCernerCredentialsAssetName]" CacheStrategy="None" DisplayName="Get Credential- Cerner" FolderPath="[in_strOrchestratorFolderPath]" sap:VirtualizedContainerService.HintSize="1260,57" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[CernerPassword]" Username="[CernerUsername]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:GetRobotCredential>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1260,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d3feac9a-e257-4536-9732-4cdb59e38a15" Text="[CernerUsername]" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable CVScreenId="8014f3a3-cfdc-4ee6-be88-c47ba87cd0f9" ContentHash="7eTrvw1ImkyAaw-FSuzlJA" CvElementArea="208, 131, 166, 25" CvType="InputBox" DesignTimeRectangle="210, 135, 143, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Username*' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Username*' role='editable text' automationid='' /&gt;" Guid="3f246656-3222-4cc6-bba8-d6516c5d3872" InformativeScreenshot="fc655d5528456df070e443778467be3d.png" IsResponsive="True" Reference="iECXXsB5aE67CeGMsIoCEA/sf7GLBBzlkuFmVP12uRxOQ" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' cls='#32770' isremoteapp='1' title='Millennium Logon' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="8014f3a3-cfdc-4ee6-be88-c47ba87cd0f9" CvTextArea="206, 115, 70, 14" CvTextArgument="Username :" CvType="Text" DesignTimeRectangle="207, 114, 166, 16" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1020' title='&amp;amp;Username :' /&gt;&lt;ctrl name='Username :' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1020' title='&amp;amp;Username :' /&gt;&lt;ctrl name='Username :' role='text' automationid='' check:text='Username :' /&gt;" Guid="1f19f934-756b-40f3-9379-5f522ba516fe" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1260,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="d3feac9a-e257-4536-9732-4cdb59e38a15" SecureText="[CernerPassword]" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable CVScreenId="7f0b7085-16dc-4428-a1e6-adb546aca5c7" ContentHash="wwlpxo585kqq0I-vRf8S5Q" DesignTimeRectangle="209, 188, 162, 22" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;ctrl name='Password :' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Password :' role='editable text' automationid='' /&gt;" Guid="23cf2c4d-d5c7-4f03-89d3-a8b488fa1ff0" InformativeScreenshot="b72e21c7aef599262a62d68949e1a7f8.png" Reference="iECXXsB5aE67CeGMsIoCEA/Kiw9VsEWuk6HPOwWfu097A" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' cls='#32770' isremoteapp='1' title='Millennium Logon' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="7f0b7085-16dc-4428-a1e6-adb546aca5c7" CvTextArea="206, 169, 67, 14" CvTextArgument="Password :" CvType="Text" DesignTimeRectangle="207, 168, 166, 16" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1007' title='&amp;amp;Password :' /&gt;&lt;ctrl name='Password :' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1007' title='&amp;amp;Password :' /&gt;&lt;ctrl name='Password :' role='text' automationid='' check:text='Password :' /&gt;" Guid="758ac17e-ccb2-487a-9dad-66242dbcbe10" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK': Cerner Launch" sap:VirtualizedContainerService.HintSize="1260,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3feac9a-e257-4536-9732-4cdb59e38a15" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CVScreenId="686f41d4-24dd-49d4-8f77-42139af7e5a7" ContentHash="jHWVCDJuPk2TyLMNweWzxA" DesignTimeRectangle="206, 286, 76, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='OK' role='push button' automationid='' check:text='OK' /&gt;" Guid="c65dde61-d7cb-4dfc-8bfb-b4c6cab3215f" InformativeScreenshot="b091fb9936db62b3b7777e3d9fa97adf.png" Reference="iECXXsB5aE67CeGMsIoCEA/GIVGODlY_Em7GL5pNVXN7A" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' cls='#32770' isremoteapp='1' title='Millennium Logon' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <uix:NCheckState DelayBefore="[in_intMaxRetry]" DisplayName="Check App State- Millennium login page" sap:VirtualizedContainerService.HintSize="1260,954" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="d3feac9a-e257-4536-9732-4cdb59e38a15" Timeout="[in_intWaitTime]" Version="V4">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears- Millennium Login page" sap:VirtualizedContainerService.HintSize="872,712" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NCheckState DisplayName="Check App State- Invalid User name password" sap:VirtualizedContainerService.HintSize="838,650" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d3feac9a-e257-4536-9732-4cdb59e38a15" Timeout="[in_intWaitTime]" Version="V4">
+                                    <uix:NCheckState.IfExists>
+                                      <Sequence DisplayName="Target  Appears- Invalid Usename password message" sap:VirtualizedContainerService.HintSize="450,408" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3feac9a-e257-4536-9732-4cdb59e38a15" Version="V4">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable CVScreenId="24f28493-6165-4141-8675-91521bf54859" ContentHash="XtTAQVlUzkWYNFIevM4EbQ" DesignTimeRectangle="184, 119, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='2' title='OK' aaname='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='OK' aaname='OK' check:text='OK' /&gt;" Guid="3eb57502-feb3-4d6a-bd9e-43c32adb15bb" InformativeScreenshot="2f48db8c88c46a64049c9d66cfc51ad4.png" Reference="iECXXsB5aE67CeGMsIoCEA/GI_8z_K4ZUaHl4DZHpkvFA" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' isremoteapp='1' title='Error:  Security Failure.' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NClick>
+                                        <Throw DisplayName="Throw- Invalid Credentials" Exception="[new SystemException(&quot;Wrong Cerner Credentials&quot;)]" sap:VirtualizedContainerService.HintSize="416,117.33333333333333" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                                      </Sequence>
+                                    </uix:NCheckState.IfExists>
+                                    <uix:NCheckState.IfNotExists>
+                                      <Throw DisplayName="Throw- Unable to launch Cerner" Exception="[new SystemException(&quot;Unable to launch Cerner application&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                                    </uix:NCheckState.IfNotExists>
+                                    <uix:NCheckState.Target>
+                                      <uix:TargetAnchorable CVScreenId="565207de-0420-43ec-b352-2d3ac92b9ad8" ContentHash="Wn2vrhaAkk6d4e9TEiCSjQ" DesignTimeRectangle="63, 64, 183, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;wnd title='Invalid Username and/or Password.' aaname='Invalid Username and/or Password.' /&gt;" FuzzySelectorArgument="&lt;wnd title='Invalid Username and/or Password.' aaname='Invalid Username and/or Password.' check:text='Invalid Username and/or Password.' /&gt;" Guid="71b8b859-be0e-4a30-9c07-a0a092c2997f" InformativeScreenshot="962afadfcacb811e6ef147f3f3411796.png" Reference="iECXXsB5aE67CeGMsIoCEA/dOMUR8bbekWCZuzsYRy7OA" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' isremoteapp='1' title='Error:  Security Failure.' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                    </uix:NCheckState.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NCheckState>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <ui:LogMessage DisplayName="LogMessage- Successful login" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Fatal" Message="[&quot;Successfully launched Cerner application&quot;]" />
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable CVScreenId="8014f3a3-cfdc-4ee6-be88-c47ba87cd0f9" ContentHash="7eTrvw1ImkyAaw-FSuzlJA" CvElementArea="208, 131, 166, 25" CvType="InputBox" DesignTimeRectangle="210, 135, 143, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Username*' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Username*' role='editable text' automationid='' /&gt;" Guid="3f246656-3222-4cc6-bba8-d6516c5d3872" InformativeScreenshot="fc655d5528456df070e443778467be3d.png" IsResponsive="True" Reference="iECXXsB5aE67CeGMsIoCEA/sf7GLBBzlkuFmVP12uRxOQ" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' cls='#32770' isremoteapp='1' title='Millennium Logon' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="8014f3a3-cfdc-4ee6-be88-c47ba87cd0f9" CvTextArea="206, 115, 70, 14" CvTextArgument="Username :" CvType="Text" DesignTimeRectangle="207, 114, 166, 16" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1020' title='&amp;amp;Username :' /&gt;&lt;ctrl name='Username :' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1020' title='&amp;amp;Username :' /&gt;&lt;ctrl name='Username :' role='text' automationid='' check:text='Username :' /&gt;" Guid="1f19f934-756b-40f3-9379-5f522ba516fe" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheckState.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NCheckState>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="430, 233, 580, 393" ContentHash="-gm3dBQPjU2lHDOHaYiFlQ" FilePath="[GlobalVariablesNamespace.GlobalVariables.str_glblCernerApplicationPath]" IconBase64="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" InformativeScreenshot="7b02b124f01c49418be23363f84c09c9.png" Reference="iECXXsB5aE67CeGMsIoCEA/7mvXzRY7mkOvDyFuzgcKMw" Selector="&lt;wnd app='cernserver.exe' isremoteapp='1' title='*illennium*ogo*' /&gt;" Title="Millennium Logon" Version="V1" />
+                      </uix:NApplicationCard.TargetApp>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </Sequence>
+              </ActivityAction>
+            </ui:RetryScope.ActivityBody>
+            <ui:RetryScope.Condition>
+              <ActivityFunc x:TypeArguments="x:Boolean" />
+            </ui:RetryScope.Condition>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:RetryScope>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="564,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Throw DisplayName="Throw: Login into Cerner" Exception="[New System.Exception(&quot;(SE3) Unable to Login into Cerner: &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_3" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e1793OvfSUaRn8B0cLakvg" Reference="J-GH-OIaQEaHiNcjAacQKw/J_LmOHupqUyvPZJYICdxXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="b5309cd3-0e3a-46b0-90ce-122d0612339c" CvTextArea="365, 33, 36, 13" CvTextArgument="Close" CvType="Text" DesignTimeRectangle="321, 32, 80, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='LaunchProgressNotification.ProgressInfo' role='list item' /&gt;&lt;ctrl automationid='closeButton' /&gt;" FuzzySelectorArgument="&lt;ctrl name='LaunchProgressNotification.ProgressInfo' role='list item' /&gt;&lt;ctrl automationid='closeButton' role='push button' check:text='Close' /&gt;" Guid="75f50a47-d8df-4e0b-9dc0-d968d00a720a" ScopeSelectorArgument="&lt;wnd app='receiver.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="89d2e25a6c16af994f53d0a2fbfc53f6.png" xmlns="">89d2e25a6c16af994f53d0a2fbfc53f6.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

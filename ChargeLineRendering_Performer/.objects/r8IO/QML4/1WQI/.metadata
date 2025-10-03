@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Filter Options",
+  "Type": "Screen",
+  "Id": "1WQIwUDw8ESThuAb4sxCGQ",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/1WQIwUDw8ESThuAb4sxCGQ",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/QML4C9JuCkGcc1-4uUVGOw",
+  "Created": "2025-09-01T20:44:43.7843434Z",
+  "Updated": "2025-09-01T20:44:43.7843434Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

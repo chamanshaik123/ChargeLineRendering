@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="12a7L1jp70uhqd6irwyT9g" Reference="J-GH-OIaQEaHiNcjAacQKw/8OGISDIK2kWu8ELtVA2PMw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" CvTextArea="6, 26, 20, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="0, 23, 32, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='tbMenu' /&gt;&lt;ctrl name='Task' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' automationid='' check:text='File' /&gt;" Guid="fc74e989-a209-4b93-9d95-3af4c0d8b02a" ScopeSelectorArgument="&lt;wnd app='pmoffice.exe' ctrlname='frmMain' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="bd55f68c-8a1e-4268-8b12-61ec6b9c2a5e" CvTextArea="37, 26, 28, 12" CvTextArgument="View" CvType="Text" DesignTimeRectangle="32, 23, 39, 19" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='View' role='menu item' automationid='' check:text='View' /&gt;" Guid="53590946-70b2-451b-ae47-7c052962eca2" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="51ec128da5b37f69e5cf2a44f24a1539.png" xmlns="">51ec128da5b37f69e5cf2a44f24a1539.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

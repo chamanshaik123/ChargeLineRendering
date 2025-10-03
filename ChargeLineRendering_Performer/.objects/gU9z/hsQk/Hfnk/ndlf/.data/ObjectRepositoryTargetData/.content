@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Aqi_tudg_kOS7HhE5wxAvg" Reference="J-GH-OIaQEaHiNcjAacQKw/6hEmA2CFBUWOhtupMqLBbA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="4fbfa863-e868-41a6-9e80-d044c524b679" CvElementArea="779, 501, 45, 26" CvTextArea="790, 506, 22, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="780, 502, 43, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='BPOForm' tag='BUTTON' type='button' aaname='Yes' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='BPOForm' tag='BUTTON' type='button' aaname='Yes' class='gwt-Button' check:text='Yes' /&gt;" Guid="ad659e15-62ca-49fc-a887-fa00b8707782" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4e1deaec9f55df36d6449a59457df2ef.png" xmlns="">4e1deaec9f55df36d6449a59457df2ef.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "receiver.exe Close Failed Reciever PopUp",
+  "Type": "App",
+  "Id": "BFh0TFIKr0ewgHiZb3Abmw",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/BFh0TFIKr0ewgHiZb3Abmw",
+  "Created": "2025-09-01T16:41:50.1022485Z",
+  "Updated": "2025-09-01T16:41:50.1022485Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

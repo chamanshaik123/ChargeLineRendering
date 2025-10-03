@@ -1,0 +1,15 @@
+﻿{
+  "Name": "RevenueSoarian",
+  "Type": "App",
+  "Id": "gU9z9ZVzcUuFJ9CI1Nkchw",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/gU9z9ZVzcUuFJ9CI1Nkchw",
+  "Created": "2025-08-18T15:18:36.3124047Z",
+  "Updated": "2025-08-18T15:24:55.6476513Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

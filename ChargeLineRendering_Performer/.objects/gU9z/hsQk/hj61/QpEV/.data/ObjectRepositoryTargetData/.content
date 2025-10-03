@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sr6IKJe4VUWg7H4MfX65bw" Reference="J-GH-OIaQEaHiNcjAacQKw/ahJbgjoLZEeFNbUZ6ilF8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="d4eee1f2-fd74-4177-8181-bcbd2bcb54dc" CvElementArea="16, 707, 113, 26" CvTextArea="27, 713, 90, 12" CvTextArgument="Restore Defaults" CvType="Button" DesignTimeRectangle="17, 708, 111, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='*RestoreDefault*' tag='BUTTON' aaname='*Restore*Default*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='*RestoreDefault*' tag='BUTTON' aaname='*Restore*Default*' type='button' class='IccButtonGradient' check:text='Restore Defaults' /&gt;" Guid="3ccbe5d3-45a8-4456-923f-7b450083ec4f" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2a55daf3c4bbe5b5e786cc31c573f0a9.png" xmlns="">2a55daf3c4bbe5b5e786cc31c573f0a9.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

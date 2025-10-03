@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rvSD7ujFRU-RtiXjMrDT8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="d2ec1414-c62a-485b-a7ad-1d7403362f9a" CvElementArea="419, 45, 120, 27" CvTextArea="461, 52, 36, 12" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="419, 45, 120, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Search' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Search' cls='Button' check:text='&amp;amp;Search' /&gt;" Guid="e602a972-0fdd-4496-9e4a-fe03fbcb6169" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9fd09b9a6ce08c0e67f720a6bc9e2070.png" xmlns="">06V-PMHTtUEqQKBWpGqC8Jg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
