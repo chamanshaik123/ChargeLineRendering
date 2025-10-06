@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click File from Header",
+  "Type": "Element",
+  "Id": "EbxNaY4ADkqxwShojXm_iw",
+  "Reference": "J-GH-OIaQEaHiNcjAacQKw/EbxNaY4ADkqxwShojXm_iw",
+  "ParentRef": "J-GH-OIaQEaHiNcjAacQKw/27peo9Y1H0ysTD0cy3b1ZA",
+  "Created": "2025-07-14T16:36:44.9338536Z",
+  "Updated": "2025-07-14T16:36:44.9338536Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

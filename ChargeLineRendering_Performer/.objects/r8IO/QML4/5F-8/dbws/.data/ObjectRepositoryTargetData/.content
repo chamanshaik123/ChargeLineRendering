@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="vtuOHlZ0uESVpwNmFeRM_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="fcb1d297-815e-4d51-85fc-0c6a8b4c46ae" CvTextArea="35, 118, 20, 12" CvTextArgument="Exit" CvType="Text" DesignTimeRectangle="0, 114, 188, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='MainMenu1' /&gt;&lt;ctrl name='Task' role='menu item' /&gt;&lt;ctrl name='Exit' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='MainMenu1' /&gt;&lt;ctrl name='Task' role='menu item' /&gt;&lt;ctrl name='Exit' role='menu item' automationid='' check:fulltext='Exit' /&gt;" Guid="0a59965c-16c8-4b14-84d9-c86cd731a634" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="ebf004d6b9a9b95681a7ef529137a8bd.png" xmlns="">054Y_lQ1StE6nx_qhR3h1Hg</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

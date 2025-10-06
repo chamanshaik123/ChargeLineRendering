@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="RevElate_GetHealthProfessionalName" this:RevElate_GetHealthProfessionalName.in_intMaxRetry="3" this:RevElate_GetHealthProfessionalName.in_dictRecordHeader="[New Dictionary(Of String, String) From {{&quot;PatientName&quot;,&quot;VAUGHN, CHERIE&quot;},&#xD;&#xA;{&quot;HealthPlanName&quot;,&quot;Hghmrk Bl Crss Bl Sh&quot;},&#xD;&#xA;{&quot;WorklistName&quot;,&quot;CAMC Missing Rendering Physician&quot;},&#xD;&#xA;{&quot;BalanceAmount&quot;,&quot;21.88&quot;},&#xD;&#xA;{&quot;Date&quot;,&quot;01/08/2025&quot;}&#xD;&#xA;}]" this:RevElate_GetHealthProfessionalName.in_strScreenshotFolderpath="BRUBAKER, GREGORY " this:RevElate_GetHealthProfessionalName.in_intWaitTime="30" this:RevElate_GetHealthProfessionalName.in_strPrefixSE="SystemException" this:RevElate_GetHealthProfessionalName.in_strEncounterId="3011455223" this:RevElate_GetHealthProfessionalName.in_dateServiceBegin="[CDate(&quot;09/24/2025&quot;)]" this:RevElate_GetHealthProfessionalName.in_dateServiceEnd="[CDate(&quot;09/24/2025&quot;)]" this:RevElate_GetHealthProfessionalName.in_strReceivableGroupDescription="OP CAMC Cardiac Imaging" this:RevElate_GetHealthProfessionalName.in_strReceivableGroupId="3770625" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="RevElate_GetHealthProfessionalName" this:RevElate_GetHealthProfessionalName.in_intMaxRetry="3" this:RevElate_GetHealthProfessionalName.in_dictRecordHeader="[New Dictionary(Of String, String) From {{&quot;PatientName&quot;,&quot;BARKER, PAULA&quot;},&#xD;&#xA;{&quot;HealthPlanName&quot;,&quot;Hghmrk Bl Crss Bl Sh&quot;},&#xD;&#xA;{&quot;WorklistName&quot;,&quot;CAMC Missing Rendering Physician&quot;},&#xD;&#xA;{&quot;BalanceAmount&quot;,&quot;21.88&quot;},&#xD;&#xA;{&quot;Date&quot;,&quot;01/08/2025&quot;}&#xD;&#xA;}]" this:RevElate_GetHealthProfessionalName.in_strScreenshotFolderpath="BRUBAKER, GREGORY " this:RevElate_GetHealthProfessionalName.in_intWaitTime="30" this:RevElate_GetHealthProfessionalName.in_strPrefixSE="SystemException" this:RevElate_GetHealthProfessionalName.in_strEncounterId="3010752281" this:RevElate_GetHealthProfessionalName.in_dateServiceBegin="[CDate(&quot;06/05/2025&quot;)]" this:RevElate_GetHealthProfessionalName.in_dateServiceEnd="[CDate(&quot;06/05/2025&quot;)]" this:RevElate_GetHealthProfessionalName.in_strReceivableGroupDescription="OP CAMC Crdlgy Sth Chrl" this:RevElate_GetHealthProfessionalName.in_strReceivableGroupId="3834810" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_intMaxRetry" Type="InArgument(x:Int32)" />
     <x:Property Name="in_dictRecordHeader" Type="InArgument(scg:Dictionary(x:String, x:String))" />
@@ -133,7 +133,7 @@
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Based on ServiceDatesAndEncounterDetails of a receivableGroupId need to get the corresponding record with HealthCareProfessionalName&#xA;in_strScreenshotFolderPath&#xA;in_intMaxRetry&#xA;in_intWaitTime&#xA;in_strPrefixSE&#xA;in_strPrefixBE&#xA;in_strEncounterId&#xA;in_dateServiceBeginDate&#xA;in_dateServiceEnd&#xA;in_strReceivableGroupDescription&#xA;in_strReceivableGroupId&#xA;out_strHealthCareProfessionalName" DisplayName="RevElate_GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1102,6437" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Based on ServiceDatesAndEncounterDetails of a receivableGroupId need to get the corresponding record with HealthCareProfessionalName&#xA;in_strScreenshotFolderPath&#xA;in_intMaxRetry&#xA;in_intWaitTime&#xA;in_strPrefixSE&#xA;in_strPrefixBE&#xA;in_strEncounterId&#xA;in_dateServiceBeginDate&#xA;in_dateServiceEnd&#xA;in_strReceivableGroupDescription&#xA;in_strReceivableGroupId&#xA;out_strHealthCareProfessionalName" DisplayName="RevElate_GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1084,6148" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_ExceptionMessage" />
       <Variable x:TypeArguments="x:Boolean" Default="False" Name="bool_TakeScreenshot" />
@@ -151,7 +151,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message: Start GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1102,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start: GetHealthProfessionalName&quot;]">
+    <ui:LogMessage DisplayName="Log Message: Start GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1084,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start: GetHealthProfessionalName&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -159,7 +159,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <Assign DisplayName="Assign: Exception Message is Empty" sap:VirtualizedContainerService.HintSize="1102,57" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Assign: Exception Message is Empty" sap:VirtualizedContainerService.HintSize="1084,57" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[str_ExceptionMessage]</OutArgument>
       </Assign.To>
@@ -173,10 +173,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:RetryScope DisplayName="Retry Scope: GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1102,6064" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_intMaxRetry]" RetryInterval="[Timespan.FromSeconds(2*in_intMaxRetry)]">
+    <ui:RetryScope DisplayName="Retry Scope: GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1084,5775" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_intMaxRetry]" RetryInterval="[Timespan.FromSeconds(2*in_intMaxRetry)]">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
-          <TryCatch DisplayName="Try Catch: GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1060,5857" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+          <TryCatch DisplayName="Try Catch: GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1042,5568" sap2010:WorkflowViewState.IdRef="TryCatch_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -184,14 +184,14 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Action: GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1022,5607" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <Sequence DisplayName="Action: GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1004,5318" sap2010:WorkflowViewState.IdRef="Sequence_9">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <If Condition="[Not String.IsNullOrEmpty(str_ExceptionMessage)]" DisplayName="If: Check if Exception Message is not Empty" sap:VirtualizedContainerService.HintSize="988,57" sap2010:WorkflowViewState.IdRef="If_1">
+                <If Condition="[Not String.IsNullOrEmpty(str_ExceptionMessage)]" DisplayName="If: Check if Exception Message is not Empty" sap:VirtualizedContainerService.HintSize="970,57" sap2010:WorkflowViewState.IdRef="If_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -219,7 +219,7 @@
                     </Sequence>
                   </If.Else>
                 </If>
-                <uix:NCheckState DisplayName="Check App State 'Follow-up ZZTEST, RENDE…'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="988,57" sap2010:WorkflowViewState.IdRef="NCheckState_2" Timeout="[in_intWaitTime]" Version="V4">
+                <uix:NCheckState DisplayName="Check App State 'Follow-up ZZTEST, RENDE…'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="970,57" sap2010:WorkflowViewState.IdRef="NCheckState_2" Timeout="[in_intWaitTime]" Version="V4">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <sap:WorkflowViewStateService.ViewState>
@@ -249,13 +249,13 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="IE Cerner Soarian: GetHealthCareProfessionName" sap:VirtualizedContainerService.HintSize="988,5433" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1ad49173-3000-4ba2-9de9-a210759df7ca" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="IE Cerner Soarian: GetHealthCareProfessionName" sap:VirtualizedContainerService.HintSize="970,5144" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1ad49173-3000-4ba2-9de9-a210759df7ca" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do: GetHealthCareProfessionName" sap:VirtualizedContainerService.HintSize="954,5079" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <Sequence DisplayName="Do: GetHealthCareProfessionName" sap:VirtualizedContainerService.HintSize="936,4830" sap2010:WorkflowViewState.IdRef="Sequence_2">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="CurrentIndex" />
                           <Variable x:TypeArguments="scg:Dictionary(x:Int32, x:String)" Default="[New Dictionary(of Int32, String)]" Name="dict_HealthProfessionalName" />
@@ -266,7 +266,7 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sub-Encounters (for sel…'" sap:VirtualizedContainerService.HintSize="920,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" Version="V4">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sub-Encounters (for sel…'" sap:VirtualizedContainerService.HintSize="902,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" Version="V4">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable CVScreenId="470de58e-f5f5-4647-b268-b0e65c688ece" ContentHash="iaLcp8p0aEqKVOkWSMS8gw" CvElementArea="466, 597, 219, 37" CvTextArea="482, 609, 183, 13" CvTextArgument="Sub-Encounters (for selected RG)" CvType="Button" DesignTimeRectangle="468, 598, 212, 36" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Sub-Encounters (for selected RG)' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TD' aaname='Sub-Encounters (for selected RG)' type='' class='IndexedFrame-top-index' check:text='Sub-Encounters (for selected RG)' /&gt;" Guid="88afb295-23c4-44a0-aa7b-1047894fb8c1" InformativeScreenshot="2bdb90cbc6b70f796a227942d9d59ae6.png" Reference="iECXXsB5aE67CeGMsIoCEA/_SJYakbm_EOj82n--Wi1WA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                           </uix:NClick.Target>
@@ -287,7 +287,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <Sequence DisplayName="Sequence: Initalize Variable" sap:VirtualizedContainerService.HintSize="920,57" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                        <Sequence DisplayName="Sequence: Initalize Variable" sap:VirtualizedContainerService.HintSize="902,57" sap2010:WorkflowViewState.IdRef="Sequence_32">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -327,7 +327,7 @@
                             </Assign.Value>
                           </Assign>
                         </Sequence>
-                        <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[bool_NewDataFound]" DisplayName="While: to GetHealthCareProfessionName" sap:VirtualizedContainerService.HintSize="920,57" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                        <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[bool_NewDataFound]" DisplayName="While: to GetHealthCareProfessionName" sap:VirtualizedContainerService.HintSize="902,57" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                           <ui:InterruptibleWhile.Body>
                             <Sequence DisplayName="Body GetHealthCareProfessionName" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_43">
                               <sap:WorkflowViewStateService.ViewState>
@@ -574,7 +574,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InterruptibleWhile>
-                        <ui:LogMessage DisplayName="Log Message: PtFinancialTable" sap:VirtualizedContainerService.HintSize="920,57" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[String.Join(&quot;,&quot;,dt_PatientFinancialInfo.AsEnumerable.GroupBy(Function(x) x(0).ToString+x(1).ToString+x(2).ToString+x(3).ToString).Select(Function(y) y.Last).CopyToDataTable.AsEnumerable().Reverse().CopyToDataTable.Columns.Cast(Of System.Data.DataColumn))+vbcrlf+&#xA;String.Join(vbcrlf, dt_PatientFinancialInfo.AsEnumerable.GroupBy(Function(x) x(0).ToString+x(1).ToString+x(2).ToString+x(3).ToString).Select(Function(y) y.Last).CopyToDataTable.AsEnumerable().Reverse().CopyToDataTable.AsEnumerable.Select(Function(currentRow) String.Join(&quot;,&quot;,currentRow.ItemArray)))]">
+                        <ui:LogMessage DisplayName="Log Message: PtFinancialTable" sap:VirtualizedContainerService.HintSize="902,57" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[String.Join(&quot;,&quot;,dt_PatientFinancialInfo.AsEnumerable.GroupBy(Function(x) x(0).ToString+x(1).ToString+x(2).ToString+x(3).ToString).Select(Function(y) y.Last).CopyToDataTable.AsEnumerable().Reverse().CopyToDataTable.Columns.Cast(Of System.Data.DataColumn))+vbcrlf+&#xA;String.Join(vbcrlf, dt_PatientFinancialInfo.AsEnumerable.GroupBy(Function(x) x(0).ToString+x(1).ToString+x(2).ToString+x(3).ToString).Select(Function(y) y.Last).CopyToDataTable.AsEnumerable().Reverse().CopyToDataTable.AsEnumerable.Select(Function(currentRow) String.Join(&quot;,&quot;,currentRow.ItemArray)))]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -582,7 +582,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:LogMessage>
-                        <If Condition="[dt_PatientFinancialInfo is Nothing AndAlso dt_PatientFinancialInfo.RowCount&lt;1]" DisplayName="If: Check if Table has Value" sap:VirtualizedContainerService.HintSize="920,57" sap2010:WorkflowViewState.IdRef="If_5">
+                        <If Condition="[dt_PatientFinancialInfo is Nothing AndAlso dt_PatientFinancialInfo.RowCount&lt;1]" DisplayName="If: Check if Table has Value" sap:VirtualizedContainerService.HintSize="902,57" sap2010:WorkflowViewState.IdRef="If_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -617,13 +617,13 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentIndex]" DataTable="[dt_PatientFinancialInfo.AsEnumerable.GroupBy(Function(x) x(0).ToString+x(1).ToString+x(2).ToString+x(3).ToString).Select(Function(y) y.Last).CopyToDataTable.AsEnumerable().Reverse().CopyToDataTable]" DisplayName="For Each Row in Data Table PtFinancial" sap:VirtualizedContainerService.HintSize="920,4326" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentIndex]" DataTable="[dt_PatientFinancialInfo.AsEnumerable.GroupBy(Function(x) x(0).ToString+x(1).ToString+x(2).ToString+x(3).ToString).Select(Function(y) y.Last).CopyToDataTable.AsEnumerable().Reverse().CopyToDataTable]" DisplayName="For Each Row in Data Table PtFinancial" sap:VirtualizedContainerService.HintSize="902,4208" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                           <ui:ForEachRow.Body>
                             <ActivityAction x:TypeArguments="sd:DataRow">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body: to GetHealthCareProfessionName" sap:VirtualizedContainerService.HintSize="868,4130" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                              <Sequence DisplayName="Body: to GetHealthCareProfessionName" sap:VirtualizedContainerService.HintSize="868,4012" sap2010:WorkflowViewState.IdRef="Sequence_44">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Boolean" Name="bool_RequiredDataFound" />
                                 </Sequence.Variables>
@@ -640,7 +640,7 @@
                                     <InArgument x:TypeArguments="x:Int32">[dt_PatientFinancialInfo.AsEnumerable.GroupBy(Function(x) x(0).ToString+x(1).ToString+x(2).ToString+x(3).ToString).Select(Function(y) y.Last).CopyToDataTable.RowCount-CurrentIndex-1]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <If Condition="[If(Date.TryParse(CurrentRow(&quot;BeginDate&quot;).ToString, Date.Now), CDate(CurrentRow(&quot;BeginDate&quot;).ToString).Date=in_dateServiceBegin.Date,False) And&#xA;If(Date.TryParse(CurrentRow(&quot;EndDate&quot;).ToString, Date.Now), CDate(CurrentRow(&quot;EndDate&quot;).ToString).Date=in_dateServiceEnd.Date,False) And&#xA;CurrentRow(&quot;ReceivableGroup&quot;).ToString.Trim.Equals(in_strReceivableGroupDescription.Trim,StringComparison.CurrentCultureIgnoreCase)]" DisplayName="If: Encounter and Dtes corresponding value matches" sap:VirtualizedContainerService.HintSize="834,3956" sap2010:WorkflowViewState.IdRef="If_18">
+                                <If Condition="[If(Date.TryParse(CurrentRow(&quot;BeginDate&quot;).ToString, Date.Now), CDate(CurrentRow(&quot;BeginDate&quot;).ToString).Date=in_dateServiceBegin.Date,False) And&#xA;If(Date.TryParse(CurrentRow(&quot;EndDate&quot;).ToString, Date.Now), CDate(CurrentRow(&quot;EndDate&quot;).ToString).Date=in_dateServiceEnd.Date,False) And&#xA;CurrentRow(&quot;ReceivableGroup&quot;).ToString.Trim.Equals(in_strReceivableGroupDescription.Trim,StringComparison.CurrentCultureIgnoreCase)]" DisplayName="If: Encounter and Dtes corresponding value matches" sap:VirtualizedContainerService.HintSize="834,3838" sap2010:WorkflowViewState.IdRef="If_18">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -648,7 +648,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="Then: Proceed to get the HealthCareName" sap:VirtualizedContainerService.HintSize="800,3706" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                    <Sequence DisplayName="Then: Proceed to get the HealthCareName" sap:VirtualizedContainerService.HintSize="800,3588" sap2010:WorkflowViewState.IdRef="Sequence_63">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -758,7 +758,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NCheckState>
-                                      <If Condition="[Not bool_RequiredDataFound]" DisplayName="If: RequiredDataNotFound" sap:VirtualizedContainerService.HintSize="766,2991" sap2010:WorkflowViewState.IdRef="If_17">
+                                      <If Condition="[Not bool_RequiredDataFound]" DisplayName="If: RequiredDataNotFound" sap:VirtualizedContainerService.HintSize="766,2529" sap2010:WorkflowViewState.IdRef="If_17">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -766,7 +766,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <If.Then>
-                                          <Sequence DisplayName="Then: SearchRequiredData" sap:VirtualizedContainerService.HintSize="732,2732" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                          <Sequence DisplayName="Then: SearchRequiredData" sap:VirtualizedContainerService.HintSize="732,2270" sap2010:WorkflowViewState.IdRef="Sequence_57">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -783,10 +783,10 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </uix:NClick>
-                                            <Sequence DisplayName="Sequence: Initalize Variable forRequiredData" sap:VirtualizedContainerService.HintSize="698,483" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                            <Sequence DisplayName="Sequence: Initalize Variable forRequiredData" sap:VirtualizedContainerService.HintSize="698,57" sap2010:WorkflowViewState.IdRef="Sequence_48">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
@@ -830,9 +830,9 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </Assign>
                                             </Sequence>
-                                            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While: boolRequiredDataNotFound" sap:VirtualizedContainerService.HintSize="698,2000" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                                            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While: boolRequiredDataNotFound" sap:VirtualizedContainerService.HintSize="698,1964" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
                                               <ui:InterruptibleWhile.Body>
-                                                <Sequence DisplayName="Body: CheckForRequiredData" sap:VirtualizedContainerService.HintSize="664,1863" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                                <Sequence DisplayName="Body: CheckForRequiredData" sap:VirtualizedContainerService.HintSize="664,1827" sap2010:WorkflowViewState.IdRef="Sequence_55">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -850,7 +850,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                   </uix:NClick>
-                                                  <If Condition="[int_Counter&gt;=int_CheckCounter]" DisplayName="If: CounterMatchedPredefinedCounter" sap:VirtualizedContainerService.HintSize="630,1509" sap2010:WorkflowViewState.IdRef="If_16">
+                                                  <If Condition="[int_Counter&gt;=int_CheckCounter]" DisplayName="If: CounterMatchedPredefinedCounter" sap:VirtualizedContainerService.HintSize="630,1473" sap2010:WorkflowViewState.IdRef="If_16">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -858,7 +858,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                     <If.Then>
-                                                      <Sequence DisplayName="Then: checkFutherRequiredDataSearch" sap:VirtualizedContainerService.HintSize="596,1250" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                                      <Sequence DisplayName="Then: checkFutherRequiredDataSearch" sap:VirtualizedContainerService.HintSize="596,1214" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -962,7 +962,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </uix:NCheckState>
-                                                        <If Condition="[int_Counter&gt;int_MaxCheckCounter*2 and bool_RequiredDataFound=False]" DisplayName="If: Check for Max counter reach" sap:VirtualizedContainerService.HintSize="562,1133" sap2010:WorkflowViewState.IdRef="If_19">
+                                                        <If Condition="[int_Counter&gt;(int_MaxCheckCounter+in_intMaxRetry) and bool_RequiredDataFound=False]" DisplayName="If: Check for Max counter reach" sap:VirtualizedContainerService.HintSize="562,1097" sap2010:WorkflowViewState.IdRef="If_19">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -970,7 +970,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                           <If.Then>
-                                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="528,883" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="528,847" sap2010:WorkflowViewState.IdRef="Sequence_65">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -987,9 +987,9 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
                                                               </uix:NClick>
-                                                              <uix:NCheckState DisplayName="Check App State 'PatientRecordRow' RequiredDataSearch" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="494,634" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" Timeout="[in_intWaitTime/in_intMaxRetry]" Version="V4">
+                                                              <uix:NCheckState DisplayName="Check App State 'PatientRecordRow' RequiredDataSearch" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="494,598" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" Timeout="[in_intWaitTime/in_intMaxRetry]" Version="V4">
                                                                 <uix:NCheckState.IfExists>
-                                                                  <Sequence DisplayName="Target appears: RequiredDataSearch" sap:VirtualizedContainerService.HintSize="450,354" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                                                                  <Sequence DisplayName="Target appears: RequiredDataSearch" sap:VirtualizedContainerService.HintSize="450,358" sap2010:WorkflowViewState.IdRef="Sequence_69">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1018,7 +1018,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
                                                                     </uix:NGetAttributeGeneric>
-                                                                    <If Condition="[str_IdDescriptionRG.Contains(CurrentRow(&quot;Identifier&quot;).ToString)]" DisplayName="If: RequiredDataSearch DescriptionMatchesIdentifiers" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="If_20">
+                                                                    <If Condition="[str_IdDescriptionRG.Contains(CurrentRow(&quot;Identifier&quot;).ToString)]" DisplayName="If: RequiredDataSearch DescriptionMatchesIdentifiers" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="If_20">
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1026,20 +1026,26 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
                                                                       <If.Then>
-                                                                        <Sequence DisplayName="Then: RequiredDataIsFound post RequiredDataSearch" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                                                        <Sequence DisplayName="Then: RequiredDataIsFound post RequiredDataSearch" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_67">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
-                                                                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                                                          <Assign sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Assign_29">
                                                                             <Assign.To>
                                                                               <OutArgument x:TypeArguments="x:Boolean">[bool_RequiredDataFound]</OutArgument>
                                                                             </Assign.To>
                                                                             <Assign.Value>
                                                                               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                                                                             </Assign.Value>
+                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                              </scg:Dictionary>
+                                                                            </sap:WorkflowViewStateService.ViewState>
                                                                           </Assign>
                                                                         </Sequence>
                                                                       </If.Then>
@@ -1101,7 +1107,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                                       </Sequence>
                                                     </If.Else>
                                                   </If>
-                                                  <Assign DisplayName="Assign: UpdateCounterForRequiredDataSearch" sap:VirtualizedContainerService.HintSize="518,105" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                                  <Assign DisplayName="Assign: UpdateCounterForRequiredDataSearch" sap:VirtualizedContainerService.HintSize="630,105" sap2010:WorkflowViewState.IdRef="Assign_28">
                                                     <Assign.To>
                                                       <OutArgument x:TypeArguments="x:Int32">[int_Counter]</OutArgument>
                                                     </Assign.To>
@@ -1139,7 +1145,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                           </Sequence>
                                         </If.Else>
                                       </If>
-                                      <uix:NCheckState DisplayName="Check App State 'FollowUpEncounterId'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="654,361" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" Timeout="[in_intWaitTime/in_intMaxRetry]" Version="V4">
+                                      <uix:NCheckState DisplayName="Check App State 'FollowUpEncounterId'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="766,361" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" Timeout="[in_intWaitTime/in_intMaxRetry]" Version="V4">
                                         <uix:NCheckState.IfExists>
                                           <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_59">
                                             <sap:WorkflowViewStateService.ViewState>
@@ -1169,7 +1175,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NCheckState>
-                                      <uix:NCheckState DisplayName="Check App State 'HealthCareProfessionalName'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="654,57" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" Timeout="[in_intWaitTime/in_intMaxRetry]" Version="V4">
+                                      <uix:NCheckState DisplayName="Check App State 'HealthCareProfessionalName'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="766,401" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" Timeout="[in_intWaitTime/in_intMaxRetry]" Version="V4">
                                         <uix:NCheckState.IfExists>
                                           <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_61">
                                             <sap:WorkflowViewStateService.ViewState>
@@ -1195,12 +1201,12 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                                         </uix:NCheckState.Target>
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NCheckState>
-                                      <uix:NGetText DisplayName="Get Text 'HealthCareProfessionalName'" sap:VirtualizedContainerService.HintSize="654,180" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" TextString="[dict_HealthProfessionalName(If(Integer.TryParse(CurrentRow(&quot;Identifier&quot;).ToString, Int32.MaxValue),Cint(CurrentRow(&quot;Identifier&quot;).ToString),CurrentIndex))]" Version="V4">
+                                      <uix:NGetText DisplayName="Get Text 'HealthCareProfessionalName'" sap:VirtualizedContainerService.HintSize="766,180" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="1ad49173-3000-4ba2-9de9-a210759df7ca" TextString="[dict_HealthProfessionalName(If(Integer.TryParse(CurrentRow(&quot;Identifier&quot;).ToString, Int32.MaxValue),Cint(CurrentRow(&quot;Identifier&quot;).ToString),CurrentIndex))]" Version="V4">
                                         <uix:NGetText.Target>
                                           <uix:TargetAnchorable CVScreenId="950f6801-fca7-48d9-b658-b847b07b06dc" ContentHash="DqkLpr7G7Eu6O1qgOzKJQw" DesignTimeRectangle="1134, 539, 292, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='ctlHlthProfessional' tag='LABEL' rowName='Health prof*' /&gt;" Guid="13f8db72-9a18-4f4c-bb5f-3feb20c3c883" ImageBase64="" InformativeScreenshot="ac1bb7b93e43cd6fb1f2cd079c8fcaad.png" Reference="iECXXsB5aE67CeGMsIoCEA/J5REf7BvU0a6Jthi8pICwg" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                         </uix:NGetText.Target>
@@ -1227,7 +1233,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:ForEachRow>
-                        <If Condition="[dict_HealthProfessionalName.Where(Function(keyPairItem) Not (String.IsNullOrEmpty(keyPairItem.Value) Or String.IsNullOrWhiteSpace(keyPairItem.Value))).Select(Function(keyValues) keyValues.Value).Distinct.Count=1 AndAlso&#xA;Not dict_HealthProfessionalName.Where(Function(keyPairItem) Not (String.IsNullOrEmpty(keyPairItem.Value) Or String.IsNullOrWhiteSpace(keyPairItem.Value))).ToDictionary.ContainsKey(CInt(in_strReceivableGroupId))]" DisplayName="If: Multiple HealthcareProfessinal or Receivable Group Id is common" sap:VirtualizedContainerService.HintSize="450,188" sap2010:WorkflowViewState.IdRef="If_6">
+                        <If Condition="[dict_HealthProfessionalName.Where(Function(keyPairItem) Not (String.IsNullOrEmpty(keyPairItem.Value) Or String.IsNullOrWhiteSpace(keyPairItem.Value))).Select(Function(keyValues) keyValues.Value).Distinct.Count=1 AndAlso&#xA;Not dict_HealthProfessionalName.Where(Function(keyPairItem) Not (String.IsNullOrEmpty(keyPairItem.Value) Or String.IsNullOrWhiteSpace(keyPairItem.Value))).ToDictionary.ContainsKey(CInt(in_strReceivableGroupId))]" DisplayName="If: Multiple HealthcareProfessinal or Receivable Group Id is common" sap:VirtualizedContainerService.HintSize="902,57" sap2010:WorkflowViewState.IdRef="If_6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1265,7 +1271,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                             </Sequence>
                           </If.Else>
                         </If>
-                        <ui:LogMessage DisplayName="Log Message: Health ProfessionalName" sap:VirtualizedContainerService.HintSize="920,50" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Health Professional Name: &quot;+out_strHealthCareProfessionalName]">
+                        <ui:LogMessage DisplayName="Log Message: Health ProfessionalName" sap:VirtualizedContainerService.HintSize="902,50" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Health Professional Name: &quot;+out_strHealthCareProfessionalName]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1289,7 +1295,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
               </Sequence>
             </TryCatch.Try>
             <TryCatch.Catches>
-              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1026,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1008,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1300,14 +1306,14 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Sequence: Take Screenshot  Rethrow Error" sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence DisplayName="Sequence: Take Screenshot  Rethrow Error" sap:VirtualizedContainerService.HintSize="536,1147" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[Not bool_TakeScreenshot]" DisplayName="If: Screenshot needs to be taken" sap:VirtualizedContainerService.HintSize="382,214" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[Not bool_TakeScreenshot]" DisplayName="If: Screenshot needs to be taken" sap:VirtualizedContainerService.HintSize="502,974" sap2010:WorkflowViewState.IdRef="If_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1315,7 +1321,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then: TakeScreenshot Add it into the Dictionary" sap:VirtualizedContainerService.HintSize="468,716" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <Sequence DisplayName="Then: TakeScreenshot Add it into the Dictionary" sap:VirtualizedContainerService.HintSize="468,715" sap2010:WorkflowViewState.IdRef="Sequence_10">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1352,7 +1358,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:LogMessage>
-                          <Assign DisplayName="Assign: Change the Flag of Take Screenshot" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign DisplayName="Assign: Change the Flag of Take Screenshot" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Boolean">[bool_TakeScreenshot]</OutArgument>
                             </Assign.To>
@@ -1379,7 +1385,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                         </Sequence>
                       </If.Else>
                     </If>
-                    <Throw DisplayName="Throw: GetHealthProfessionalName" Exception="[New System.Exception(&quot;SE: Unable to GetHealthProfessionalName: &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_4">
+                    <Throw DisplayName="Throw: GetHealthProfessionalName" Exception="[New System.Exception(&quot;SE: Unable to GetHealthProfessionalName: &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="502,113" sap2010:WorkflowViewState.IdRef="Throw_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1390,7 +1396,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
                   </Sequence>
                 </ActivityAction>
               </Catch>
-              <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="1026,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+              <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="1008,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1455,7 +1461,7 @@ CInt(dt_PatientFinancialInfo.AsEnumerable.Where(Function(x) x("Identifier").ToSt
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:RetryScope>
-    <ui:LogMessage DisplayName="Log Message: End GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1102,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;End: GetHealthProfessionalName&quot;]">
+    <ui:LogMessage DisplayName="Log Message: End GetHealthProfessionalName" sap:VirtualizedContainerService.HintSize="1084,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;End: GetHealthProfessionalName&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

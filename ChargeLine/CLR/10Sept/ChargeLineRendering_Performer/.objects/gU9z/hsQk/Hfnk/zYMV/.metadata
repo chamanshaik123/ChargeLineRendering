@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Check App State Expand",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "zYMVJMBV00-CY0GPaJC-Gg",
+  "Reference": "iECXXsB5aE67CeGMsIoCEA/zYMVJMBV00-CY0GPaJC-Gg",
+  "ParentRef": "iECXXsB5aE67CeGMsIoCEA/HfnkgT-NLka90ATNlEKWmQ",
+  "Created": "2025-08-20T10:21:45.4024503Z",
+  "Updated": "2025-08-20T10:21:45.4024503Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

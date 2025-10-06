@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="4pifvJXr0U-v_JVDaRYToQ" Reference="iECXXsB5aE67CeGMsIoCEA/KtdMJjhchEK7P_6AhHH-Ag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="db8a74e5-f69e-4945-8926-bd75aeb260ff" DesignTimeRectangle="292, 261, 193, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' aaname='CAMC Missing Rendering Physician' /&gt;" Guid="fd505af4-99cc-4891-a260-74bc23119dda" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
-      <imageRef attrName="InformativeScreenshot" originalValue="b52ae0d54f1098be77c5443f9896dfa4.png" xmlns="">0DKOjm6LIJkG9_ZLlzKC9RQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>
