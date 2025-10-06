@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="lFpy323J9kW8v-k6_w0XIQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="5951594b-8604-46f6-b7f1-259ff6298bac" DesignTimeRectangle="1260, 160, 36, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ctlRefreshButton*' tag='BUTTON' aaname='Refresh*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlRefreshButton*' tag='BUTTON' aaname='Refresh*' type='button' class='IccButtonGradient' /&gt;" Guid="a21e986b-700f-40a0-bffe-dfd346bfe56b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAdCAYAAADYSS5zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGdSURBVFhH7ZfPSgJRFIcHDARbC7YWDFzbK7i2FzBwlS9gJNWmIqkWLcooCq2wRLdZ/qsRjVxVBrkyqlcwZn/qd6FFzdEcvNNM4OJb/c7lfnPm3gtH0TSN7Mz/Eex230mtN2jvMEVb20lLwN6Va1W46AQhlz7J0N1Di15e3ywBex9nslRVa3pB2Fsp98V961G46ATRYm6BFcBlJDgMI8FhMU3wttmkYqnEZkaQLriTTJLHM0GKogiWV1bZukGRKjgfj5PT6aSFxSXRQa7GKNIE640bIYcOcnmlekW5fJ7N+iFNcH1jk7xeL5tBzu12k8s1blhSiuBaIkF+v19IzEaj1Ok8f8tT6SMKBoPiA3p1uBdSBJ/abQoEpoQgusXVhELTFA7PsFk/pAgCSKq1GpudFy7I4Rij07Msm/dDmuBP8AZCLBabE2cvEomwdb9hiiDOHG403kGfb1JcIK5uEEzrIC4KfjuXGcE0QVmMBIeFFbT9TIJxDxMVCriFfwH2zmRzVP58+HWCmEUR7O4fiBZbAfYuXBb5udiu2FxQow8JovKzy45z4QAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="f6a8966a41d035bf80641266b69376e2.png" xmlns="">099puqFC2Xkuh_XH3gkMMOQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="-VQUD_AXRkKB28AQFD86Dg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="12b4c78a-98df-4b6e-acbc-b6c5d7a8dde2" DesignTimeRectangle="219, 507, 1212, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='ctlRGIdDesc' tag='LABEL' parentid='ctlRGDetailsControlGroup' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlRGIdDesc' tag='LABEL' parentid='ctlRGDetailsControlGroup' type='' class='truncated-label subSectionHead' aaname='*' /&gt;" Guid="56a9d895-1eca-4216-880e-a144fbab4dae" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="8ef14721505914df19fabaf749a65d17.png" xmlns="">0tsJGIz4Z00uWL-c0uJ0l8w</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

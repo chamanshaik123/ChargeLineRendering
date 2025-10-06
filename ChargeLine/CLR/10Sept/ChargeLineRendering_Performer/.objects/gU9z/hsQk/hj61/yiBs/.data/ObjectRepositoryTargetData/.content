@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="UZ_IlUwCokOuwTVf8AK09Q" Reference="J-GH-OIaQEaHiNcjAacQKw/5Z-3AneQbkOtChrO7wm8Wg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="749b519f-e63e-49a5-9373-37bf3c7ef4d8" CvElementArea="635, 707, 60, 26" CvTextArea="646, 713, 38, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="636, 708, 59, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ctlcancelButtonButton*' tag='BUTTON' aaname='Cancel' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlcancelButtonButton*' tag='BUTTON' aaname='Cancel' type='button' class='IccButtonGradient' check:text='Cancel' /&gt;" Guid="cfea0e65-d585-4ddd-804c-af848b8c2e8d" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="ed4b555b7cb239b8c74ddc4b428555d8.png" xmlns="">ed4b555b7cb239b8c74ddc4b428555d8.png</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">CheckState</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

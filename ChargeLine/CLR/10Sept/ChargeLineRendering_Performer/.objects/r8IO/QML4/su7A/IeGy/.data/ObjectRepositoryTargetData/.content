@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="2MRZsThAjkqVPfvgRq915Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="e7af99bc-35ab-4fdf-a896-387be96c0cec" CvElementArea="195, 255, 93, 27" CvTextArea="231, 263, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="195, 255, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='stlpButtons' /&gt;&lt;wnd ctrlname='cmdOK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='stlpButtons' /&gt;&lt;wnd ctrlname='cmdOK' check:text='&amp;amp;OK' /&gt;" Guid="d7730fe2-3993-4124-8ae5-aa44cfc7a6e6" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmCreditReason' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="4143a4635a3f3143b9fefa6654f133e9.png" xmlns="">0s5L8xezRYUeNOArfdiCWeg</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="mqgMSSIiYE6TATz3Nt8upg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="7f95c46e-3afd-47b3-a424-2793e25340d0" CvElementArea="25, 61, 345, 23" CvType="InputBox" DesignTimeRectangle="26, 62, 342, 21" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='stplCreditReason' /&gt;&lt;wnd ctrlname='grpCreditReason' /&gt;&lt;wnd cls='ComboBox' /&gt;&lt;ctrl role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;wnd ctrlname='stplCreditReason' /&gt;&lt;wnd ctrlname='grpCreditReason' /&gt;&lt;wnd cls='ComboBox' /&gt;&lt;ctrl role='combo box' automationid='' /&gt;" Guid="5f05c248-77c4-4348-bca6-831ca18927d9" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmCreditReason' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="c446131ab5ec05a28f9562f8798e5663.png" xmlns="">0UczBJzlh1kukS_IK1YCsZg</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">SelectItem</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

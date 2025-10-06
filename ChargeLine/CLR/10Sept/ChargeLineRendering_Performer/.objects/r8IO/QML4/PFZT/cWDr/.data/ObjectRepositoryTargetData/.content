@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="JIVTA0-AVEetj3mpDSO_TA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="1b19bc50-e55b-4763-89ca-9e982475c721" CvElementArea="427, 434, 93, 27" CvTextArea="463, 442, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="427, 434, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='cmdOK' aaname='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='cmdOK' aaname='OK' check:text='&amp;amp;OK' /&gt;" Guid="eea16f8f-4ec3-402e-96fb-2395e00c7168" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="e84df2cb1d8f3efef2343553a980fc47.png" xmlns="">0mwGCIMgN9EWMUh6vyyJnGw</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

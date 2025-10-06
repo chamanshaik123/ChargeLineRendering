@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="ibHuIeKWrUyoRtKIukHtGw" Reference="F-XitlQWl0ahaBFojCE8Zg/7MXHeEAX_k6VGVRA8RSKZg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="0713aaa9-943b-45bb-9539-cd1af5899a1f" DesignTimeRectangle="71, 100, 138, 45" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='tablist' tag='TABLE' /&gt;&lt;webctrl type='' class='tabBoxLeft' tag='TD' /&gt;" Guid="c8a40b45-4d4c-4b22-9c25-06a53bbcd800" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian *' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="73237e714ea1c228d939ff8a611652e8.png" xmlns="">73237e714ea1c228d939ff8a611652e8.png</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">CheckState</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="HO-AxNBE1E62x34Bb3DJnw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="295, 119, 75, 23" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd aaname='OK' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='OK' cls='Button' check:text='OK' /&gt;" Guid="891eb697-0601-422f-9e46-fec8ed8f19c1" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Credit Charge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="756b20426644e71219f0944d49756ace.png" xmlns="">0qbPr08FocU6ww8NGiQf9ZQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">CheckState</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

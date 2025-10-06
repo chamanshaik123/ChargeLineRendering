@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="UbxGFcYkVEiFZOdlunAd2A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="e38dffb7-46df-40f4-9381-ad7abb1ea8b8" DesignTimeRectangle="603, 365, 66, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='listbox' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' aaname='*Days*' /&gt;&lt;webctrl tag='TD' aaname='Days' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='listbox' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' aaname='*Days*' /&gt;&lt;webctrl tag='TD' aaname='Days' type='' class='IccComboBoxPopupTableCell' check:text='Days' /&gt;" Guid="b2b7511d-cc6f-43e8-bff9-e0315b48a207" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [TEST 2025.01]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="691b67b944a9e8489f27ecab20ef322d.png" xmlns="">0QUkkk5IL7EeSga471yLUUA</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

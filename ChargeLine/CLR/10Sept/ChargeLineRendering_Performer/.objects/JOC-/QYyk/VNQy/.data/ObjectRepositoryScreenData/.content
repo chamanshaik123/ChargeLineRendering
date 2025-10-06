@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryScreenData ContentHash="bOWM-E9gnU2yWZ-XEkMlqQ" Reference="J-GH-OIaQEaHiNcjAacQKw/cJbwXtvmtUi0cI95ppzw5w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryScreenData.Data>
-    <TargetApp x:Key="TargetApp" Area="0, 0, 1440, 860" ContentHash="C2ifgzR3a0m26SrLvq0cMQ" FilePath="[str_glblPMofficeApplicationPath]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF6SURBVFhHxZQLboNAEEM5OkfjZi0ma9U4nmUXkGrpSWQ+9hBFWUb107Rt28G6ridYB1Bbey6GVmGOzjw6xIM1ZJTbh2i4GtLsSr4DH6jZ90WDu+Eq3wctJotLb4RTyafFncXhFM46Sf2KtBOP4LAOEohG1UxFNd9iP2JAGgR+QG9W6c1CLb7/9gCimZJmycjsEU7zNECqA2aofP/1AND9+nWZz3dxb3Ic4HBpaeAZ0s+s9cQ5kHLA7vfdRE3DUp29UdRf2X1y0w0A30qPSPgeSBlgn6+b6Lkx6lpLMFRxb7LPzx0w8i2g7yR/EH+ESjL3OmpJrxyAZQ/zOp6TUCfuSy7/hgH6fgQDtK59J/lCQ/+EwANSXfuOepHjACg1HZh4AKR17yvJ8wiHaJSGFMx4AOp3DoBa/Ec+kICRB0CszxzQYv8EIx9KVMZ4Hj0AarFn3TmiqjucKcOp2SNSr+IynBo9YobhcOrNI6bDVU8OeRTsGj2EamsXWpZfgLYUisCf9T8AAAAASUVORK5CYII=" Reference="J-GH-OIaQEaHiNcjAacQKw/cJbwXtvmtUi0cI95ppzw5w" Selector="&lt;wnd app='pmoffice.exe' isremoteapp='1' /&gt;" Version="V1">
-      <imageRef attrName="InformativeScreenshot" originalValue="8700f093b900e63c135d1e7e39a6c28c.png" xmlns="">8700f093b900e63c135d1e7e39a6c28c.png</imageRef>
-    </TargetApp>
-  </ObjectRepositoryScreenData.Data>
-</ObjectRepositoryScreenData>

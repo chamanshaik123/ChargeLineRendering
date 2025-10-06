@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="btAW7JPhJ0iAYTO2-gANFg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="2, 357, 36, 19" DesignTimeScaleFactor="1" Guid="0d6eb495-1b81-4910-80a0-9ce5981c2363" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAATCAYAAAD4f6+NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACLSURBVEhL7c7NCYAwDIbhzOFgTtAhXMDxevaaTSL+4EE+a9N+wYuFF0qTwiN2Oyklk2mpS8SGccYzZznn4346ruMFsVBUEANFB/WiQkA9qDDQVgsqFLTlRYWD9tCfh+JBaL9QLAjtvhQHQnsVxYDQTmV8EJo74oLQzBkPhN4b4oCIFUGq+lk/qJzaCsyG24n9ZJZwAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="6c061cf2fd90f54951fdec3e02889e81.png" xmlns="">0spGZvaO_406-i-C9x4mBcA</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

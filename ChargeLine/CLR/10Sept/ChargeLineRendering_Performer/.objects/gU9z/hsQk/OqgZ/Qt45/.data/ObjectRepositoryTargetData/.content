@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="J6YFUEv0lUeku-CdRXqOFg" Reference="J-GH-OIaQEaHiNcjAacQKw/GfbTj6KVGUeyGKtGPIstAg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="79bfb218-c4db-472e-897e-e248cee19083" DesignTimeRectangle="7, 308, 39, 38" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;ctrl name='RevElate' role='check box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='RevElate' role='check box' automationid='' check:fulltext='RevElate' /&gt;" Guid="85b56a3c-3f4c-4de1-980c-aacaa7d77a3f" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle - United States Base Experience - My Workflow - Op*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="c77142166263580d7085c8e65b5fb972.png" xmlns="">c77142166263580d7085c8e65b5fb972.png</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

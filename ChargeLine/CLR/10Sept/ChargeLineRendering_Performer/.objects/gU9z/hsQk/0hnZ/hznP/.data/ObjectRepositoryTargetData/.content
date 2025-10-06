@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="ErV8cq6eQ0q4nf3lHa4uFA" Reference="iECXXsB5aE67CeGMsIoCEA/hznPqQD4KUOHi9slK8nqZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="79bfb218-c4db-472e-897e-e248cee19083" DesignTimeRectangle="7, 308, 39, 38" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;ctrl name='RevElate' role='check box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='RevElate' role='check box' automationid='' check:fulltext='RevElate' /&gt;" Guid="85b56a3c-3f4c-4de1-980c-aacaa7d77a3f" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
-      <imageRef attrName="InformativeScreenshot" originalValue="52aee54f5c9bc3114625cb10bb4a2d07.png" xmlns="">0ksKN7-Xh5k-S7dqayRGE2A</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">CheckState</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="c6NfxMZX8kKyMP63M6xrUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="f29ac89b-8b16-4d27-b655-6f71af169b87" DesignTimeRectangle="122, 48, 24, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Toggle*' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='stlpMain' /&gt;&lt;ctrl name='Toggle*' role='push button' automationid='' check:fulltext='Toggle from Interfaced to Pending' /&gt;" Guid="b71247b1-cc7d-4943-b8e3-8815e57a9120" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmApplication' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="653bf6e56e4a244112799c4384886618.png" xmlns="">0Yv1--rHG8EaaJPaw4eGtCA</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

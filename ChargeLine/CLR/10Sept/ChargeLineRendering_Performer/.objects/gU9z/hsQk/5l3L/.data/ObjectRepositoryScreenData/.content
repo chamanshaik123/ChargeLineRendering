@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryScreenData ContentHash="ld-R7pz4HUqQxdCJ5s-d7A" Reference="F-XitlQWl0ahaBFojCE8Zg/6iHqFE4fLUKIlS0DMWwXQA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryScreenData.Data>
-    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" ContentHash="6RgRnamb2EunRYLdRhQ0Ig" Reference="F-XitlQWl0ahaBFojCE8Zg/6iHqFE4fLUKIlS0DMWwXQA" Selector="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle - United States Base Experience - RevElate - Opene*' /&gt;" Title="Revenue Cycle - United States Base Experience - RevElate - Opene*" Url="[Nothing]" />
-  </ObjectRepositoryScreenData.Data>
-</ObjectRepositoryScreenData>

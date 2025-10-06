@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryScreenData ContentHash="5BQMhuPLZku8Hf8m9RUfWQ" Reference="F-XitlQWl0ahaBFojCE8Zg/cIGA-CHZ5kWpnOh-eDEDHA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryScreenData.Data>
-    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" ContentHash="e0-ilDkPCkOP0rxrbjaaLA" Reference="F-XitlQWl0ahaBFojCE8Zg/cIGA-CHZ5kWpnOh-eDEDHA" Selector="&lt;wnd app='wfcrun32.exe' cls='#32770' title='P0570 Revenue Cycle ERROR' /&gt;" Title="P0570 Revenue Cycle ERROR" Url="[Nothing]" />
-  </ObjectRepositoryScreenData.Data>
-</ObjectRepositoryScreenData>

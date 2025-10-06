@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="vACYXTqWg0OeHKqYlVxzlg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="9, 395, 538, 170" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='SftTree*' role='pane' /&gt;" FuzzySelectorArgument="&lt;uia cls='SftTree*' role='pane' automationid='*' /&gt;" Guid="e1398078-5b45-42bb-a6b9-7220978f1048" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="f4e5de0a43049fcc4bc91289c4238f22.png" xmlns="">0Yz_u9iqR_UuCUuFi32vOvw</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">GetText</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

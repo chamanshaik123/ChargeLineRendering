@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="8Y_pXdQ77kOAXZ6I3IsReQ" Reference="iECXXsB5aE67CeGMsIoCEA/FBEbVj5xAEKsq-rlbp4-6w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="60fd7721-50e4-4b19-9ae9-277c7cb8b07f" DesignTimeRectangle="594, 253, 97, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='RGGrid-cell-ctlRGId-icc*' aaname='{0}' tag='DIV' /&gt;&quot;, CurrentRow(&quot;Identifier&quot;).ToString.Trim)]" Guid="a2b7e2f5-362f-4583-bcba-27736448778a" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="dd6236c723bba7c6552eb6cb02e23192.png" xmlns="">0vhcuzA_6b0yac6xQNfR4sw</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

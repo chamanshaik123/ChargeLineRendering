@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="YR2f6eIFEEi3DiYbIvTTKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="9aeb747e-02e6-4657-b077-0ec240e0adbd" DesignTimeRectangle="1416, 207, 15, 15" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='jqxScrollBtnUpverticalScrollBarctlRGGrid' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='jqxScrollBtnUpverticalScrollBarctlRGGrid' type='' class='jqx-reset jqx-reset-hsglobal jqx-icon-arrow-up jqx-icon-arrow-up-hsglobal' tag='DIV' aaname='' /&gt;" Guid="a1d9bf4a-5bdf-43da-9e77-7bbb80a9afaa" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [PROD 2025.01]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="a5936a00d8a3a04fe08a7a3f637dd106.png" xmlns="">0nk2RwuMQoUqhKyqFwXT1Lw</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="dB1G-8nFD0GPt-9yowP_bA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="92315501-5b74-4c42-8835-99ce977dd3d5" CvElementArea="653, 510, 93, 27" CvTextArea="679, 518, 39, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="653, 510, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='tlpl_main' /&gt;&lt;wnd ctrlname='tlpl_Buttons' /&gt;&lt;wnd ctrlname='cmdCancel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tlpl_main' /&gt;&lt;wnd ctrlname='tlpl_Buttons' /&gt;&lt;wnd ctrlname='cmdCancel' check:text='Cancel' /&gt;" Guid="a8d73be2-a89e-4709-9b74-ffce63c1aa27" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmMain' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="b2533e997123e98142f99814ac8be80c.png" xmlns="">0gB-GpPhf0ECt9vD8vSaneg</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="BdMipiKQR0GFWaKl8ZtIKg" Reference="iECXXsB5aE67CeGMsIoCEA/QcUdYh2C7EOls1cmfF6Gvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="d61f6eb0-eecf-43c8-a9d2-bf6b1b35f92b" CvElementArea="525, 434, 93, 26" CvTextArea="551, 442, 39, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="525, 434, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlname='cmdCancel' aaname='Cancel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='cmdCancel' aaname='Cancel' check:text='&amp;amp;Cancel' /&gt;" Guid="904cece8-8afe-40eb-98f4-e0a515447995" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' ctrlname='frmModifyChargeInformation' isremoteapp='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="fe2f73bb1fc5c93f2a792480fd6bd6b6.png" xmlns="">0DEvW74rTzkOI8IH5-LbjtQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">None</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

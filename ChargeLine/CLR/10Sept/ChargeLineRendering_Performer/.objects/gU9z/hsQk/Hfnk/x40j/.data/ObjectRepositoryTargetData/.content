@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="RT_p0YJ7lEKB71j5AR4lsA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="acb75743-7f95-445e-a50f-a02021125ddd" CvTextArea="76, 26, 26, 12" CvTextArgument="Task" CvType="Text" DesignTimeRectangle="71, 23, 37, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='Task' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='Task' role='menu item' automationid='' check:text='Task' /&gt;" Guid="b339e90b-b8b5-4d09-8947-1f43292214a8" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle - United States Base Experience - RevElate - Opene*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="3848167f7952e6a1c20ebc2972d22084.png" xmlns="">0MGyGekjS5ka5TWaEpGJM0g</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

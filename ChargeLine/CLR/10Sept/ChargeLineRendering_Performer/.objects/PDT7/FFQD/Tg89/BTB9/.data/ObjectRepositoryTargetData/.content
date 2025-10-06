@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="51kR1msmU0KHkuvE9eXzkQ" Reference="BIPb7NZ-MEG1ZOZ9L35Dqw/VlJ2x__UHUGPRYFbkvDNBw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="dedf1098-f5e0-4c11-b8bd-17bbdd8117cc" CvElementArea="316, 108, 91, 24" CvTextArea="352, 113, 18, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="316, 107, 92, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Yes' cls='Button' title='*Yes' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Yes' cls='Button' title='&amp;amp;Yes' check:text='&amp;amp;Yes' /&gt;" Guid="69f28cc1-e5da-4f85-91d1-f206617dfb84" ScopeSelectorArgument="&lt;wnd app='javaw.exe' cls='#32768' isremoteapp='1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="28452f775de8e66458099776c13d54d4.png" xmlns="">28452f775de8e66458099776c13d54d4.png</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

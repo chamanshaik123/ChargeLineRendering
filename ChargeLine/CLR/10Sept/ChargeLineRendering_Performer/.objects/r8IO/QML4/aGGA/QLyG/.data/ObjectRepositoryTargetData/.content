@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="h_oESxNb2EyFGFhJ4q68Vg" Reference="iECXXsB5aE67CeGMsIoCEA/QLyGxxPJukuaChp2vlzxlA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="a48dda1d-ef19-4716-9f01-9794f3ee050a" DesignTimeRectangle="356, 599, 93, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;uia cls='Button' name='OK' enabled='true' /&gt;" Guid="26168693-72af-4c70-8222-818fb6ee71bf" ScopeSelectorArgument="&lt;wnd app='cschargeviewer.exe' cls='#32770' isremoteapp='1' title='Provider Selection' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="9bbe8eaa0b74055d2c848e9673a7ed37.png" xmlns="">0Ei66-RQPLkGMddZzfYbaYA</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">None</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

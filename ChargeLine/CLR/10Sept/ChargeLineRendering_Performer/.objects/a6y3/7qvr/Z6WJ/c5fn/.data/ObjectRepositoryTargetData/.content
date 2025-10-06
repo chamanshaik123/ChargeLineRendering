@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="V0COF7xvLEukTEiK4amx2g" Reference="F-XitlQWl0ahaBFojCE8Zg/nhPbN6RjDECoS8D_56XTPA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="048dc578-d33f-4325-b3a2-d06a54778c77" DesignTimeRectangle="286, 543, 118, 133" DesignTimeScaleFactor="0.800000011920929" ElementType="ListItem" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='storeapp added' aaname='' check:innerText='P0570 Revenue Cycle' /&gt;" Guid="934f16cb-e7f4-4e22-8248-176818c68774" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="c6c79c91fced11f57764a3707337c603.png" xmlns="">c6c79c91fced11f57764a3707337c603.png</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">CheckState</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

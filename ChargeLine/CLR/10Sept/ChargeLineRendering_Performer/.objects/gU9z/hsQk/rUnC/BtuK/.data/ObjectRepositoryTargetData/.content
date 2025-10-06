@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="-5hMQfIrhkOT5lqqjx5bGA" Reference="F-XitlQWl0ahaBFojCE8Zg/uI9RlNJscEmU8U8ENYkmeQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="d6f50b80-a477-4a24-9ac3-8acaa1d6b7fa" CvElementArea="53, 69, 104, 27" CvTextArea="77, 76, 53, 12" CvTextArgument="Personnel" CvType="Button" DesignTimeRectangle="54, 70, 105, 23" DesignTimeScaleFactor="1" ElementType="TabPage" FullSelectorArgument="&lt;wnd aaname='My Workflow' cls='SWT_Window0' /&gt;&lt;wnd aaname='Personnel' cls='SWT_Window0' /&gt;&lt;ctrl name='Personnel' role='page tab list' /&gt;&lt;ctrl name='Personnel' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='My Workflow' cls='SWT_Window0' /&gt;&lt;wnd aaname='Personnel' cls='SWT_Window0' /&gt;&lt;ctrl name='Personnel' role='page tab list' /&gt;&lt;ctrl name='Personnel' role='page tab' automationid='' check:text='Personnel' /&gt;" Guid="26b99eac-c218-4e7e-b2d9-b7b4e98df89b" ScopeSelectorArgument="&lt;wnd app='revenuecycle.exe' cls='SWT_Window0' isremoteapp='1' title='Revenue Cycle - United States Base Experience - My Workflow - Op*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="866d0b311b432e206931253be2280140.png" xmlns="">866d0b311b432e206931253be2280140.png</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">CheckState</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

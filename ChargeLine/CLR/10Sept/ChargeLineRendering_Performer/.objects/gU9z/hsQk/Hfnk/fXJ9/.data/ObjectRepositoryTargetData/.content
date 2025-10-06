@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="yS1_YK4EvUK48msCcj0Bkg" Reference="iECXXsB5aE67CeGMsIoCEA/fXJ9dYgQ_UaxrRNj73IyCQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="244, 565, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='TR' aaname='*{0}*{1}*{2}*{3}*' /&gt;&lt;webctrl tag='IMG' href='*BlindCollapsed_Button*gif' /&gt;&quot;,in_dictRecordHeader(&quot;PateinetName&quot;),in_dictRecordHeader(&quot;HealthPlanName&quot;),in_dictRecordHeader(&quot;Date&quot;),in_dictRecordHeader(&quot;BalanceAmount&quot;))]" Guid="3f7ecc60-d25c-40c7-a669-b150e4790b33" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="b6ac4838390e621b0330d740dc8bf479.png" xmlns="">0j-bl2fDvE0613-LjlxYtnQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">CheckState</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

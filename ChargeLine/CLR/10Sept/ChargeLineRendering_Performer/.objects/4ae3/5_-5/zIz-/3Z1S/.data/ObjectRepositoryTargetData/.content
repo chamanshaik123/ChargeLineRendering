@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="JnrTy0NUR0G6C1j8xPPorA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="b5309cd3-0e3a-46b0-90ce-122d0612339c" CvTextArea="82, 44, 94, 13" CvType="AnyWordGroup" DesignTimeRectangle="83, 44, 101, 27" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='OK' cls='Button' /&gt;" Guid="1a36e27f-364e-413b-909c-6a757f325959" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='wfcrun32.exe' title='P0*ERROR' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="457642197836d6812d4e8110b316a842.png" xmlns="">457642197836d6812d4e8110b316a842.png</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">CheckState</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

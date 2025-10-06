@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ExtractMetadataObjectReference ContentHash="ZpQkzKL1t022hhQ62BKbUg" Value="&lt;extract&gt;&lt;column name='Column0' attr='fulltext' exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='9' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix" />
